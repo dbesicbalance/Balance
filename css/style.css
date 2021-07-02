@@ -618,6 +618,11 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   animation: 1s reveal-inner linear forwards;
 }
 
+.concierge-section{
+  width: 100%;
+  height: 100%;
+}
+
 @-webkit-keyframes reveal {
   0% {
     left: 0;
@@ -1226,20 +1231,20 @@ body .page-header {
   width: 20%;
   height: 80px;
   line-height: 80px;
-  background: #fff;
+  background: #002214;
   position: absolute;
   left: auto;
   right: 0;
   bottom: 0;
   z-index: 1;
-  color: #141414;
+  color: #856d47;
   font-family: "Argesta Display";
   font-size: 22px;
 }
 .slider .slider-prev {
   width: 80px;
   height: 80px;
-  background: #141414;
+  background: #856d47;
   position: absolute;
   right: calc(20% + 82px);
   bottom: 0;
@@ -1269,7 +1274,7 @@ body .page-header {
 .slider .slider-next {
   width: 80px;
   height: 80px;
-  background: #141414;
+  background: #856d47;
   position: absolute;
   right: 20%;
   bottom: 0;
@@ -1914,7 +1919,7 @@ body .page-header {
 .carousel-events-box .swiper-prev {
   width: 60px;
   height: 60px;
-  background: #141414;
+  background: #ffffffc0;
   position: absolute;
   left: 0;
   top: 33%;
@@ -1928,8 +1933,8 @@ body .page-header {
   content: "";
   width: 15px;
   height: 15px;
-  border-left: 4px solid #fff;
-  border-bottom: 4px solid #fff;
+  border-left: 4px solid #856d47;
+  border-bottom: 4px solid #856d47;
   transform: rotate(45deg);
   position: absolute;
   left: 25px;
@@ -1944,7 +1949,7 @@ body .page-header {
 .carousel-events-box .swiper-next {
   width: 60px;
   height: 60px;
-  background: #141414;
+  background: #ffffffc0;
   position: absolute;
   right: 0;
   top: 33%;
@@ -1958,8 +1963,8 @@ body .page-header {
   content: "";
   width: 15px;
   height: 15px;
-  border-right: 4px solid #fff;
-  border-top: 4px solid #fff;
+  border-right: 4px solid #856d47;
+  border-top: 4px solid #856d47;
   transform: rotate(45deg);
   position: absolute;
   right: 25px;
@@ -2102,11 +2107,11 @@ body .page-header {
 
 /* RECENT NEWS */
 .col-md-6:nth-child(2) .recent-news {
-  padding-right: 30px;
+  padding-right: 0px;
 }
 
 .col-md-6:nth-child(3) .recent-news {
-  padding-left: 30px;
+  padding-left: 0px;
 }
 
 .recent-news {
@@ -3313,7 +3318,7 @@ body .page-header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: #141414;
+  background: #002214;
   padding-top: 100px;
   color: #fff;
 }
