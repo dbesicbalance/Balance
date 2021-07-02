@@ -114,21 +114,22 @@
     <!-- end container --> 
   </nav>
   <!-- end navbar -->
-  <header class="page-header" data-background="img/1MansionsBorgheto.jpg">
-    <div class="container">  
+  <header class="page-header" data-background="">
+    <div class="container-portal">
+      <div class="x"><img src="img/1MansionsBorgheto.jpg" alt=""></div>
+      <div class="xx"><img src="img/2MansionsBorgheto.jpg" alt=""></div>
+      <div class="xxx"><img src="img/3LIFESTYLE.jpg" alt=""></div>
+    </div>  
+    <div class="container" style="z-index: 1000;">  
       <h1>Rooms</h1>
       <p>We love staying in hotels</p>
     </div>
     <!-- end container -->
     <div class="scroll-down"></div>
-    <!-- end scroll-down --> 
+    <!-- end scroll-down -->  
   </header>
   <!-- end page-header -->
-  <div class="container-portal">
-    <div class="x"><img src="img/1MansionsBorgheto.jpg" alt=""></div>
-    <div class="xx"><img src="img/2MansionsBorgheto.jpg" alt=""></div>
-    <div class="xxx"><img src="img/3LIFESTYLE.jpg" alt=""></div>
-  </div>   
+
   <section class="content-section">
     <div class="container">
       <div class="row">
@@ -218,16 +219,16 @@ Hairdryers and ironing facilities are available from reception.
         </div>
         <!-- end col-12 -->
        
-		  	<div class="room-info-box" style="background: #002214;">
+		  	<div class="room-info-box" style="background: #b8b8b870;">
 			  <h6>Facilities</h6>
 				<ul>
-				<li><figure><img src="images/icon01.png" alt="Image"></figure><b>Room Type</b><span class="b">Hotel Non-Smoking Throughout</span></li>
-				<li><figure><img src="images/icon02.png" alt="Image"></figure><b>Room services</b><span class="b">24 Hour Reception, Wake Up Call Available</span></li>
-				<li><figure><img src="images/icon03.png" alt="Image"></figure><b>Parking (charges may apply)	</b><span class="b">Car parking available onsite</span></li>
-					<li><figure><img src="images/icon04.png" alt="Image"></figure><b>Business</b><span class="b">Wi-Fi Available, Wi-Fi Available In Public Areas</span></li>
-					<li><figure><img src="images/icon05.png" alt="Image"></figure><b>Dining</b><span class="b">Restaurant, Bar</span></li>
-					<li><figure><img src="images/icon06.png" alt="Image"></figure><b>In room entertainment</b><span class="b">TV, Air Conditioner</span></li>
-					<li><figure><img src="images/icon07.png" alt="Image"></figure><b>Other facilities</b><span class="b">Tea/Coffee making facilities in each room, Telephone In Each Room</span></li>
+				<li><figure><img class="facilities-icon" src="img/room-type.png" alt="Image"></figure><b>Room Type</b><span class="b">Hotel Non-Smoking Throughout</span></li>
+				<li><figure><img class="facilities-icon" src="img/room-service.png" alt="Image"></figure><b>Room services</b><span class="b">24 Hour Reception, Wake Up Call Available</span></li>
+				<li><figure><img class="facilities-icon" src="img/parking.png" alt="Image"></figure><b>Parking (charges may apply)	</b><span class="b">Car parking available onsite</span></li>
+					<li><figure><img class="facilities-icon" src="img/business.png" alt="Image"></figure><b>Business</b><span class="b">Wi-Fi Available, Wi-Fi Available In Public Areas</span></li>
+					<li><figure><img class="facilities-icon" src="img/dining.png" alt="Image"></figure><b>Dining</b><span class="b">Restaurant, Bar</span></li>
+					<li><figure><img class="facilities-icon" src="img/entertainment.png" alt="Image"></figure><b>In room entertainment</b><span class="b">TV, Air Conditioner</span></li>
+					<li><figure><img class="facilities-icon" src="img/other-facilities.png" alt="Image"></figure><b>Other facilities</b><span class="b">Tea/Coffee making facilities in each room, Telephone In Each Room</span></li>
 				</ul>
 			  </div>
 			  <!-- end room-info-box -->
@@ -360,15 +361,20 @@ longstanding reputation for excellence.</h2>
 
 .container-portal {
   width: 100%;
+  height: 200px;
   display: grid;
   grid-template-columns: 1.5fr 1.5fr 1.5fr;
   grid-template-rows: 0.5fr 0.5fr ;
-  gap: 10px 10px;
+  gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "x xxx xxx"
     "xx xxx xxx"
     ". . .";
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  margin-top: 0%;
 }
 
 .x { grid-area: x; }
@@ -407,7 +413,11 @@ longstanding reputation for excellence.</h2>
   }
 
   .b{
-    color: #fff;
+    color: rgb(0, 0, 0);
+  }
+
+  .facilities-icon{
+    color: black;
   }
 </style>
 
