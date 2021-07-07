@@ -1334,6 +1334,7 @@ body .page-header {
   font-family: "Argesta Display";
   text-indent: -5px;
 }
+
 .page-header .container p {
   width: 100%;
   display: block;
@@ -2694,7 +2695,7 @@ body .page-header {
   margin: 5px 0;
   padding: 5px 0;
   padding-bottom: 15px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #002214;
 }
 .room-info-box ul li:last-child {
   padding-bottom: 0;
@@ -2743,7 +2744,6 @@ body .page-header {
   margin-top: -50px;
   position: relative;
   z-index: 1;
-  padding: 30px;
   padding-left: 0;
   padding-bottom: 0;
   padding-right: 0;
@@ -2751,7 +2751,7 @@ body .page-header {
 .meeting-event-box .content h5 {
   width: 100%;
   display: block;
-  font-size: 28px;
+  font-size: 20px;
   font-family: "Argesta Display";
 }
 .meeting-event-box .content h5 a {
