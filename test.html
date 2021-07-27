@@ -1,687 +1,117 @@
 <!DOCTYPE html>
 <html>
-    
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untitled</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-
-    <!------ Include the above in your HEAD tag ---------->
-    
-     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-
-</head>
-
 <style>
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.row > .column {
-  padding: 8px 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
+.filterDiv {
   float: left;
-  width: 20%;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: #000000;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #000000;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: #856d47;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: #856d47;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: #002214;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 12px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.img-colum {
-  margin-bottom: -4px;
-  height: 200px;
-}
-
-.caption-container {
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
   text-align: center;
-  background-color: black;
-  padding: 2px 16px;
+  margin: 2px;
+  display: none;
+}
+
+.show-filter {
+  display: block;
+}
+
+.container-filter {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
   color: white;
 }
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.row .column img {
-    display: inline-block;
-    width: 25%;
-    height: 200px;
-    background-position: center;
-    background-size: cover;
-}
-
-.img-slide{
-    width: 100%;
-    height: 90vh;
-}
-
-
-
-
-
-.photo-gallery {
-  color:#313437;
-  background-color:#fff;
-}
-
-.photo-gallery p {
-  color:#7d8285;
-}
-
-.photo-gallery h2 {
-  font-weight:bold;
-  margin-bottom:40px;
-  padding-top:40px;
-  color:inherit;
-}
-
-@media (max-width:767px) {
-  .photo-gallery h2 {
-    margin-bottom:25px;
-    padding-top:25px;
-    font-size:24px;
-  }
-}
-
-.photo-gallery .intro {
-  font-size:16px;
-  max-width:500px;
-  margin:0 auto 40px;
-}
-
-.photo-gallery .intro p {
-  margin-bottom:0;
-}
-
-.photo-gallery .photos {
-  padding-bottom:20px;
-}
-
-.photo-gallery .item {
-  padding-bottom:30px;
-}
-
-#demo {
-  height:100%;
-  position:relative;
-  overflow:hidden;
-}
-
-
-.green{
-  background-color:#6fb936;
-}
-        .thumb{
-            margin-bottom: 30px;
-        }
-        
-        .page-top{
-            margin-top:85px;
-        }
-
-   
-img.zoom {
-    width: 100%;
-    height: 200px;
-    border-radius:5px;
-    object-fit:cover;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-}
-        
- 
-.transition {
-    -webkit-transform: scale(1.2); 
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-}
-    .modal-header {
-   
-     border-bottom: none;
-}
-    .modal-title {
-        color:#000;
-    }
-    .modal-footer{
-      display:none;  
-    }
-
-
 </style>
-<body>
-
-
-<div
-  class="cloudimage-360"
-  data-folder="https://scaleflex.cloudimg.io/crop/1920x700/n/https://scaleflex.airstore.io/demo/360-car/"
-  data-filename="iris-{index}.jpeg"
-  data-amount="36"
-  data-magnifier="3"
-  data-spin-reverse
-></div>
-
-<h2 style="text-align:center">Lightbox</h2>
-
-<div class="row">
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-03.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-04.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-05.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-06.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-07.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-08.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-16.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-17.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-2.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-44.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-50.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-51.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-52.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-53.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-54.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-55.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-56.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-57.jpg" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-58.jpg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-59.jpg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-60.jpg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-61.jpg" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-62.jpg" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
-  </div>
-  <div class="column">
-    <img class="img-column" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-63.jpg" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
-  </div>
-</div>
-
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 25</div>
-      <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-01.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 25</div>
-      <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-03.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 25</div>
-      <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-04.jpg" style="width:100%">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 25</div>
-      <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-05.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">5 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-06.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">6 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-07.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">7 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-08.jpg" style="width:100%">
-      </div>
-      
-      <div class="mySlides">
-        <div class="numbertext">8 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-16.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">9 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-17.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">10 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-2.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">11 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-44.jpg" style="width:100%">
-      </div>
-      
-      <div class="mySlides">
-        <div class="numbertext">12 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-50.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">13 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-51.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">14 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-52.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">15 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-53.jpg" style="width:100%">
-      </div>
-      
-      <div class="mySlides">
-        <div class="numbertext">16 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-54.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">17 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-55.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">18 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-56.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">19 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-57.jpg" style="width:100%">
-      </div>
-      
-      <div class="mySlides">
-        <div class="numbertext">20 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-58.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">21 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-59.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">22 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-60.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">23 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-61.jpg" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">24 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-62.jpg" style="width:100%">
-      </div>
-      
-      <div class="mySlides">
-        <div class="numbertext">25 / 25</div>
-        <img class="img-slide" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-63.jpg" style="width:100%">
-      </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    
-  </div>
-</div>
-
 
 <body>
-    <div class="photo-gallery">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Lightbox Gallery</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
-            </div>
-            <div class="row photos">
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="yachts/img/Optasia-yacht-atalanta-golden-yachts-01.jpg" data-lightbox="photos"><img class="img-fluid" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-01.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="yachts/img/Optasia-yacht-atalanta-golden-yachts-03.jpg" data-lightbox="photos"><img class="img-fluid" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-63.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="yachts/img/Optasia-yacht-atalanta-golden-yachts-05.jpg" data-lightbox="photos"><img class="img-fluid" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-63.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="yachts/img/Optasia-yacht-atalanta-golden-yachts-05.jpg" data-lightbox="photos"><img class="img-fluid" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-63.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="yachts/img/Optasia-yacht-atalanta-golden-yachts-63.jpg" data-lightbox="photos"><img class="img-fluid" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-63.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="yachts/img/Optasia-yacht-atalanta-golden-yachts-51.jpg" data-lightbox="photos"><img class="img-fluid" src="yachts/img/Optasia-yacht-atalanta-golden-yachts-01.jpg"></a></div>
-            </div>
-        </div>
-    </div>
 
+<h2>Filter DIV Elements</h2>
 
-     
-    
-    
-        <!-- Page Content -->
-       <div class="container page-top">
-    
-    
-    
-            <div class="row">
-    
-    
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a href="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-                        <img  src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-                       
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"  class="fancybox" rel="ligthbox">
-                        <img  src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid"  alt="">
-                    </a>
-                </div>
-                
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a href="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                        <img  src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                    </a>
-                </div>
-                
-                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a href="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                        <img  src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                    </a>
-                </div>
-                
-                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-                        <img  src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-                    </a>
-                </div>
-                
-                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a href="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-                        <img  src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-                    </a>
-                </div>
-                
-                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a href="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                        <img  src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                    </a>
-                </div>
-                
-                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a href="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                        <img  src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                    </a>
-                </div>
-                
-                
-               
-               
-           </div>
-    
-         
-          
-    
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="row">
-                    <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
-                    </a>
-                    <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
-                    </a>
-                    <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
-                    </a>
-                </div>
-                <div class="row">
-                    <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
-                    </a>
-                    <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
-                    </a>
-                    <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
-                        <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
-                    </a>
-                </div>
-            </div>
-        </div>
-    
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2/js-cloudimage-360-view.min.js"></script>
-</body>
+<div class="container-filter">
+  <div class="filterDiv cars">BMW</div>
+  <div class="filterDiv colors fruits">Orange</div>
+  <div class="filterDiv cars">Volvo</div>
+  <div class="filterDiv colors">Red</div>
+  <div class="filterDiv cars animals">Mustang</div>
+  <div class="filterDiv colors">Blue</div>
+  <div class="filterDiv animals">Cat</div>
+  <div class="filterDiv animals">Dog</div>
+  <div class="filterDiv fruits">Melon</div>
+  <div class="filterDiv fruits animals">Kiwi</div>
+  <div class="filterDiv fruits">Banana</div>
+  <div class="filterDiv fruits">Lemon</div>
+  <div class="filterDiv animals">Cow</div>
+</div>
 
 <script>
-
-$(document).ready(function(){
-  $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-    
-    $(".zoom").hover(function(){
-		
-		$(this).addClass('transition');
-	}, function(){
-        
-		$(this).removeClass('transition');
-	});
-});
-    
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    RemoveClass(x[i], "show-filter");
+    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show-filter");
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+}
+
+function AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+function RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
 }
 </script>
-    
+
 </body>
 </html>
