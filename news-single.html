@@ -43,7 +43,7 @@
 <body>
 <div class="cursor js-cursor"></div>
 <div class="preloader">
-  <div class="loadbar"></div>
+
   <!-- end loadbar -->
   <figure> <span>MANSIONS CROATIA</span> <img src="img/m2.png" alt="Image"> </figure>
 </div>
@@ -130,7 +130,7 @@
     <!-- end container --> 
   </nav>
   <!-- end navbar -->
-  <header class="page-header" data-background="img/optasia.jpeg">
+  <header class="page-header" data-background="img/journalheader.jpg">
     <div class="container">
 	  <h1>News</h1>
 		<p>We love staying in hotels</p>
@@ -146,12 +146,12 @@
 	  <div class="col-lg-8">
 		  <div class="news-box single">
         <figure>
-			<img src="yachts/img/Optasia-yacht-atalanta-golden-yachts-05.jpg" alt="Image">
+			<img src="img/journalheader.jpg" alt="Image">
 			   </figure>
           <div class="content"><span class="category">EATING & DRINKING </span> 
 			  <small class="date">DEC 26, 2020</small>
             <h3>Expression alteration entreaties mrs can terminated estimating.</h3>
-            <div class="author"> <img src="images/avatar.jpg" alt="Image"> <span>by <b>The Quardo</b></span> </div>
+            <div class="author"> <img src="img/avatar.png" alt="Image"> <span>by <b>The Quardo</b></span> </div>
             <!-- end author --> 
 			  <p>ne minute you’re battling traffic on LA’s 405 Freeway in your 1990s Honda Civic, the next 
 		you’re sitting in a 16th-century farmhouse in the <u>English</u> countryside deciding between 
@@ -163,7 +163,7 @@ a nomination for Best-Dressed Hotel in the Mr & Mrs Smith Hotel Awards. Word tra
 continents fast.
 
 </p>
-			  <figure><img src="yachts/img/Optasia-yacht-atalanta-golden-yachts-50.jpg" alt="Image"></figure>
+			  <figure><img src="img/journalheader.jpg" alt="Image"></figure>
 			  <p>The final straws on the property’s thatched roof had only been in place a second before friends from 
 London to Los Angeles returned with rave reviews. One pal, a <u>Hollywood casting agent</u>, rhapsodised over 
 the hotel’s attention to detail, ‘right down to the embroidered hair dryer and slipper bags.’ A Brooklyn-based 
@@ -178,7 +178,7 @@ Though the area feels remote, it’s incredibly easy to access from London. I ho
 which takes an hour to get to Hanborough. From there it’s a 10-minute cab ride before I pull into the hotel’s 
 gravel drive. A pair of petite penguin statues greet me and I spot a door with an embossed metal sign 
 reading: ‘NO RIFF RAFF’. It appears they’ve been forewarned.</p>
-			  <figure><img src="cars/img/audi-r8-v10-coupe-1.jpg" alt="Image"></figure>
+			  <figure><img src="img/journalheader.jpg" alt="Image"></figure>
 			  <blockquote>
 			  “  The whole Mr Hanbury thing is just weird enough to work. And 
 maybe it’s this elaborate storytelling that makes other creatives 
@@ -201,10 +201,10 @@ reading: ‘NO RIFF RAFF’. It appears they’ve been forewarned.</p>
         </div>
         <!-- end news-box --> 
 		   
-		  <ul class="pagination">
+		 <!-- <ul class="pagination">
           <li class="page-item"> <a class="page-link" href="#">PREV POST</a> </li>
           <li class="page-item"> <a class="page-link" href="#">NEXT POST</a> </li>
-        </ul>
+        </ul>  -->
         <!-- end pagination --> 
 		</div>
 		<!-- end col-8 -->
@@ -235,10 +235,10 @@ reading: ‘NO RIFF RAFF’. It appears they’ve been forewarned.</p>
 				<div class="widget">
 				<h6 class="widget-title">GALLERY</h6>
 				<ul class="widget-gallery">
-						<li><img src="img/1.jpg" alt="Image"></li>
-						<li><img src="img/3.jpg" alt="Image"></li>
-						<li><img src="img/6.jpg" alt="Image"></li>
-						<li><img src="img/4.jpg" alt="Image"></li>
+						<li><img src="img/avatar.png" alt="Image"></li>
+						<li><img src="img/avatar1.png" alt="Image"></li>
+						<li><img src="img/avatar2.png" alt="Image"></li>
+						<li><img src="img/avatar3.png" alt="Image"></li>
 					</ul>
 				</div>
 				<!-- end widget -->
@@ -252,7 +252,14 @@ reading: ‘NO RIFF RAFF’. It appears they’ve been forewarned.</p>
   <!-- end container --> 
 	</section>
 	<!-- end content-section -->
-  <section class="content-section no-spacing" data-background="#856d47">
+
+
+  <div class="col-12 text-center"> <a href="news.html" class="custom-button" onclick="goBack()">GO BACK</a> </div>
+        <!-- end col-12 --> 
+
+
+
+  <section class="content-section no-spacing" data-background="#cda16a">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -358,9 +365,14 @@ reading: ‘NO RIFF RAFF’. It appears they’ve been forewarned.</p>
 }
 
   .navbar .logo a img{
-  height: 100px;
-  margin-left: 100px;
+  height: 80px;
 }
+
+.custom-button{
+  margin-bottom: 50px;
+}
+
+
 
 </style>
 <!-- JS FILES --> 
@@ -373,5 +385,10 @@ reading: ‘NO RIFF RAFF’. It appears they’ve been forewarned.</p>
 <script src="js/overscroll.js"></script> 
 <script src="js/TweenMax.min.js"></script>
 <script src="js/scripts.js"></script>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+  </script>
 </body>
 </html>
