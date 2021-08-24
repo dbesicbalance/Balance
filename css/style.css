@@ -1243,20 +1243,20 @@ body .page-header {
   width: 20%;
   height: 80px;
   line-height: 80px;
-  background: var(--mansions-green);
+  background: white;
   position: absolute;
   left: auto;
   right: 0;
   bottom: 0;
   z-index: 1;
-  color: var(--mansions-gold);
+  color: black;
   font-family: "Argesta Display";
   font-size: 22px;
 }
 .slider .slider-prev {
   width: 80px;
   height: 80px;
-  background: var(--mansions-gold);
+  background: #141414;
   position: absolute;
   right: calc(20% + 82px);
   bottom: 0;
@@ -1286,7 +1286,7 @@ body .page-header {
 .slider .slider-next {
   width: 80px;
   height: 80px;
-  background: var(--mansions-gold);
+  background: #141414;
   position: absolute;
   right: 20%;
   bottom: 0;
