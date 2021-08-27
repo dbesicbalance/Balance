@@ -581,9 +581,11 @@ const overlay = document.querySelectorAll('.flex-item-overlay');
 
 overlay.forEach(element => {
   element.addEventListener('mouseenter',()=>{
+    element.children[0].classList.add('move-up');
     element.children[1].classList.add('fade-up');
   })
   element.addEventListener('mouseleave',()=>{
+    element.children[0].classList.remove('move-up');
     element.children[1].classList.remove('fade-up');
   })
 });
