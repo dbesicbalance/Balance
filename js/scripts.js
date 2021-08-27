@@ -574,3 +574,21 @@
 
 
 })(jQuery);
+
+
+// COLLAGE FADE UP TEXT
+const overlay = document.querySelector('.flex-item-overlay');
+const fadeUpText = document.querySelector('.flex-item-overlay p');
+
+function fadeUp (element, target){
+  element.addEventListener('mouseenter',()=>{
+    target.classList.add('fade-up');
+    console.log('hover radi');
+  })
+  element.addEventListener('mouseleave',()=>{
+    target.classList.remove('fade-up');
+    console.log('hover radi');
+  })
+}
+
+fadeUp(overlay, fadeUpText);
