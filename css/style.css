@@ -3562,18 +3562,16 @@ select:-webkit-autofill:focus{
   position: relative;
   margin: 3rem auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(2, 1fr 2fr);
   gap: 1rem;
   padding: 1rem;
   background-color: rgb(27,27,27); /* colors */
   width: 100%;
 }
-
 .grid-item{
   overflow: hidden;
-  height: 20rem;
-
+  height: 15rem;
 }
 .grid-item-overlay{
   width: 100%;
@@ -3611,7 +3609,7 @@ select:-webkit-autofill:focus{
   left: 0;
 }
 .wide{
-  grid-column: span 2;
+  /* grid-column: span 2; */
 }
 .tall{
   grid-row: span 2;
@@ -3628,10 +3626,11 @@ select:-webkit-autofill:focus{
 }
 .flex-item{
   height: 15rem;
-  width: 33%;
-  max-width: 50rem;
-  max-height: 40rem;
+  width: 50%;
+  min-width: 15rem;
+  max-width: 25rem;
   overflow: hidden;
+
 }
 
 .flex-item-overlay{
@@ -3675,6 +3674,10 @@ select:-webkit-autofill:focus{
 }
 .move-up{
   transform: translateY(0) !important;
+}
+
+.flex-wide{
+
 }
 
 
