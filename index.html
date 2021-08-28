@@ -42,31 +42,31 @@
 <link rel="stylesheet" href="css/style.css">
 
 <!-- FAVICO -->
-<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-<link rel="manifest" href="img/manifest.json">
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
 </head>
 <body>
 <div class="cursor js-cursor"></div>
-<div class="preloader">
+<div class="preloader" >
   <div class="loadbar"></div>
   <!-- end loadbar -->
-  <figure> <span>MANSIONS CROATIA</span> <img src="img/m2.png" alt="Image"> </figure>
+  <figure style="background-image: url(img/mansions-logo-pattern.png); opacity: 0.05;"> <span>MANSIONS CROATIA</span>  </figure>
 </div>
 <!-- end preloader -->
 <div class="page-transition">
@@ -78,9 +78,15 @@
   <nav class="hamburger-navigation">
     <div class="layer"></div>
     <!-- end layer -->
-    <div class="container">
-      
-      
+        <!-- Log-In / Welcome User -->
+        <div class="container">
+          <div class="nav-user">
+            <ul class="nav-menu login-menu">
+              <li><a href="">Welcome</a></li>
+              <li><a href="sign-in.html"><span class="golden">Mr. Anderson</span></a></li>
+            </ul>
+          </div>
+          <!-- end Log-In / Welcome User -->
       <ul class="nav-menu">
         <li><a href="quardo.html">Collections</a></li>
         <li><a href="special-offers.html">Promotions</a></li>
@@ -88,7 +94,7 @@
         <li><a href="special-offers.html">Journal</a></li>
         <li><a href="contact-us.html">About us</a></li>
         <li><a href="concierge.html">My concierge</a></li>
-        <li><a href="special-offers.html">LOG IN</a></li>
+        <li><a href="sign-in.html">LOG IN</a></li>
       </ul>
       <div class="info-box"> <span>Follow us on Social Media</span>
         <ul class="nav-social">
@@ -105,7 +111,7 @@
   </nav>
   <!-- end hamburger-navigation -->
   <nav class="navbar">
-    <div class="logo"> <a href="index.html"><img src="img/m1.png" alt="Image"></a> </div>
+    <div class="logo"> <a href="index.html"><img src="img/mansions_croatia_final-01.png" alt="Image"></a> </div>
     <div class="container">
      
       <!-- end logo -->
@@ -465,7 +471,7 @@
             <p>Unlike other platforms, we at Mansions pride ourselves 
               on offering our guests full service. Our philosophy is 
               simple: you desire, we deliver.</p>
-            <a href="special-offers.html" class="custom-button">SEE SPECIAL OFFERS</a> </div>
+            <a href="concierge.html" class="custom-button">EXPLORE CONCIERGE</a> </div>
           <!-- end side-content --> 
         </div>
         <!-- end col-6 -->
@@ -495,196 +501,147 @@
         <div class="col-12">
           <div class="events-tab">
             <ul class="tab-nav">
-              <li class="active"><a href="#tab01"> <span>Istria</span> </a></li>
-              <li><a href="#tab02"> <span>Kvarner</span></a></li>
-              <li><a href="#tab03"> <span>Dalmatia</span> </a></li>
-              <li><a href="#tab04"> <span>Islands</span></a></li>
+              <li class="active"><a href="#tab01">Mansions Standards <span></span> </a></li>
+              <li><a href="#tab02">Destinations <span></span></a></li>
             </ul>
             <div id="tab01" class="tab-item active-item">
-              <div class="carousel-events-box">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"> <img src="img/conci.jpg" alt="Image"> </figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">In Home Dining<br>
-                        </a></h5>
-                      <span>Whether you require a private chef to make a special event more memorable or just a quick meal delivered.</span> <small></small> </div>
-                    <!-- end content --> 
+              <div class="collage-flex">
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>Eco friendly Villas</h5>
+                    <p>Eco Living - more than Green</p>
                   </div>
-                  <!-- end swiper-slide -->
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"><img src="img/lobbyboy.jpg" alt="Image"></figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">Kids Concierge</a></h5>
-                      <span>If you're travelling as a family, your concierge will arrange a range of age appropriate added extras to help make travelling...</span> <small></small> </div>
-                    <!-- end content --> 
-                  </div>
-                  <!-- end swiper-slide -->
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"><img src="img/cook.jpeg" alt="Image"></figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">Itinerary Planing</a></h5>
-                      <span>Whether you're in town to shop, eat, explore or relax, we can assist in putting together a perfect holiday itinerary with...</span> <small></small> </div>
-                    <!-- end content --> 
-                  </div>
-                  <!-- end swiper-slide -->
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"><img src="img/privateparty.jpg" alt="Image"></figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">Private Parties</a></h5>
-                      <span>We produce legendary parties and celebrations for the world’s most discerning audience. Renowned for creating original experiences in exciting sought-after locations all over the world, from intimate gatherings to lavish celebrations, we have a global reputation for production excellence, precision attention and creating memories. </span> <small></small> </div>
-                    <!-- end content --> 
-                  </div>
-                  <!-- end swiper-slide --> 
+                  <img src="img/selection/Eco friendly Villas.jpg" alt="">
                 </div>
-                <!-- end swiper-wrapper -->
-                <div class="swiper-prev"></div>
-                <div class="swiper-next"></div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>Signature Mansions</h5>
+                    <p>Unlock the unique personality of our properties </p>
+                  </div>
+                  <img src="img/selection/signature-villas.jpg" alt="">
+                </div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>Spa Retreat Villas</h5>
+                    <p>Peaceful, luxurious with wellness space to relax </p>
+                  </div>
+                  <img src="img/selection/spa-retreat.jpg" alt="">
+                </div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>Heated Pool Villas</h5>
+                    <p>365 chilling out all year round </p>
+                  </div>
+                  <img src="img/selection/Heated Pool Villas.jpg" alt="">
+                </div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>Seaside Villas</h5>
+                    <p>Be spoilt for choice between your own pool and one step to the sea </p>
+                  </div>
+                  <img src="img/selection/Sea side.jfif" alt="">
+                </div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>Rural Villas</h5>
+                    <p>Surrounded by natural landscapes and Agri cultural and village atmosphere </p>
+                  </div>
+                  <img src="img/selection/Rural Villas.jpg" alt="">
+                </div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>Heritage Villas</h5>
+                    <p>Stay in a unique piece of history </p>
+                  </div>
+                  <img src="img/selection/Heritage Villas.jpg" alt="">
+                </div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>High-Tech Villas</h5>
+                    <p>Explore high standard of smart & home automatization </p>
+                  </div>
+                  <img src="img/selection/High Tech -Villa Korcula Diamond.jpg" alt="">
+                </div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>Pet friendly</h5>
+                    <p>Our selection of fantastic villas where pets are welcome </p>
+                  </div>
+                  <img src="img/selection/pet-friendly.jpg" alt="">
+                </div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>Secluded Villas</h5>
+                    <p>This collection is jam packed with properties for a perfectly peaceful getaway with full privacy  </p>
+                  </div>
+                  <img src="img/selection/Secluded Villas.jpg" alt="">
+                </div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>Kids friendly Villas</h5>
+                    <p>Happy parents, happy kids</p>
+                  </div>
+                  <img src="img/selection/Kids friendly Villas.jpg" alt="">
+                </div>
               </div>
-              <!-- end carousel-events-box --> 
+              <!-- end collage-grid --> 
             </div>
             <!-- end tab-item -->
+          
             <div id="tab02" class="tab-item">
-              <div class="carousel-events-box">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"><img src="img/conci.jpg" alt="Image"></figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">The Caterer Marketing <br>
-                        & PR Summit</a></h5>
-                      <span></span> <small></small> </div>
-                    <!-- end content --> 
+              <div class="collage-flex">
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>ISTRA</h5>
+                    <p></p>
                   </div>
-                  <!-- end swiper-slide -->
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"> <img src="img/conci.jpg" alt="Image"> </figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">The Caterer Marketing <br>
-                        & PR Summit</a></h5>
-                      <span></span> <small></small> </div>
-                    <!-- end content --> 
-                  </div>
-                  <!-- end swiper-slide -->
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"><img src="img/conci.jpg" alt="Image"></figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">The Caterer Marketing <br>
-                        & PR Summit</a></h5>
-                      <span>07 Oct 2020</span> <small>Quardo Hotel, London</small> </div>
-                    <!-- end content --> 
-                  </div>
-                  <!-- end swiper-slide -->
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"><img src="img/conci.jpg" alt="Image"></figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">The Caterer Marketing <br>
-                        & PR Summit</a></h5>
-                      <span>07 Oct 2020</span> <small>Quardo Hotel, London</small> </div>
-                    <!-- end content --> 
-                  </div>
-                  <!-- end swiper-slide --> 
+                  <img src="img/destinations/rovinj.jpeg" alt="">
                 </div>
-                <!-- end swiper-wrapper -->
-                <div class="swiper-prev"></div>
-                <div class="swiper-next"></div>
-              </div>
-              <!-- end carousel-events-box --> 
-            </div>
-            <!-- end tab-item -->
-            <div id="tab03" class="tab-item">
-              <div class="carousel-events-box">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"> <img src="img/conci.jpg" alt="Image"> </figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">The Caterer Marketing <br>
-                        & PR Summit</a></h5>
-                      <span>07 Oct 2020</span> <small>Quardo Hotel, London</small> </div>
-                    <!-- end content --> 
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>KVARNER</h5>
+                    <p> </p>
                   </div>
-                  <!-- end swiper-slide -->
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"><img src="img/conci.jpg" alt="Image"></figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">The Caterer Marketing <br>
-                        & PR Summit</a></h5>
-                      <span>07 Oct 2020</span> <small>Quardo Hotel, London</small> </div>
-                    <!-- end content --> 
-                  </div>
-                  <!-- end swiper-slide -->
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"><img src="img/conci.jpg" alt="Image"></figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">The Caterer Marketing <br>
-                        & PR Summit</a></h5>
-                      <span>07 Oct 2020</span> <small>Quardo Hotel, London</small> </div>
-                    <!-- end content --> 
-                  </div>
-                  <!-- end swiper-slide -->
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"><img src="img/conci.jpg" alt="Image"></figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">The Caterer Marketing <br>
-                        & PR Summit</a></h5>
-                      <span>07 Oct 2020</span> <small>Quardo Hotel, London</small> </div>
-                    <!-- end content --> 
-                  </div>
-                  <!-- end swiper-slide --> 
+                  <img src="img/destinations/losinj-vidikovac.jpeg" alt="">
                 </div>
-                <!-- end swiper-wrapper -->
-                <div class="swiper-prev"></div>
-                <div class="swiper-next"></div>
-              </div>
-              <!-- end carousel-events-box --> 
-            </div>
-            <!-- end tab-item -->
-            <div id="tab04" class="tab-item">
-              <div class="carousel-events-box">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"> <img src="img/conci.jpg" alt="Image"> </figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">The Caterer Marketing <br>
-                        & PR Summit</a></h5>
-                      <span>07 Oct 2020</span> <small>Quardo Hotel, London</small> </div>
-                    <!-- end content --> 
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>KVARNER ISLANDS</h5>
+                    <p></p>
                   </div>
-                  <!-- end swiper-slide -->
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"><img src="img/conci.jpg" alt="Image"></figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">The Caterer Marketing <br>
-                        & PR Summit</a></h5>
-                      <span>07 Oct 2020</span> <small>Quardo Hotel, London</small> </div>
-                    <!-- end content --> 
-                  </div>
-                  <!-- end swiper-slide -->
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"><img src="img/conci.jpg" alt="Image"></figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">The Caterer Marketing <br>
-                        & PR Summit</a></h5>
-                      <span>07 Oct 2020</span> <small>Quardo Hotel, London</small> </div>
-                    <!-- end content --> 
-                  </div>
-                  <!-- end swiper-slide -->
-                  <div class="swiper-slide">
-                    <figure class="reveal-effect"><img src="img/conci.jpg" alt="Image"></figure>
-                    <div class="content">
-                      <h5><a href="meetings-events-detail.html">The Caterer Marketing <br>
-                        & PR Summit</a></h5>
-                      <span>07 Oct 2020</span> <small>Quardo Hotel, London</small> </div>
-                    <!-- end content --> 
-                  </div>
-                  <!-- end swiper-slide --> 
+                  <img src="img/destinations/hvar1.jpeg" alt="">
                 </div>
-                <!-- end swiper-wrapper -->
-                <div class="swiper-prev"></div>
-                <div class="swiper-next"></div>
-              </div>
-              <!-- end carousel-events-box --> 
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>NORTH DALMATIA</h5>
+                    <p> </p>
+                  </div>
+                  <img src="img/destinations/zadar.jpeg" alt="">
+                </div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>CENTRAL DALMATIA</h5>
+                    <p> </p>
+                  </div>
+                  <img src="img/destinations/split.jpg" alt="">
+                </div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>SOUTH DALMATIA</h5>
+                    <p></p>
+                  </div>
+                  <img src="img/destinations/dubrovnik1.jpeg" alt="">
+                </div>
+                <div class="flex-item">
+                  <div class="flex-item-overlay">
+                    <h5>DALMATIAN ISLANDS</h5>
+                    <p></p>
+                  </div>
+                  <img src="img/destinations/korcula.jpeg" alt="">
+                </div>
+                
             </div>
-            <!-- end tab-item --> 
+              <!-- end tab-item -->
           </div>
           <!-- end events-tab --> 
         </div>
@@ -702,41 +659,41 @@
         <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
           <div class="room-detail">
             <div class="price-line"><span>STAY FROM</span> $60.00</div>
-            <h3><a href="img/1MansionsBorgheto.jpg">Deluxe Room</a></h3>
+            <h3><a href="room-detail.html">Deluxe Room</a></h3>
             <div class="reviews">925 guest reviews <span>8.0</span></div>
-          </div> -->
+          </div> 
           <!-- end room-detail --> 
         </div>
         <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
           <div class="room-detail">
             <div class="price-line"><span>STAY FROM</span> $60.00</div>
-            <h3><a href="img/1MansionsBorgheto.jpg">Deluxe Room</a></h3>
+            <h3><a href="room-detail.html">Deluxe Room</a></h3>
             <div class="reviews">925 guest reviews <span>8.0</span></div>
-          </div>  -->
+          </div>  
           <!-- end room-detail --> 
         </div>
         <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
           <div class="room-detail">
             <div class="price-line"><span>STAY FROM</span> $60.00</div>
-            <h3><a href="img/1MansionsBorgheto.jpg">Deluxe Room</a></h3>
+            <h3><a href="room-detail.html">Deluxe Room</a></h3>
             <div class="reviews">925 guest reviews <span>8.0</span></div>
-          </div>  -->
+          </div>  
           <!-- end room-detail --> 
         </div>
         <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
           <div class="room-detail">
             <div class="price-line"><span>STAY FROM</span> $60.00</div>
-            <h3><a href="img/1MansionsBorgheto.jpg">Deluxe Room</a></h3>
+            <h3><a href="room-detail.html">Deluxe Room</a></h3>
             <div class="reviews">925 guest reviews <span>8.0</span></div>
-          </div>  -->
+          </div>  
           <!-- end room-detail --> 
         </div>
         <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
           <div class="room-detail">
             <div class="price-line"><span>STAY FROM</span> $60.00</div>
-            <h3><a href="img/1MansionsBorgheto.jpg">Deluxe Room</a></h3>
+            <h3><a href="room-detail.html">Deluxe Room</a></h3>
             <div class="reviews">925 guest reviews <span>8.0</span></div>
-          </div>  -->
+          </div>  
           <!-- end room-detail --> 
         </div>
         <!-- end swiper-slide --> 
@@ -864,22 +821,22 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="carousel-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae autem nulla quam, neque dolor perspiciatis sunt.
-                       Eos, ab aperiam expedita, incidunt rem laboriosam quaerat ipsam alias ratione quos sunt qui? </p> <img src="img/avatar3.png">
+                    <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.
+                      This was the very best explanation of frameworks for brginners that I've ever seen. </p> <img src="img/avatar3.png">
                     <div id="image-caption">Nick Doe</div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="carousel-caption">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus rerum numquam expedita, 
-                      repellat molestias, accusamus sunt animi maxime rem debitis dolorem quisquam necessitatibus id. Commodi sit quasi provident officia a.</p> <img src="img/avatar3.png" class="img-fluid">
+                    <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.
+                      This was the very best explanation of frameworks for brginners that I've ever seen.</p> <img src="img/avatar3.png" class="img-fluid">
                     <div id="image-caption">Cromption Greves</div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="carousel-caption">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quo nobis exercitationem necessitatibus magni 
-                      fugiat suscipit quidem, commodi laudantium alias iste similique quos voluptates eius cumque inventore beatae illum vel.</p> <img src="img/avatar3.png" class="img-fluid">
+                    <p>If Shai Reznik's TDD videos don't convince you to add automated testing your code, I don't know what will.
+                      This was the very best explanation of frameworks for brginners that I've ever seen.</p> <img src="img/avatar3.png" class="img-fluid">
                     <div id="image-caption">Harry Mon</div>
                 </div>
             </div>
@@ -1105,13 +1062,100 @@
 }
 
 .navbar .logo a img{
-  height: 80px;
+  height: 150px;
+  margin-left: 20px;
 }
 
 .reveal-effect{
   width: 400px;
 }
 
+
+
+.row-collage {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-collage {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.column-collage img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.wide{
+  grid-column: span 2;
+}
+
+.container-collage {
+  position: relative;
+  width: 100%;
+}
+
+.image-collage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-collage {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00000050;
+}
+
+.container-collage:hover .overlay-collage {
+  opacity: 1;
+}
+
+.text-collage {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-collage {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-collage {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
 
 </style>
 
