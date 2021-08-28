@@ -578,8 +578,10 @@
 
 // COLLAGE FADE UP TEXT
 const overlay = document.querySelectorAll('.flex-item-overlay');
+const gridItem = document.querySelectorAll('.grid-item-overlay');
 
-overlay.forEach(element => {
+function collageAnimation (item){
+ item.forEach(element => {
   element.addEventListener('mouseenter',()=>{
     element.children[0].classList.add('move-up');
     element.children[1].classList.add('fade-up');
@@ -588,4 +590,8 @@ overlay.forEach(element => {
     element.children[0].classList.remove('move-up');
     element.children[1].classList.remove('fade-up');
   })
-});
+}); 
+}
+
+collageAnimation(overlay);
+collageAnimation(gridItem);
