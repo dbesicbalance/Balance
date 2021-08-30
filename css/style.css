@@ -73,10 +73,7 @@ theme.
     61. SIGNUP PAGE
     62. USER NAVBAR
     63. COLLAGE DESTINATIONS
-<<<<<<< HEAD
 
-=======
->>>>>>> collage
 	
 
 */
@@ -101,8 +98,6 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  --mansions-gold: #856d47;
-  --mansions-green: #12271c;
 }
 
 /* HTML TAGS */
@@ -257,11 +252,7 @@ input[type="submit"] {
   font-size: 14px;
   font-weight: 600;
   color: #fff;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   border: none;
   padding: 0 50px;
 }
@@ -272,11 +263,7 @@ button[type="submit"] {
   font-size: 14px;
   font-weight: 600;
   color: #fff;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   border: none;
   padding: 0 50px;
 }
@@ -365,11 +352,7 @@ button[type="submit"] i {
 
 .cursor.drag:before {
   transform: scale(1);
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   border-color: transparent;
 }
 
@@ -403,11 +386,7 @@ button[type="submit"] i {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   cursor: pointer;
   -webkit-transition: background .15s ease-in-out;
   transition: background .15s ease-in-out;
@@ -418,18 +397,13 @@ button[type="submit"] i {
   height: 20px;
   border: 0;
   border-radius: 50%;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   cursor: pointer;
   -moz-transition: background .15s ease-in-out;
   transition: background .15s ease-in-out;
 }
 
 .range-slider__range:active::-moz-range-thumb {
-<<<<<<< HEAD
   background: #cda16a;
 }
 
@@ -439,17 +413,6 @@ button[type="submit"] i {
 
 ::-moz-range-track {
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
-}
-
-.range-slider__range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--mansions-gold);
-}
-
-::-moz-range-track {
-  background: var(--mansions-gold);
->>>>>>> collage
   border: 0;
 }
 
@@ -493,11 +456,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   border: 1px solid #cbcbcb;
 }
 .accordion .card .card-header a:hover {
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   text-decoration: none;
 }
 .accordion .card .card-body {
@@ -507,13 +466,8 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 }
 .accordion .card [aria-expanded="true"] {
   color: #fff !important;
-<<<<<<< HEAD
   background: #cda16a;
   border-color: #cda16a !important;
-=======
-  background: var(--mansions-gold);
-  border-color: var(--mansions-gold) !important;
->>>>>>> collage
 }
 
 /* DATE PICKER */
@@ -549,20 +503,12 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 }
 
 .datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   color: #fff;
 }
 
 .datepicker-panel > ul > li.highlighted {
-<<<<<<< HEAD
   background-color: #cda16a;
-=======
-  background-color: var(--mansions-gold);
->>>>>>> collage
 }
 
 .datepicker-panel > ul > li:hover {
@@ -722,11 +668,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   height: 80px;
   line-height: 80px;
   display: inline-block;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   padding: 0 50px;
   color: #fff;
   font-size: 13px;
@@ -800,11 +742,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   width: 0%;
   height: 100%;
   max-height: 6px;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   position: absolute;
   top: 0;
   left: 0;
@@ -860,11 +798,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   position: fixed;
   top: 0;
   left: 0;
@@ -969,11 +903,7 @@ body .page-header {
   -webkit-transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.86, 0, 0.09, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.09, 1);
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
 }
 .hamburger-navigation .layer {
   width: 100%;
@@ -1065,21 +995,9 @@ body .page-header {
   font-family: "Argesta Display";
 }
 .hamburger-navigation .nav-menu li a:hover {
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
 }
-.golden{
-  color:var(--mansions-gold);
-  transition: all 0.35s ease-in-out;
-  opacity: 1;
-  filter: none;
-}
-.golden:hover{
-  color: white;
->>>>>>> collage
-}
+
 /* HAMBURGER NAGIVATION ACTIVE */
 .hamburger-navigation-active .scroll-content {
   transform: translate3d(0px, 0px, 0px) !important;
@@ -1227,11 +1145,7 @@ body .page-header {
   line-height: 80px;
   display: inline-block;
   background: #f5f3ec;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   font-size: 14px;
   font-weight: 600;
   padding: 0 50px;
@@ -1314,11 +1228,7 @@ body .page-header {
   content: "";
   width: 30%;
   height: 6px;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   position: absolute;
   left: 0;
   top: 0;
@@ -1328,21 +1238,13 @@ body .page-header {
   width: 20%;
   height: 80px;
   line-height: 80px;
-<<<<<<< HEAD
   background: #12271b;
-=======
-  background: white;
->>>>>>> collage
   position: absolute;
   left: auto;
   right: 0;
   bottom: 0;
   z-index: 1;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: black;
->>>>>>> collage
   font-family: "Argesta Display";
   font-size: 22px;
 }
@@ -1463,11 +1365,7 @@ body .page-header {
   width: 1px;
   height: 0;
   animation: 1s scrolldown infinite;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   position: absolute;
   top: 0;
   left: 0;
@@ -1739,11 +1637,7 @@ body .page-header {
   position: absolute;
   left: calc(50% - 70px);
   top: calc(50% - 70px);
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   font-size: 30px;
   text-align: center;
   border-radius: 50%;
@@ -1754,11 +1648,7 @@ body .page-header {
   transition: all .30s ease-in-out;
 }
 .side-image .video-button:hover {
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   color: #fff;
 }
 .side-image img {
@@ -1831,11 +1721,7 @@ body .page-header {
 }
 .side-hotel-box .info-box span {
   display: inline-block;
-<<<<<<< HEAD
   border-left: 6px solid #cda16a;
-=======
-  border-left: 6px solid var(--mansions-gold);
->>>>>>> collage
   padding-left: 20px;
 }
 .side-hotel-box .info-box b {
@@ -1858,11 +1744,7 @@ body .page-header {
   display: inline-block;
 }
 .side-hotel-box .availability i {
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
 }
 
 /* CAROUSEL IMAGE BOX */
@@ -1935,11 +1817,7 @@ body .page-header {
   border-bottom: 4px solid transparent;
 }
 .events-tab .tab-nav li.active {
-<<<<<<< HEAD
   border-color: #cda16a;
-=======
-  border-color: var(--mansions-gold);
->>>>>>> collage
 }
 .events-tab .tab-nav li a {
   display: inline-block;
@@ -1984,11 +1862,7 @@ body .page-header {
   border-bottom: 1px solid #fff;
 }
 .content-tab .tab-nav li.active a {
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   opacity: 1;
 }
 .content-tab .tab-nav li a {
@@ -2067,13 +1941,8 @@ body .page-header {
   content: "";
   width: 15px;
   height: 15px;
-<<<<<<< HEAD
   border-left: 4px solid #cda16a;
   border-bottom: 4px solid #cda16a;
-=======
-  border-left: 4px solid var(--mansions-gold);
-  border-bottom: 4px solid var(--mansions-gold);
->>>>>>> collage
   transform: rotate(45deg);
   position: absolute;
   left: 25px;
@@ -2102,13 +1971,8 @@ body .page-header {
   content: "";
   width: 15px;
   height: 15px;
-<<<<<<< HEAD
   border-right: 4px solid #cda16a;
   border-top: 4px solid #cda16a;
-=======
-  border-right: 4px solid var(--mansions-gold);
-  border-top: 4px solid var(--mansions-gold);
->>>>>>> collage
   transform: rotate(45deg);
   position: absolute;
   right: 25px;
@@ -2126,11 +1990,7 @@ body .page-header {
   margin-bottom: 25px;
 }
 .carousel-events-box figure:before {
-<<<<<<< HEAD
   background: #cda16a !important;
-=======
-  background: var(--mansions-gold) !important;
->>>>>>> collage
 }
 .carousel-events-box figure img {
   width: 100%;
@@ -2154,11 +2014,7 @@ body .page-header {
   color: #fff;
 }
 .carousel-events-box .content h5 a:hover {
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
 }
 .carousel-events-box .content span {
   display: inline-block;
@@ -2224,11 +2080,7 @@ body .page-header {
   display: block;
   font-size: 15px;
   font-weight: 800;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   letter-spacing: 1px;
 }
 .rooms-slider .swiper-slide .room-detail .price-line span {
@@ -2249,11 +2101,7 @@ body .page-header {
 }
 .rooms-slider .swiper-slide .room-detail .reviews span {
   padding: 5px 8px;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   color: #fff;
   font-weight: 800;
   margin-left: 5px;
@@ -2305,11 +2153,7 @@ body .page-header {
   content: "";
   width: 60px;
   height: 1px;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   position: absolute;
   left: -80px;
   top: calc(50% - 0.5px);
@@ -2325,11 +2169,7 @@ body .page-header {
 }
 .recent-news .content ul li a {
   display: inline-block;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   font-size: 14px;
   font-weight: 600;
 }
@@ -2369,11 +2209,7 @@ body .page-header {
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   color: #fff;
   text-align: center;
   position: relative;
@@ -2488,11 +2324,7 @@ body .page-header {
   line-height: 44px;
   display: inline-block;
   text-align: center;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   color: #fff;
 }
 .member-box figure img {
@@ -2523,11 +2355,7 @@ body .page-header {
 .member-box .content a {
   display: inline-block;
   text-decoration: underline;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   font-weight: 600;
   font-size: 15px;
 }
@@ -2548,11 +2376,7 @@ body .page-header {
   line-height: 140px;
   display: inline-block;
   background: #fff;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   font-size: 30px;
   text-align: center;
   border-radius: 50%;
@@ -2564,11 +2388,7 @@ body .page-header {
   margin-bottom: 100px;
 }
 .video-box .play-btn:hover {
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   color: #fff;
 }
 .video-box h2 {
@@ -2601,11 +2421,7 @@ body .page-header {
   float: right;
   margin-top: -56px;
   font-weight: 800;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
 }
 .rooms-filter .price-range .range-slider__value:before {
   content: "$";
@@ -2692,11 +2508,7 @@ body .page-header {
   display: block;
   font-size: 15px;
   font-weight: 800;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   letter-spacing: 1px;
 }
 .room-box .content .price-line span {
@@ -2735,11 +2547,7 @@ body .page-header {
 }
 .room-box .content .bottom-specs .reviews span {
   padding: 5px 8px;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   color: #fff;
   font-weight: 800;
   margin-left: 5px;
@@ -2757,11 +2565,7 @@ body .page-header {
   display: block;
   font-size: 15px;
   font-weight: 800;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   letter-spacing: 1px;
 }
 .room-type .price-line span {
@@ -2803,11 +2607,7 @@ body .page-header {
   margin-right: 10px;
 }
 .recent-testimonial span i {
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   display: inline-block;
   margin: 0 2px;
   font-size: 14px;
@@ -2877,11 +2677,7 @@ body .page-header {
   font-size: 26px;
   font-family: "Argesta Display";
   margin-bottom: 15px;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
 }
 .room-info-box p {
   width: 100%;
@@ -2906,11 +2702,7 @@ body .page-header {
   margin: 5px 0;
   padding: 5px 0;
   padding-bottom: 15px;
-<<<<<<< HEAD
   border-bottom: 1px solid #12271b;
-=======
-  border-bottom: 1px solid var(--mansions-green);
->>>>>>> collage
 }
 .room-info-box ul li:last-child {
   padding-bottom: 0;
@@ -2973,11 +2765,7 @@ body .page-header {
   display: inline-block;
 }
 .meeting-event-box .content h5 a:hover {
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
 }
 .meeting-event-box .content span {
   width: 100%;
@@ -3035,11 +2823,7 @@ body .page-header {
   display: inline-block;
 }
 .special-offer-box .content h5 a:hover {
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
 }
 .special-offer-box .content p {
   width: 100%;
@@ -3051,11 +2835,7 @@ body .page-header {
 }
 .special-offer-box .content small {
   display: inline-block;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   padding: 4px 8px;
   color: #fff;
   font-weight: 600;
@@ -3075,11 +2855,7 @@ body .page-header {
   margin-bottom: 10px;
 }
 .event-headline .rating i {
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   display: inline-block;
   margin-right: 4px;
   font-size: 15px;
@@ -3106,11 +2882,7 @@ body .page-header {
 }
 .event-headline address span i {
   display: inline-block;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   margin-right: 10px;
 }
 
@@ -3131,11 +2903,7 @@ body .page-header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   color: #fff;
   padding: 50px;
   margin: 15px 0;
@@ -3165,11 +2933,7 @@ body .page-header {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
 }
 .google-maps iframe {
   width: 100%;
@@ -3188,11 +2952,7 @@ body .page-header {
   left: calc(50% - 40px);
   top: calc(50% - 40px);
   font-size: 40px;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   border-radius: 50%;
 }
 .google-maps:after {
@@ -3232,11 +2992,7 @@ body .page-header {
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
 }
 .news-box figure img {
   width: 100%;
@@ -3250,11 +3006,7 @@ body .page-header {
 }
 .news-box .content .category {
   display: inline-block;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   font-size: 14px;
   font-weight: 600;
   position: relative;
@@ -3263,11 +3015,7 @@ body .page-header {
   content: "";
   width: 60px;
   height: 1px;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   position: absolute;
   left: -80px;
   top: calc(50% - 0.5px);
@@ -3308,11 +3056,7 @@ body .page-header {
   transition: all .30s ease-in-out;
 }
 .news-box .content h3 a:hover {
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   text-decoration: none;
 }
 .news-box .content .author {
@@ -3346,11 +3090,7 @@ body .page-header {
   display: block;
   padding: 40px;
   background: #f5f3ec;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   font-size: 22px;
   font-family: "Argesta Display";
   margin: 30px 0;
@@ -3389,11 +3129,7 @@ body .page-header {
   z-index: 1;
   font-weight: 400;
   font-size: 22px;
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
   margin-bottom: 30px;
   padding-bottom: 30px;
   font-family: "Argesta Display";
@@ -3402,11 +3138,7 @@ body .page-header {
   content: "";
   width: 50px;
   height: 4px;
-<<<<<<< HEAD
   background: #cda16a;
-=======
-  background: var(--mansions-gold);
->>>>>>> collage
   position: absolute;
   left: 0;
   bottom: 0;
@@ -3450,11 +3182,7 @@ body .page-header {
   font-size: 19px;
 }
 .sidebar .widget .categories li a:hover {
-<<<<<<< HEAD
   color: #cda16a;
-=======
-  color: var(--mansions-gold);
->>>>>>> collage
 }
 .sidebar .widget .widget-gallery {
   width: calc(100% + 4px);
@@ -3597,11 +3325,7 @@ body .page-header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-<<<<<<< HEAD
   background: #12271b;
-=======
-  background: var(--mansions-green);
->>>>>>> collage
   padding-top: 100px;
   color: #fff;
 }
@@ -3828,75 +3552,8 @@ select:-webkit-autofill:focus{
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 
 /* 63. COLLAGE DESTINATIONS */
-=======
-/* 63. COLLAGE DESTINATIONS */
-.collage-grid{
-  position: relative;
-  margin: 3rem auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 15rem;
-  grid-auto-flow: dense;
-  /* grid-template-columns: repeat(2, 50%); */
-  width: 100%;
-  
-}
-.grid-item{
-  overflow: hidden;
-  min-width: 15rem;
-  /* height: 15rem; */
-}
-.grid-item-overlay{
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  text-align: center;
-  padding: 0 1rem;
-}
-.grid-item-overlay h5{
-  font-size: 2rem;
-  font-weight: 800;
-  transition: all 0.3s ease;
-  transform: translateY(3rem);
-}
-.grid-item-overlay p{
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-.grid-item-overlay:hover{
-  background-color: rgba(0, 0, 0, 0.7);
-}
-.grid-item img{
-  width: 100%;
-  position: relative;
-  top: -100%;
-  left: 0;
-}
-.wide{
-  grid-column: span 2;
-}
-.tall{
-  grid-row: span 2;
-}
-.big{
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-
->>>>>>> collage
 .collage-flex{
   display: flex;
   width: 100%;
@@ -3904,25 +3561,11 @@ select:-webkit-autofill:focus{
   align-items: center;
   justify-content: center;
 }
-<<<<<<< HEAD
 .flex-item{
   height: 15rem;
   width: 25rem;
   max-width: 30rem;
   max-height: 15rem;
-=======
-  /* POJEDINI ITEM U COLLAGEU */
-
-.column{
-  flex: 25%;
-  max-width: 25%;
-}
-.flex-item{
-  height: 15rem;
-  width: 100%;
-  min-width: 15rem;
-  max-width: 25rem;
->>>>>>> collage
   overflow: hidden;
 }
 .flex-item-overlay{
@@ -3938,13 +3581,8 @@ select:-webkit-autofill:focus{
   top: 0;
   left: 0;
   z-index: 2;
-<<<<<<< HEAD
   padding: 1rem;
   text-align: center;
-=======
-  text-align: center;
-  padding: 0 1rem;
->>>>>>> collage
 }
 .flex-item-overlay h5{
   font-size: 2rem;
@@ -3960,12 +3598,8 @@ select:-webkit-autofill:focus{
   background-color: rgba(0, 0, 0, 0.7);
 }
 .flex-item img{
-<<<<<<< HEAD
   max-width: 150%;
   width: 110%;
-=======
-  width: 100%;
->>>>>>> collage
   position: relative;
   top: -100%;
   left: 0;
@@ -3974,7 +3608,6 @@ select:-webkit-autofill:focus{
   transform: translateY(-1rem);
   opacity: 1 !important;
 }
-<<<<<<< HEAD
 
 .move-up{
   transform: translateY(0) !important;
@@ -3986,17 +3619,6 @@ select:-webkit-autofill:focus{
 .tall{
   grid-row: span 2;
 }
-=======
-.move-up{
-  transform: translateY(0) !important;
-}
-.flex-wide{
-  
-}
-  /* END POJEDINI ITEM U COLLAGEU */
-
-
->>>>>>> collage
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
   .hotel-search form .form-group {
