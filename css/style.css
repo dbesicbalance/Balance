@@ -3562,16 +3562,17 @@ select:-webkit-autofill:focus{
   position: relative;
   margin: 3rem auto;
   display: grid;
-  /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
-  grid-template-columns: repeat(2, 1fr 2fr);
-  gap: 1rem;
-  padding: 1rem;
-  background-color: rgb(27,27,27); /* colors */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 15rem;
+  grid-auto-flow: dense;
+  /* grid-template-columns: repeat(2, 50%); */
   width: 100%;
+  
 }
 .grid-item{
   overflow: hidden;
-  height: 15rem;
+  min-width: 15rem;
+  /* height: 15rem; */
 }
 .grid-item-overlay{
   width: 100%;
@@ -3609,12 +3610,15 @@ select:-webkit-autofill:focus{
   left: 0;
 }
 .wide{
-  /* grid-column: span 2; */
+  grid-column: span 2;
 }
 .tall{
   grid-row: span 2;
 }
-
+.big{
+  grid-column: span 2;
+  grid-row: span 2;
+}
 
 
 .collage-flex{
@@ -3624,15 +3628,19 @@ select:-webkit-autofill:focus{
   align-items: center;
   justify-content: center;
 }
+  /* POJEDINI ITEM U COLLAGEU */
+
+.column{
+  flex: 25%;
+  max-width: 25%;
+}
 .flex-item{
   height: 15rem;
-  width: 50%;
+  width: 100%;
   min-width: 15rem;
   max-width: 25rem;
   overflow: hidden;
-
 }
-
 .flex-item-overlay{
   width: 100%;
   height: 100%;
@@ -3675,10 +3683,10 @@ select:-webkit-autofill:focus{
 .move-up{
   transform: translateY(0) !important;
 }
-
 .flex-wide{
-
+  
 }
+  /* END POJEDINI ITEM U COLLAGEU */
 
 
 /* RESPONSIVE MEDIUM  */
