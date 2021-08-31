@@ -73,6 +73,7 @@ theme.
     61. SIGNUP PAGE
     62. USER NAVBAR
     63. COLLAGE DESTINATIONS
+    64. CONCIERGE SYMBOLS
 
 	
 
@@ -3633,6 +3634,34 @@ select:-webkit-autofill:focus{
 .tall{
   grid-row: span 2;
 }
+
+/* 64. CONCIERGE SYMBOLS */
+.concierge-services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.concierge-services .service{
+  max-width: 10rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid var(--mansions-gold);
+  margin: 0.5rem;
+  overflow: hidden;
+  background: white;
+  padding: 0.5rem;
+}
+.concierge-services .service:hover{
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  border: rgb(0,0,0);
+}
+.concierge-services .symbol img{
+  width: 100%;
+}
+.concierge-services .service p{
+  font-size: 0.9rem;
+}
+
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
   .hotel-search form .form-group {
