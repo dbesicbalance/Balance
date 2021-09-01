@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="theme-color" content="#cda16a"/>
+<meta name="theme-color" content="var(--mansions-gold)"/>
 <title>Mansions Croatia</title>
 <meta name="author" content="Themezinho">
 <meta name="description" content="Beautiful premium look hotels website">
@@ -78,15 +78,23 @@
   <nav class="hamburger-navigation">
     <div class="layer"></div>
     <!-- end layer -->
-    <div class="container">
-      <ul class="nav-menu mobile-menu">
+        <!-- Log-In / Welcome User -->
+        <div class="container">
+          <div class="nav-user">
+            <ul class="nav-menu login-menu">
+              <li><a href="">Welcome</a></li>
+              <li><a href="sign-in.html"><span class="golden">Mr. Anderson</span></a></li>
+            </ul>
+          </div>
+          <!-- end Log-In / Welcome User -->
+      <ul class="nav-menu">
         <li><a href="quardo.html">Collections</a></li>
-          <li><a href="special-offers.html">Promotions</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="special-offers.html">Journal</a></li>
-          <li><a href="contact-us.html">About us</a></li>
-          <li><a href="concierge.html">My concierge</a></li>
-          <li><a href="special-offers.html">LOG IN</a></li>
+        <li><a href="special-offers.html">Promotions</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="special-offers.html">Journal</a></li>
+        <li><a href="contact-us.html">About us</a></li>
+        <li><a href="concierge.html">My concierge</a></li>
+        <li><a href="sign-in.html">LOG IN</a></li>
       </ul>
       <div class="info-box"> <span>Follow us on Social Media</span>
         <ul class="nav-social">
@@ -103,18 +111,19 @@
   </nav>
   <!-- end hamburger-navigation -->
   <nav class="navbar">
-    <div class="logo"> <a href="index.html"><img src="img/mansions_croatia_final-01.png" alt="Image"></a> </div>
     <div class="container">
-     
+      <div class="logo"> <a href="index.html">
+        <img src="img/mansions_croatia_final-01.png" alt="Image"></a> 
+      </div>
       <!-- end logo -->
-      <div class="navbar-text">Booking  +385 99 8110 680
-        <div class="nav-social social-nav"><div class="swiper-scrollbar" style="background: #cda16a" style="height: 1px;"></div>
-          <a href="#"><i class="lni lni-facebook-filled"></i></a>
-          <a href="#"><i class="lni lni-twitter-original"></i></a>
-          <a href="#"><i class="lni lni-instagram"></i></a>
+      <div class="navbar-text"><p class='navbar-booking'>Booking  +385 99 8110 680</p> 
+        <div class="nav-social social-nav">
+          <a href="https://www.linkedin.com/in/mansions-croatia-382ab0207/?originalSubdomain=hr"><i class="lni lni-linkedin-original"></i></a>
+          <a href="https://twitter.com/mansionscroatia"><i class="lni lni-twitter-original"></i></a>
+          <a href="https://www.instagram.com/mansionscroatia/"><i class="lni lni-instagram"></i></a>
           <a href="#"><i class="lni lni-youtube"></i></a>
           <a href="#"><i class="lni lni-pinterest"></i></a>
-        </div></div>
+      </div></div>
       <!-- end navbar-text -->
       <div class="site-menu">
         <ul>
@@ -201,7 +210,7 @@
       <div class="col-12">
         <div class="content-tab">
               <ul class="tab-nav">
-                <li class="active" style="color: #cda16a;"><a href="#tab01">All</a></li>
+                <li class="active" style="color: var(--mansions-gold);"><a href="#tab01">All</a></li>
                 <li><a href="#tab02">Entertainment</a></li>
                 <li><a href="#tab03">Dine&Wine</a></li>
                 <li><a href="#tab04">Services</a></li>
@@ -686,10 +695,10 @@
           <div class="row justify-content-center">
           <div class="col-lg-10">
             <div class="room-info-box" style="text-align: center; padding: 75px;">
-            <h2 style="color: #cda16a; font-size: 30px">Terms of use</h2>
+            <h2 style="color: var(--mansions-gold); font-size: 30px">Terms of use</h2>
             <p style="text-align: left;"><strong></strong><br>
-              <i class="fas fa-chevron-circle-right" style="color: #cda16a; padding-right: 10px;"></i>To reserve our concierge services the client has to inform our staff minimum 7 days ahead of the determined date of service.<br>
-              <i class="fas fa-chevron-circle-right" style="color: #cda16a; padding-right: 10px;"></i>A last minute concierge reservation fee will be extra charged depending on availability.
+              <i class="fas fa-chevron-circle-right" style="color: var(--mansions-gold); padding-right: 10px;"></i>To reserve our concierge services the client has to inform our staff minimum 7 days ahead of the determined date of service.<br>
+              <i class="fas fa-chevron-circle-right" style="color: var(--mansions-gold); padding-right: 10px;"></i>A last minute concierge reservation fee will be extra charged depending on availability.
               </p>
             </p>
             </div>
@@ -864,8 +873,8 @@ fitness centres. In addition, we’ve partnered.</p> </div>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
     <label for="country">Service</label>
-    <select id="country" name="country">
-      <option value="SERVICE">CHOOSE SERVICE...</option>
+    <select id="country" name="country" placeholder="Choose service">
+      <option value="SERVICE" >CHOOSE SERVICE</option>
       <option value="NANNY">NANNY</option>
       <option value="MASSAGE">MASSAGE</option>
       <option value="BARBER">BARBER</option>
@@ -891,8 +900,9 @@ fitness centres. In addition, we’ve partnered.</p> </div>
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="SUBMIT" class="custom-button">
   </form>
+  
 </div>
 <!--contact us-->
 
@@ -918,7 +928,7 @@ fitness centres. In addition, we’ve partnered.</p> </div>
     <!-- end container --> 
   </section>
   <!-- end content-section -->
-  <section class="content-section no-spacing" data-background="#cda16a">
+  <section class="content-section no-spacing" data-background="var(--mansions-gold)">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -980,41 +990,9 @@ fitness centres. In addition, we’ve partnered.</p> </div>
   <!-- end footer --> 
 </main>
 
-<style>
+<!-- <style>
 
-input[type=text], select, textarea {
-  width: 100%;
-  height: 75px;
-  padding: 12px;
-  border: 1px solid #cda16a;
-  box-sizing: border-box;
-  resize: vertical;
-  font-size: 0.725rem;
-  background-color: rgba(204, 204, 204, 0);
-}
 
-input[type=submit] {
-  background-color: #12271b;
-  color: #cda16a;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #12271b;
-}
-
-.container-contact {
-  border-radius: 5px;
-  background-color: #ffffff00;
-  padding: 20px;
-  background:url();
-}
-
-label{
-    font-size: 0.725rem;
-}
 
 #demo {
     background: rgb(255, 255, 255);
@@ -1184,7 +1162,7 @@ label{
     text-align: -webkit-center;
 }
 
-</style>
+</style> -->
 <!-- JS FILES --> 
 <script src="js/jquery.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
