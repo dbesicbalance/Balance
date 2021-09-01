@@ -98,6 +98,8 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  --mansions-gold: #cda16c;
+  --mansions-green: #12271c;
 }
 
 /* HTML TAGS */
