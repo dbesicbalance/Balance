@@ -1075,7 +1075,8 @@ body .page-header {
   display: inline-block;
 }
 .navbar .logo a img{
-  height: 7rem;
+  height: 5rem;
+  margin: 0 3rem;
 }
 .navbar .navbar-text {
   display: inline-block;
