@@ -123,6 +123,9 @@ iframe {
 .gold{
   background-color: var(--mansions-gold);
 }
+.gray{
+  color: gray;
+}
 
 /* LINKS */
 a {
