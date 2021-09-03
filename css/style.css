@@ -73,7 +73,6 @@ theme.
     61. SIGNUP PAGE
     62. USER NAVBAR
     63. COLLAGE DESTINATIONS
-    64. CONCIERGE SYMBOLS
 
 	
 
@@ -99,7 +98,7 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  --mansions-gold: #856d47;
+  --mansions-gold: #cda16c;
   --mansions-green: #12271c;
 }
 
@@ -114,17 +113,6 @@ strong {
 
 iframe {
   max-width: 100%;
-}
-
-.lni{
-  color: #fff;
-  size: 5rem;
-}
-.gold{
-  background-color: var(--mansions-gold);
-}
-.gray{
-  color: gray;
 }
 
 /* LINKS */
@@ -266,7 +254,7 @@ input[type="submit"] {
   font-size: 14px;
   font-weight: 600;
   color: #fff;
-  background: var(--mansions-gold);
+  background: #cda16a;
   border: none;
   padding: 0 50px;
 }
@@ -277,7 +265,7 @@ button[type="submit"] {
   font-size: 14px;
   font-weight: 600;
   color: #fff;
-  background: var(--mansions-gold);
+  background: #cda16a;
   border: none;
   padding: 0 50px;
 }
@@ -366,7 +354,7 @@ button[type="submit"] i {
 
 .cursor.drag:before {
   transform: scale(1);
-  background: var(--mansions-gold);
+  background: #cda16a;
   border-color: transparent;
 }
 
@@ -400,7 +388,7 @@ button[type="submit"] i {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: var(--mansions-gold);
+  background: #cda16a;
   cursor: pointer;
   -webkit-transition: background .15s ease-in-out;
   transition: background .15s ease-in-out;
@@ -411,22 +399,22 @@ button[type="submit"] i {
   height: 20px;
   border: 0;
   border-radius: 50%;
-  background: var(--mansions-gold);
+  background: #cda16a;
   cursor: pointer;
   -moz-transition: background .15s ease-in-out;
   transition: background .15s ease-in-out;
 }
 
 .range-slider__range:active::-moz-range-thumb {
-  background: var(--mansions-gold);
+  background: #cda16a;
 }
 
 .range-slider__range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--mansions-gold);
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #cda16a;
 }
 
 ::-moz-range-track {
-  background: var(--mansions-gold);
+  background: #cda16a;
   border: 0;
 }
 
@@ -470,7 +458,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   border: 1px solid #cbcbcb;
 }
 .accordion .card .card-header a:hover {
-  color: var(--mansions-gold);
+  color: #cda16a;
   text-decoration: none;
 }
 .accordion .card .card-body {
@@ -480,8 +468,8 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 }
 .accordion .card [aria-expanded="true"] {
   color: #fff !important;
-  background: var(--mansions-gold);
-  border-color: var(--mansions-gold) !important;
+  background: #cda16a;
+  border-color: #cda16a !important;
 }
 
 /* DATE PICKER */
@@ -517,12 +505,12 @@ input::-moz-focus-inner, input::-moz-focus-outer {
 }
 
 .datepicker-panel > ul > li.picked, .datepicker-panel > ul > li.picked:hover {
-  background: var(--mansions-gold);
+  background: #cda16a;
   color: #fff;
 }
 
 .datepicker-panel > ul > li.highlighted {
-  background-color: var(--mansions-gold);
+  background-color: #cda16a;
 }
 
 .datepicker-panel > ul > li:hover {
@@ -682,7 +670,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   height: 80px;
   line-height: 80px;
   display: inline-block;
-  background: var(--mansions-gold);
+  background: #cda16a;
   padding: 0 50px;
   color: #fff;
   font-size: 13px;
@@ -756,7 +744,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   width: 0%;
   height: 100%;
   max-height: 6px;
-  background: var(--mansions-gold);
+  background: #cda16a;
   position: absolute;
   top: 0;
   left: 0;
@@ -812,7 +800,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: var(--mansions-gold);
+  background: #cda16a;
   position: fixed;
   top: 0;
   left: 0;
@@ -917,7 +905,7 @@ body .page-header {
   -webkit-transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.86, 0, 0.09, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.09, 1);
-  background: var(--mansions-gold);
+  background: #cda16a;
 }
 .hamburger-navigation .layer {
   width: 100%;
@@ -1009,7 +997,7 @@ body .page-header {
   font-family: "Argesta Display";
 }
 .hamburger-navigation .nav-menu li a:hover {
-  color: var(--mansions-gold);
+  color: #cda16a;
 }
 
 /* HAMBURGER NAGIVATION ACTIVE */
@@ -1087,14 +1075,6 @@ body .page-header {
   -ms-transition: all .30s ease-in-out;
   -o-transition: all .30s ease-in-out;
   transition: all .30s ease-in-out;
-  text-align: center;
-}
-.navbar-text p{
-  border-bottom: 2px solid var(--mansions-gold);
-}
-.navbar-text .nav-social{
-  display: flex;
-  justify-content: space-between;
 }
 .navbar .site-menu {
   display: inline-block;
@@ -1166,8 +1146,8 @@ body .page-header {
   height: 80px;
   line-height: 80px;
   display: inline-block;
-  background: #f5f3ec;
-  color: var(--mansions-gold);
+  background: #cda16a;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 600;
   padding: 0 50px;
@@ -1250,7 +1230,7 @@ body .page-header {
   content: "";
   width: 30%;
   height: 6px;
-  background: var(--mansions-gold);
+  background: #cda16a;
   position: absolute;
   left: 0;
   top: 0;
@@ -1260,20 +1240,20 @@ body .page-header {
   width: 20%;
   height: 80px;
   line-height: 80px;
-  background: white;
+  background: #12271b;
   position: absolute;
   left: auto;
   right: 0;
   bottom: 0;
   z-index: 1;
-  color: black;
+  color: #cda16a;
   font-family: "Argesta Display";
   font-size: 22px;
 }
 .slider .slider-prev {
   width: 80px;
   height: 80px;
-  background: var(--mansions-gold);
+  background: #cda16a;
   position: absolute;
   right: calc(20% + 82px);
   bottom: 0;
@@ -1303,7 +1283,7 @@ body .page-header {
 .slider .slider-next {
   width: 80px;
   height: 80px;
-  background: var(--mansions-gold);
+  background: #cda16a;
   position: absolute;
   right: 20%;
   bottom: 0;
@@ -1387,7 +1367,7 @@ body .page-header {
   width: 1px;
   height: 0;
   animation: 1s scrolldown infinite;
-  background: var(--mansions-gold);
+  background: #cda16a;
   position: absolute;
   top: 0;
   left: 0;
@@ -1659,7 +1639,7 @@ body .page-header {
   position: absolute;
   left: calc(50% - 70px);
   top: calc(50% - 70px);
-  color: var(--mansions-gold);
+  color: #cda16a;
   font-size: 30px;
   text-align: center;
   border-radius: 50%;
@@ -1670,7 +1650,7 @@ body .page-header {
   transition: all .30s ease-in-out;
 }
 .side-image .video-button:hover {
-  background: var(--mansions-gold);
+  background: #cda16a;
   color: #fff;
 }
 .side-image img {
@@ -1743,7 +1723,7 @@ body .page-header {
 }
 .side-hotel-box .info-box span {
   display: inline-block;
-  border-left: 6px solid var(--mansions-gold);
+  border-left: 6px solid #cda16a;
   padding-left: 20px;
 }
 .side-hotel-box .info-box b {
@@ -1766,7 +1746,7 @@ body .page-header {
   display: inline-block;
 }
 .side-hotel-box .availability i {
-  color: var(--mansions-gold);
+  color: #cda16a;
 }
 
 /* CAROUSEL IMAGE BOX */
@@ -1839,7 +1819,7 @@ body .page-header {
   border-bottom: 4px solid transparent;
 }
 .events-tab .tab-nav li.active {
-  border-color: var(--mansions-gold);
+  border-color: #cda16a;
 }
 .events-tab .tab-nav li a {
   display: inline-block;
@@ -1884,7 +1864,7 @@ body .page-header {
   border-bottom: 1px solid #fff;
 }
 .content-tab .tab-nav li.active a {
-  color: var(--mansions-gold);
+  color: #cda16a;
   opacity: 1;
 }
 .content-tab .tab-nav li a {
@@ -1963,8 +1943,8 @@ body .page-header {
   content: "";
   width: 15px;
   height: 15px;
-  border-left: 4px solid var(--mansions-gold);
-  border-bottom: 4px solid var(--mansions-gold);
+  border-left: 4px solid #cda16a;
+  border-bottom: 4px solid #cda16a;
   transform: rotate(45deg);
   position: absolute;
   left: 25px;
@@ -1993,8 +1973,8 @@ body .page-header {
   content: "";
   width: 15px;
   height: 15px;
-  border-right: 4px solid var(--mansions-gold);
-  border-top: 4px solid var(--mansions-gold);
+  border-right: 4px solid #cda16a;
+  border-top: 4px solid #cda16a;
   transform: rotate(45deg);
   position: absolute;
   right: 25px;
@@ -2012,7 +1992,7 @@ body .page-header {
   margin-bottom: 25px;
 }
 .carousel-events-box figure:before {
-  background: var(--mansions-gold) !important;
+  background: #cda16a !important;
 }
 .carousel-events-box figure img {
   width: 100%;
@@ -2036,7 +2016,7 @@ body .page-header {
   color: #fff;
 }
 .carousel-events-box .content h5 a:hover {
-  color: var(--mansions-gold);
+  color: #cda16a;
 }
 .carousel-events-box .content span {
   display: inline-block;
@@ -2063,7 +2043,7 @@ body .page-header {
   content: "";
   width: 100%;
   height: 240px;
-  background: var(--mansions-green);
+  background: rgba(18, 39, 27, 0.9);
   position: absolute;
   left: 0;
   top: 0;
@@ -2102,7 +2082,7 @@ body .page-header {
   display: block;
   font-size: 15px;
   font-weight: 800;
-  color: var(--mansions-gold);
+  color: #cda16a;
   letter-spacing: 1px;
 }
 .rooms-slider .swiper-slide .room-detail .price-line span {
@@ -2123,7 +2103,7 @@ body .page-header {
 }
 .rooms-slider .swiper-slide .room-detail .reviews span {
   padding: 5px 8px;
-  background: var(--mansions-gold);
+  background: #cda16a;
   color: #fff;
   font-weight: 800;
   margin-left: 5px;
@@ -2175,7 +2155,7 @@ body .page-header {
   content: "";
   width: 60px;
   height: 1px;
-  background: var(--mansions-gold);
+  background: #cda16a;
   position: absolute;
   left: -80px;
   top: calc(50% - 0.5px);
@@ -2191,7 +2171,7 @@ body .page-header {
 }
 .recent-news .content ul li a {
   display: inline-block;
-  color: var(--mansions-gold);
+  color: #cda16a;
   font-size: 14px;
   font-weight: 600;
 }
@@ -2231,7 +2211,7 @@ body .page-header {
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
-  background: var(--mansions-gold);
+  background: #cda16a;
   color: #fff;
   text-align: center;
   position: relative;
@@ -2346,7 +2326,7 @@ body .page-header {
   line-height: 44px;
   display: inline-block;
   text-align: center;
-  background: var(--mansions-gold);
+  background: #cda16a;
   color: #fff;
 }
 .member-box figure img {
@@ -2377,7 +2357,7 @@ body .page-header {
 .member-box .content a {
   display: inline-block;
   text-decoration: underline;
-  color: var(--mansions-gold);
+  color: #cda16a;
   font-weight: 600;
   font-size: 15px;
 }
@@ -2398,7 +2378,7 @@ body .page-header {
   line-height: 140px;
   display: inline-block;
   background: #fff;
-  color: var(--mansions-gold);
+  color: #cda16a;
   font-size: 30px;
   text-align: center;
   border-radius: 50%;
@@ -2410,7 +2390,7 @@ body .page-header {
   margin-bottom: 100px;
 }
 .video-box .play-btn:hover {
-  background: var(--mansions-gold);
+  background: #cda16a;
   color: #fff;
 }
 .video-box h2 {
@@ -2443,7 +2423,7 @@ body .page-header {
   float: right;
   margin-top: -56px;
   font-weight: 800;
-  color: var(--mansions-gold);
+  color: #cda16a;
 }
 .rooms-filter .price-range .range-slider__value:before {
   content: "$";
@@ -2530,7 +2510,7 @@ body .page-header {
   display: block;
   font-size: 15px;
   font-weight: 800;
-  color: var(--mansions-gold);
+  color: #cda16a;
   letter-spacing: 1px;
 }
 .room-box .content .price-line span {
@@ -2569,7 +2549,7 @@ body .page-header {
 }
 .room-box .content .bottom-specs .reviews span {
   padding: 5px 8px;
-  background: var(--mansions-gold);
+  background: #cda16a;
   color: #fff;
   font-weight: 800;
   margin-left: 5px;
@@ -2587,7 +2567,7 @@ body .page-header {
   display: block;
   font-size: 15px;
   font-weight: 800;
-  color: var(--mansions-gold);
+  color: #cda16a;
   letter-spacing: 1px;
 }
 .room-type .price-line span {
@@ -2629,7 +2609,7 @@ body .page-header {
   margin-right: 10px;
 }
 .recent-testimonial span i {
-  color: var(--mansions-gold);
+  color: #cda16a;
   display: inline-block;
   margin: 0 2px;
   font-size: 14px;
@@ -2699,7 +2679,7 @@ body .page-header {
   font-size: 26px;
   font-family: "Argesta Display";
   margin-bottom: 15px;
-  color: var(--mansions-gold);
+  color: #cda16a;
 }
 .room-info-box p {
   width: 100%;
@@ -2724,7 +2704,7 @@ body .page-header {
   margin: 5px 0;
   padding: 5px 0;
   padding-bottom: 15px;
-  border-bottom: 1px solid var(--mansions-green);
+  border-bottom: 1px solid #12271b;
 }
 .room-info-box ul li:last-child {
   padding-bottom: 0;
@@ -2764,6 +2744,7 @@ body .page-header {
 }
 .meeting-event-box figure img {
   width: 100%;
+  border: 2px solid var(--mansions-gold);
 }
 .meeting-event-box .content {
   width: calc(100% - 50px);
@@ -2787,7 +2768,7 @@ body .page-header {
   display: inline-block;
 }
 .meeting-event-box .content h5 a:hover {
-  color: var(--mansions-gold);
+  color: #cda16a;
 }
 .meeting-event-box .content span {
   width: 100%;
@@ -2845,7 +2826,7 @@ body .page-header {
   display: inline-block;
 }
 .special-offer-box .content h5 a:hover {
-  color: var(--mansions-gold);
+  color: #cda16a;
 }
 .special-offer-box .content p {
   width: 100%;
@@ -2857,7 +2838,7 @@ body .page-header {
 }
 .special-offer-box .content small {
   display: inline-block;
-  background: var(--mansions-gold);
+  background: #cda16a;
   padding: 4px 8px;
   color: #fff;
   font-weight: 600;
@@ -2877,7 +2858,7 @@ body .page-header {
   margin-bottom: 10px;
 }
 .event-headline .rating i {
-  color: var(--mansions-gold);
+  color: #cda16a;
   display: inline-block;
   margin-right: 4px;
   font-size: 15px;
@@ -2904,7 +2885,7 @@ body .page-header {
 }
 .event-headline address span i {
   display: inline-block;
-  color: var(--mansions-gold);
+  color: #cda16a;
   margin-right: 10px;
 }
 
@@ -2925,7 +2906,7 @@ body .page-header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: var(--mansions-gold);
+  background: #cda16a;
   color: #fff;
   padding: 50px;
   margin: 15px 0;
@@ -2955,7 +2936,7 @@ body .page-header {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  background: var(--mansions-gold);
+  background: #cda16a;
 }
 .google-maps iframe {
   width: 100%;
@@ -2974,7 +2955,7 @@ body .page-header {
   left: calc(50% - 40px);
   top: calc(50% - 40px);
   font-size: 40px;
-  color: var(--mansions-gold);
+  color: #cda16a;
   border-radius: 50%;
 }
 .google-maps:after {
@@ -3014,7 +2995,7 @@ body .page-header {
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
-  background: var(--mansions-gold);
+  background: #cda16a;
 }
 .news-box figure img {
   width: 100%;
@@ -3028,7 +3009,7 @@ body .page-header {
 }
 .news-box .content .category {
   display: inline-block;
-  color: var(--mansions-gold);
+  color: #cda16a;
   font-size: 14px;
   font-weight: 600;
   position: relative;
@@ -3037,7 +3018,7 @@ body .page-header {
   content: "";
   width: 60px;
   height: 1px;
-  background: var(--mansions-gold);
+  background: #cda16a;
   position: absolute;
   left: -80px;
   top: calc(50% - 0.5px);
@@ -3078,7 +3059,7 @@ body .page-header {
   transition: all .30s ease-in-out;
 }
 .news-box .content h3 a:hover {
-  color: var(--mansions-gold);
+  color: #cda16a;
   text-decoration: none;
 }
 .news-box .content .author {
@@ -3112,7 +3093,7 @@ body .page-header {
   display: block;
   padding: 40px;
   background: #f5f3ec;
-  color: var(--mansions-gold);
+  color: #cda16a;
   font-size: 22px;
   font-family: "Argesta Display";
   margin: 30px 0;
@@ -3151,7 +3132,7 @@ body .page-header {
   z-index: 1;
   font-weight: 400;
   font-size: 22px;
-  color: var(--mansions-gold);
+  color: #cda16a;
   margin-bottom: 30px;
   padding-bottom: 30px;
   font-family: "Argesta Display";
@@ -3160,7 +3141,7 @@ body .page-header {
   content: "";
   width: 50px;
   height: 4px;
-  background: var(--mansions-gold);
+  background: #cda16a;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -3204,7 +3185,7 @@ body .page-header {
   font-size: 19px;
 }
 .sidebar .widget .categories li a:hover {
-  color: var(--mansions-gold);
+  color: #cda16a;
 }
 .sidebar .widget .widget-gallery {
   width: calc(100% + 4px);
@@ -3347,7 +3328,7 @@ body .page-header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: var(--mansions-green);
+  background: #12271b;
   padding-top: 100px;
   color: #fff;
 }
@@ -3576,20 +3557,38 @@ select:-webkit-autofill:focus{
 
 
 /* 63. COLLAGE DESTINATIONS */
+.collage-grid{
+  position: relative;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgb(27,27,27); /* colors */
+  width: 100%;
+  height: 50vh;
+}
+
+
+
+
 .collage-flex{
   display: flex;
   width: 100%;
+
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 .flex-item{
+
   height: 15rem;
   width: 25rem;
   max-width: 30rem;
   max-height: 15rem;
   overflow: hidden;
 }
+
 .flex-item-overlay{
   width: 100%;
   height: 100%;
@@ -3641,82 +3640,6 @@ select:-webkit-autofill:focus{
 .tall{
   grid-row: span 2;
 }
-
-/* 64. CONCIERGE SYMBOLS */
-.concierge-services{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.concierge-services .service{
-  max-width: 10rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  border: 1px solid #eee;
-  margin: 0.5rem;
-  overflow: hidden;
-  background: white;
-  padding: 0.5rem;
-}
-.concierge-services .service:hover{
-  border: 1px solid var(--mansions-gold);
-}
-.concierge-services .symbol img{
-  width: 100%;
-}
-.concierge-services .service p{
-  font-size: 0.9rem;
-}
-
-/* 65. CONCIERGE INPUT FORM */
- input[type=text], 
- input[type=number],
- select, 
- textarea {
-  width: 100%;
-  border: 1px solid var(--mansions-gold);
-}
-label{
-    font-size: 14px;
-    margin-top: 1rem;
-    margin-bottom: 0;
-} 
-
-/* TESTIMONIALS */
-.carousel-caption {
-  position: initial;
-  z-index: 10;
-  padding: 5rem 8rem;
-  color: rgba(78, 77, 77, 0.856);
-  text-align: center;
-  font-size: 1.2rem;
-  font-style: italic;
-  font-weight: bold;
-  line-height: 2rem
-}
-.carousel-caption img {
-  width: 6rem;
-  border-radius: 5rem;
-  margin-top: 2rem
-}
-#image-caption {
-  font-style: normal;
-  font-size: 1rem;
-  margin-top: 0.5rem
-}
-.carousel-control-prev {
-  justify-content: flex-start
-}
-
-.carousel-control-next {
-  justify-content: flex-end
-}
-.carousel-control-prev,
-.carousel-control-next {
-  transition: none;
-  opacity: unset
-}
-
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
   .hotel-search form .form-group {
