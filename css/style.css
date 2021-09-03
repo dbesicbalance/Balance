@@ -3663,8 +3663,12 @@ select:-webkit-autofill:focus{
 }
 
 /* 65. CONCIERGE INPUT FORM */
- input[type=text], select, textarea {
+ input[type=text], 
+ input[type=number],
+ select, 
+ textarea {
   width: 100%;
+  border: 1px solid var(--mansions-gold);
     /* 
   height: 75px;
   padding: 12px;
