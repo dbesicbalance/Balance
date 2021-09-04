@@ -124,8 +124,15 @@ iframe {
 .gold{
   background-color: var(--mansions-gold);
 }
+.golden{
+  color: var(--mansions-gold);
+}
 .gray{
   color: gray;
+}
+.welcome{
+  font-size: 3vw;
+  font-family: "Argesta Display";
 }
 
 /* LINKS */
@@ -1131,7 +1138,7 @@ body .page-header {
   text-decoration: none;
 }
 .navbar .hamburger-menu {
-  display: inline-block;
+  display: none;
   margin-left: auto;
 }
 
@@ -3737,6 +3744,12 @@ label{
 
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
+  .navbar .hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .site-menu {
+    display: none;
+  }
   .hotel-search form .form-group {
     margin: 15px;
   }
