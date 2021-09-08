@@ -3382,9 +3382,8 @@ body .page-header {
 .footer .bottom-bar {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 2rem 1rem;
   font-size: 14px;
   position: relative;
   margin-top: 50px;
@@ -3400,7 +3399,9 @@ body .page-header {
   opacity: 0.2;
 }
 .footer .bottom-bar span {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
 }
 .footer .bottom-bar .footer-social {
   display: inline-block;
@@ -3412,10 +3413,34 @@ body .page-header {
   margin-left: 10px;
   padding: 0;
   list-style: none;
+  font-size: 0.8rem;
 }
 .footer .bottom-bar .footer-social li a {
   display: inline-block;
   color: #fff;
+}
+/* 68. FOOTER */
+footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+footer h6{
+  border-bottom: 1px solid white;
+}
+footer ul{
+  list-style-type: none;
+  padding-inline-start: 0;
+  font-size: 1rem;
+}
+footer ul li{
+  margin: 0.5rem;
+}
+footer p{
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+footer a{
+  color: inherit;
 }
 
 /* SIGNUP PAGE */
