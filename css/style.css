@@ -124,8 +124,15 @@ iframe {
 .gold{
   background-color: var(--mansions-gold);
 }
+.golden{
+  color: var(--mansions-gold);
+}
 .gray{
   color: gray;
+}
+.welcome{
+  font-size: 3vw;
+  font-family: "Argesta Display";
 }
 
 /* LINKS */
@@ -1131,7 +1138,7 @@ body .page-header {
   text-decoration: none;
 }
 .navbar .hamburger-menu {
-  display: inline-block;
+  display: none;
   margin-left: auto;
 }
 
@@ -3375,25 +3382,26 @@ body .page-header {
 .footer .bottom-bar {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 2rem;
   font-size: 14px;
   position: relative;
   margin-top: 50px;
 }
 .footer .bottom-bar:before {
   content: "";
-  width: calc(100% + 100px);
+  width: 100%;
   height: 1px;
   background: #fff;
   position: absolute;
   top: 0;
-  left: -50px;
+  left: 0;
   opacity: 0.2;
 }
 .footer .bottom-bar span {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
 }
 .footer .bottom-bar .footer-social {
   display: inline-block;
@@ -3405,10 +3413,34 @@ body .page-header {
   margin-left: 10px;
   padding: 0;
   list-style: none;
+  font-size: 0.8rem;
 }
 .footer .bottom-bar .footer-social li a {
   display: inline-block;
   color: #fff;
+}
+/* 68. FOOTER */
+footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+footer h6{
+  border-bottom: 1px solid white;
+}
+footer ul{
+  list-style-type: none;
+  padding-inline-start: 0;
+  font-size: 1rem;
+}
+footer ul li{
+  margin: 0.5rem;
+}
+footer p{
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+footer a{
+  color: inherit;
 }
 
 /* SIGNUP PAGE */
@@ -3737,6 +3769,12 @@ label{
 
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
+  .navbar .hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .site-menu {
+    display: none;
+  }
   .hotel-search form .form-group {
     margin: 15px;
   }
