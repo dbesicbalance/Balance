@@ -3383,19 +3383,19 @@ body .page-header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 2rem 1rem;
+  padding: 2rem;
   font-size: 14px;
   position: relative;
   margin-top: 50px;
 }
 .footer .bottom-bar:before {
   content: "";
-  width: calc(100% + 100px);
+  width: 100%;
   height: 1px;
   background: #fff;
   position: absolute;
   top: 0;
-  left: -50px;
+  left: 0;
   opacity: 0.2;
 }
 .footer .bottom-bar span {
