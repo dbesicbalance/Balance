@@ -100,7 +100,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   --mansions-gold: #856d47;
-  --mansions-green: #12271c;
+  --mansions-green: #141414;
+  /* --mansions-green: #12271c; */
   --mansions-dark:#141414;
 }
 
@@ -3578,6 +3579,9 @@ footer a{
   flex-wrap: nowrap;
   width: 100%;
   overflow: scroll;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
 /* WEBKIT FORM AUTOFILL STYLE */
