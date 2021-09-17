@@ -3525,6 +3525,9 @@ body .page-header {
   width: 100%;
   overflow: scroll;
 }
+.carousel::-webkit-scrollbar {
+  display: none;
+}
 
 /* WEBKIT FORM AUTOFILL STYLE */
 input:-webkit-autofill,
