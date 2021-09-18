@@ -74,7 +74,10 @@ theme.
     62. USER NAVBAR
     63. COLLAGE DESTINATIONS
     64. CONCIERGE SYMBOLS
-
+    65. CONCIERGE MAIN PAGE
+    66.
+    67.
+    68. CONCIERGE ON LANDING PAGE
 	
 
 */
@@ -127,6 +130,9 @@ iframe {
 }
 .golden{
   color: var(--mansions-gold);
+}
+.gold-outline{
+  border: 5px solid var(--mansions-gold);
 }
 .gray{
   color: gray;
@@ -3769,6 +3775,17 @@ label{
 .partner-img{
   max-height: 5rem;
   max-width: 7rem;
+}
+
+/* 68. CONCIERGE ON LANDING PAGE */
+.concierge-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5rem 0;
+  
 }
 
 /* RESPONSIVE MEDIUM  */
