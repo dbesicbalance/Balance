@@ -75,8 +75,8 @@ theme.
     63. COLLAGE DESTINATIONS
     64. CONCIERGE SYMBOLS
     65. CONCIERGE MAIN PAGE
-    66.
-    67.
+    66. TESTIMONIALS
+    67. PARTNER LOGOS
     68. CONCIERGE ON LANDING PAGE
 	
 
@@ -1854,14 +1854,14 @@ body .page-header {
   margin-right: 20px;
   padding: 0 5px;
   list-style: none;
-  border-bottom: 4px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 .events-tab .tab-nav li.active {
   border-color: var(--mansions-gold);
 }
 .events-tab .tab-nav li a {
   display: inline-block;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .events-tab .tab-item {
   width: 100%;
@@ -3630,10 +3630,12 @@ select:-webkit-autofill:focus{
   justify-content: center;
 }
 .flex-item{
-  height: 15rem;
+  /* height: 15rem;
   width: 25rem;
   max-width: 30rem;
-  max-height: 15rem;
+  max-height: 15rem; */
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .flex-item-overlay{
@@ -3653,8 +3655,8 @@ select:-webkit-autofill:focus{
   text-align: center;
 }
 .flex-item-overlay h5{
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 400;
   transition: all 0.3s ease;
   transform: translateY(3rem);
 }
@@ -3785,7 +3787,100 @@ label{
   justify-content: center;
   text-align: center;
   margin: 5rem 0;
-  
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: 
+    "one one two two three three"
+    "four four four four five five"
+    "six six seven seven seven seven"
+    "six six eight eight nine nine"
+    "ten ten ten ten eleven eleven"; 
+
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "one one one two two two three three three four four four"
+    "one one one five five five five five five four four four"
+    "one one one five five five five five five six six six"
+    "seven seven seven seven seven eight eight eight eight six six six"
+    "seven seven seven seven seven eight eight eight eight nine nine nine"
+    "ten ten ten ten eleven eleven eleven eleven eleven nine nine nine";
+    max-height: 700px;
+    max-width: 100%;
+  }
+
+.two { grid-area: two; }
+
+.three { grid-area: three; }
+
+.one { grid-area: one; }
+
+.five { grid-area: five; }
+
+.four { grid-area: four; }
+
+.six { grid-area: six; }
+
+.seven { grid-area: seven; }
+
+.eight { grid-area: eight; }
+
+.nine { grid-area: nine; }
+
+.ten { grid-area: ten; }
+
+.eleven { grid-area: eleven; }
+
+.grid-container>*{
+  min-height: 10rem;
+  color: white;
+}
+
+.destinations-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "jedan jedan jedan dva dva dva tri tri tri cetiri cetiri cetiri"
+    "jedan jedan jedan dva dva dva tri tri tri cetiri cetiri cetiri"
+    "jedan jedan jedan sest sest sest sest sest sest cetiri cetiri cetiri"
+    "pet pet pet sest sest sest sest sest sest osam osam osam"
+    "pet pet pet sedam sedam sedam sedam sedam sedam osam osam osam"
+    "pet pet pet sedam sedam sedam sedam sedam sedam osam osam osam";
+    max-height: 700px;
+}
+
+.jedan { grid-area: jedan; }
+
+.dva { grid-area: dva; }
+
+.tri { grid-area: tri; }
+
+.cetiri { grid-area: cetiri; }
+
+.pet { grid-area: pet; }
+
+.sest { grid-area: sest; }
+
+.sedam { grid-area: sedam; }
+
+.osam { grid-area: osam; }
+
+.destinations-grid-container>*{
+  min-height: 10rem;
+  color: white;
 }
 
 /* RESPONSIVE MEDIUM  */
