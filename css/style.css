@@ -3803,7 +3803,20 @@ label{
   margin: 0 auto;
   opacity: 0.8;
 }
-
+.container svg{
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+}
+.up-corner{
+  top: 1rem;
+  left: 1rem;
+}
+.down-corner{
+  bottom: 1rem;
+  right: 1rem;
+  transform: rotateZ(180deg);
+}
 /* 69. DESTINATIONS */
 .grid-container {
   display: grid;
