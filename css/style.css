@@ -107,10 +107,12 @@ body {
   --mansions-green: #12271c;
   --mansions-dark:#141414;
   --dirty-white: rgb(245, 243, 236);
-  
 }
 
 /* HTML TAGS */
+.scroll-content{
+  background-color: var(--dirty-white);
+}
 img {
   max-width: 100%;
 }
@@ -1280,7 +1282,7 @@ body .page-header {
   width: 20%;
   height: 80px;
   line-height: 80px;
-  background: white;
+  background-color: var(--dirty-white);
   position: absolute;
   left: auto;
   right: 0;
