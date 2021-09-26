@@ -74,7 +74,11 @@ theme.
     62. USER NAVBAR
     63. COLLAGE DESTINATIONS
     64. CONCIERGE SYMBOLS
-
+    65. CONCIERGE MAIN PAGE
+    66. TESTIMONIALS
+    67. PARTNER LOGOS
+    68. CONCIERGE ON LANDING PAGE
+    69. DESTINATIONS
 	
 
 */
@@ -102,10 +106,13 @@ body {
   --mansions-gold: #856d47;
   --mansions-green: #12271c;
   --mansions-dark:#141414;
-  
+  --dirty-white: rgb(245, 243, 236);
 }
 
 /* HTML TAGS */
+.scroll-content{
+  background-color: var(--dirty-white);
+}
 img {
   max-width: 100%;
 }
@@ -127,6 +134,9 @@ iframe {
 }
 .golden{
   color: var(--mansions-gold);
+}
+.gold-outline{
+  border: 5px solid var(--mansions-gold);
 }
 .gray{
   color: gray;
@@ -1272,7 +1282,7 @@ body .page-header {
   width: 20%;
   height: 80px;
   line-height: 80px;
-  background: white;
+  background-color: var(--dirty-white);
   position: absolute;
   left: auto;
   right: 0;
@@ -1848,14 +1858,14 @@ body .page-header {
   margin-right: 20px;
   padding: 0 5px;
   list-style: none;
-  border-bottom: 4px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 .events-tab .tab-nav li.active {
   border-color: var(--mansions-gold);
 }
 .events-tab .tab-nav li a {
   display: inline-block;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .events-tab .tab-item {
   width: 100%;
@@ -2075,7 +2085,7 @@ body .page-header {
   content: "";
   width: 100%;
   height: 240px;
-  background: var(--mansions-green);
+  background: var(--dirty-white);
   position: absolute;
   left: 0;
   top: 0;
@@ -3624,11 +3634,17 @@ select:-webkit-autofill:focus{
   justify-content: center;
 }
 .flex-item{
-  height: 15rem;
+  /* height: 15rem;
   width: 25rem;
   max-width: 30rem;
-  max-height: 15rem;
+  max-height: 15rem; */
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+}
+.flex-item img{
+  min-height: 100%;
+  min-width: 100%;
 }
 .flex-item-overlay{
   width: 100%;
@@ -3647,8 +3663,8 @@ select:-webkit-autofill:focus{
   text-align: center;
 }
 .flex-item-overlay h5{
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 1.5rem;
+  font-weight: 400;
   transition: all 0.3s ease;
   transform: translateY(3rem);
 }
@@ -3769,6 +3785,130 @@ label{
 .partner-img{
   max-height: 5rem;
   max-width: 7rem;
+}
+
+/* 68. CONCIERGE ON LANDING PAGE */
+.concierge-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 0;
+  color: white;
+}
+.concierge-emblem{
+  height: 7rem;
+  width: 7rem;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+.container svg{
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+}
+.up-corner{
+  top: 1rem;
+  left: 1rem;
+}
+.down-corner{
+  bottom: 1rem;
+  right: 1rem;
+  transform: rotateZ(180deg);
+}
+/* 69. DESTINATIONS */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: 
+    "one one two two three three"
+    "four four four four five five"
+    "six six seven seven seven seven"
+    "six six eight eight nine nine"
+    "ten ten ten ten eleven eleven"; 
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "one one one two two two three three three four four four"
+    "one one one five five five five five five four four four"
+    "one one one five five five five five five six six six"
+    "seven seven seven seven seven eight eight eight eight six six six"
+    "seven seven seven seven seven eight eight eight eight nine nine nine"
+    "ten ten ten ten eleven eleven eleven eleven eleven nine nine nine";
+  max-height: 700px;
+}
+
+.two { grid-area: two; }
+
+.three { grid-area: three; }
+
+.one { grid-area: one; }
+
+.five { grid-area: five; }
+
+.four { grid-area: four; }
+
+.six { grid-area: six; }
+
+.seven { grid-area: seven; }
+
+.eight { grid-area: eight; }
+
+.nine { grid-area: nine; }
+
+.ten { grid-area: ten; }
+
+.eleven { grid-area: eleven; }
+
+.grid-container>*{
+  min-height: 10rem;
+  color: white;
+}
+
+.destinations-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "jedan jedan jedan dva dva dva tri tri tri cetiri cetiri cetiri"
+    "jedan jedan jedan dva dva dva tri tri tri cetiri cetiri cetiri"
+    "jedan jedan jedan sest sest sest sest sest sest cetiri cetiri cetiri"
+    "pet pet pet sest sest sest sest sest sest osam osam osam"
+    "pet pet pet sedam sedam sedam sedam sedam sedam osam osam osam"
+    "pet pet pet sedam sedam sedam sedam sedam sedam osam osam osam";
+    max-height: 700px;
+}
+
+.jedan { grid-area: jedan; }
+
+.dva { grid-area: dva; }
+
+.tri { grid-area: tri; }
+
+.cetiri { grid-area: cetiri; }
+
+.pet { grid-area: pet; }
+
+.sest { grid-area: sest; }
+
+.sedam { grid-area: sedam; }
+
+.osam { grid-area: osam; }
+
+.destinations-grid-container>*{
+  min-height: 10rem;
+  color: white;
 }
 
 /* RESPONSIVE MEDIUM  */

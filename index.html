@@ -75,6 +75,7 @@
 </div>
 <!-- end page-transition -->
 <main id="main">
+  <!-- HAMBURGER NAVIGATION -->
   <nav class="hamburger-navigation">
     <div class="layer"></div>
     <!-- end layer -->
@@ -109,10 +110,12 @@
     </div>
     <!-- end container --> 
   </nav>
-  <!-- end hamburger-navigation -->
+  <!-- END HAMBURGER NAVIGATION -->
+
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="container">
-      <div class="logo"> <a href="index.html"><img src="img/mansions_logo_skupljeni_bijeli.png" alt="Image"></a> </div>
+      <div class="logo"> <a href="index.html"><img src="img/mansions_logo_skupljeni.png" alt="Image"></a> </div>
       <!-- end logo -->
       <div class="navbar-text"><p class='navbar-booking'>Booking  +385 99 8110 680</p> 
         <div class="nav-social social-nav"><div class="swiper-scrollbar" style="background: var(--mansions-gold)" style="height: 1px;"></div>
@@ -149,7 +152,9 @@
     </div>
     <!-- end container --> 
   </nav>
-  <!-- end navbar -->
+  <!-- END NAVBAR -->
+
+  <!-- MAIN IMAGE SLIDER -->
   <header class="slider">
     <div class="main-slider">
       <div class="swiper-wrapper">
@@ -231,8 +236,10 @@
     <div class="scroll-down"></div>
     <!-- end scroll-down --> 
   </header>
-  <!-- end slider -->
-  <section class="content-section no-spacing">
+  <!-- END MAIN IMAGE SLIDER -->
+
+  <!-- SEARCH -->
+  <section class="content-section no-spacing" data-background="var(--dirty-white)">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -286,9 +293,10 @@
   <!-- end content-section -->
   </section>
   <!-- end content-section -->
+  <!-- END SEARCH -->
 
   <!-- RECOMMENDED VILLAS -->
-  <section class="content-section">
+  <section class="content-section" data-background="var(--dirty-white)">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -355,9 +363,10 @@
     <!-- end container --> 
   </section>
   <!-- end content-section -->
+  <!-- END RECOMMENDED VILLAS -->
 
   <!-- ONE VILLA HIGHLIGHTED -->
-  <section class="content-section no-spacing">
+  <section class="content-section" data-background="var(--dirty-white)">
     <div class="container">
       <div class="row no-gutters align-items-center">
         <div class="col-12">
@@ -394,258 +403,297 @@
     <!-- end container --> 
   </section>
   <!-- end content-section -->
+  <!-- END ONE VILLA HIGHLIGHTED -->
 
   <!-- CONCIERGE SECTION -->
-  <section class="content-section no-spacing" data-background="var(--mansions-gold)">
+  <section class="content-section gold-outline" data-background="var(--mansions-green)">
     <div class="container">
+      <svg class="up-corner" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246.75 258"><defs><style>.cls-1{fill:none;stroke:#856d47;stroke-miterlimit:10;stroke-width:4px;}</style></defs><line class="cls-1" x1="47" y1="258" x2="47" y2="58"/><line class="cls-1" x1="2" y1="48" x2="246.75" y2="47.5"/><line class="cls-1" x1="2" y1="48" x2="2" y2="2"/><line class="cls-1" x1="48" y1="2" x2="2" y2="2"/><line class="cls-1" x1="48" y1="2" x2="48" y2="37"/></svg>
+      <svg class="down-corner" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246.75 258"><defs><style>.cls-1{fill:none;stroke:#856d47;stroke-miterlimit:10;stroke-width:4px;}</style></defs><line class="cls-1" x1="47" y1="258" x2="47" y2="58"/><line class="cls-1" x1="2" y1="48" x2="246.75" y2="47.5"/><line class="cls-1" x1="2" y1="48" x2="2" y2="2"/><line class="cls-1" x1="48" y1="2" x2="2" y2="2"/><line class="cls-1" x1="48" y1="2" x2="48" y2="37"/></svg>
       <div class="row no-gutters align-items-center">
-        <div class="col-lg-6">
-          <div class="side-content light text-left">
-            <h6>YOUR EVERY NEED CATERED TO</h6>
-            <h2>Concierge</h2>
-            <p>At Mansions, we pride ourselves 
-              on offering our guests full service. Our philosophy is 
-              simple: you desire, we deliver. Chose from a list of our services, or contact us for a more specific need.</p>
-            <a href="concierge.html" class="custom-button">FIND OUT MORE</a> </div>
-          <!-- end side-content --> 
-        </div>
-        <!-- end col-6 -->
-        <div class="col-lg-6">
-          <figure class="side-image right-align overlap-top reveal-effect"><img src="img/side-image03.jpg" alt="Image"></figure>
-        </div>
-        <!-- end col-6 --> 
-      </div>
-      <!-- end row --> 
-    </div>
-    <!-- end container --> 
-  </section>
-
-  <!-- DESTINATIONS -->
-  <section class="content-section" data-background="var(--mansions-green)">
-    <div class="container">
-      <div class="row">
         <div class="col-12">
-          <div class="section-title light">
-            <h6>PLAN YOUR HOLIDAYS & EXPLORE THE LUXURY OF</h6>
-            <h2>Mansions Croatia Destinations</h2>
+          <div class="section-title light text-center">
+            <h6>YOUR EVERY NEED CATERED TO</h6>
+            <h2>Mansions Concierge</h2>
           </div>
           <!-- end section-title --> 
+          <div class="row no-gutters align-items-center">
+            <img class="concierge-emblem" src="/img/mansions-logo.png" alt="">
+          </div>
+          <div class='concierge-text'>
+            <p>At Mansions, we pride ourselves 
+              on offering our guests full service. Our philosophy is 
+              simple: you desire, we deliver. Whether you need tickets to a sold out concert, 
+              want a personal chef, or wish to rent a private jet, we can help you. 
+              Chose from a list of our services, or contact us for a more specific need.</p>
+              <br>
+            <a href="concierge.html" class="custom-button">FIND OUT MORE</a> 
+          </div>
         </div>
         <!-- end col-12 -->
-        <div class="col-12">
-          <div class="events-tab">
-            <ul class="tab-nav">
-              <li class="active"><a href="#tab01">Accomodations</a></li>
-              <li><a href="#tab02">Destinations</a></li>
-            </ul>
-            <div id="tab01" class="tab-item active-item">
-              <div class="collage-flex">
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>Eco friendly</h5>
-                    <p>Eco Living - more than Green</p>
-                  </div>
-                  <img src="img/selection/Eco friendly Villas.jpg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>Signature Mansions</h5>
-                    <p>Unlock the unique personality of our properties </p>
-                  </div>
-                  <img src="img/selection/signature-villas.jpg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>Spa Retreat</h5>
-                    <p>Peaceful, luxurious with wellness space to relax </p>
-                  </div>
-                  <img src="img/selection/spa-retreat.jpg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>Heated Pool</h5>
-                    <p>365 chilling out all year round </p>
-                  </div>
-                  <img src="img/selection/Heated Pool Villas.jpg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>Seaside</h5>
-                    <p>Be spoilt for choice between your own pool and one step to the sea </p>
-                  </div>
-                  <img src="img/selection/Sea side.jfif" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>Rural</h5>
-                    <p>Surrounded by natural landscapes and Agri cultural and village atmosphere </p>
-                  </div>
-                  <img src="img/selection/Rural Villas.jpg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>Heritage</h5>
-                    <p>Stay in a unique piece of history </p>
-                  </div>
-                  <img src="img/selection/Heritage Villas.jpg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>High-Tech</h5>
-                    <p>Explore high standard of smart & home automatization </p>
-                  </div>
-                  <img src="img/selection/High Tech -Villa Korcula Diamond.jpg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>Pet friendly</h5>
-                    <p>Our selection of fantastic villas where pets are welcome </p>
-                  </div>
-                  <img src="img/selection/pet-friendly.jpg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>Secluded</h5>
-                    <p>This collection is jam packed with properties for a perfectly peaceful getaway with full privacy  </p>
-                  </div>
-                  <img src="img/selection/Secluded Villas.jpg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>For Families</h5>
-                    <p>Happy parents, happy kids</p>
-                  </div>
-                  <img src="img/selection/Kids friendly Villas.jpg" alt="">
-                </div>
-              </div>
-              <!-- end collage-grid --> 
-            </div>
-            <!-- end tab-item -->
-          
-            <div id="tab02" class="tab-item">
-              <div class="collage-flex">
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>ISTRA</h5>
-                    <p></p>
-                  </div>
-                  <img src="img/destinations/rovinj.jpeg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>KVARNER</h5>
-                    <p> </p>
-                  </div>
-                  <img src="img/destinations/losinj-vidikovac.jpeg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>OPATIJA</h5>
-                    <p></p>
-                  </div>
-                  <img src="img/destinations/opatija.jpeg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>KVARNER ISLANDS</h5>
-                    <p></p>
-                  </div>
-                  <img src="img/destinations/hvar1.jpeg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>NORTH DALMATIA</h5>
-                    <p> </p>
-                  </div>
-                  <img src="img/destinations/zadar.jpeg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>CENTRAL DALMATIA</h5>
-                    <p> </p>
-                  </div>
-                  <img src="img/destinations/split.jpg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>SOUTH DALMATIA</h5>
-                    <p></p>
-                  </div>
-                  <img src="img/destinations/dubrovnik1.jpeg" alt="">
-                </div>
-                <div class="flex-item">
-                  <div class="flex-item-overlay">
-                    <h5>DALMATIAN ISLANDS</h5>
-                    <p></p>
-                  </div>
-                  <img src="img/destinations/korcula.jpeg" alt="">
-                </div>
-                
-            </div>
-              <!-- end tab-item -->
-          </div>
-          <!-- end events-tab --> 
-        </div>
-        <!-- end col-12 --> 
       </div>
       <!-- end row --> 
     </div>
     <!-- end container --> 
   </section>
   <!-- end content-section -->
-
-<section class="content-section no-spacing">
-    <div class="rooms-slider">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
-          <div class="room-detail">
-            <div class="price-line"><span>STAY FROM</span> $60.00</div>
-            <h3><a href="room-detail.html">Deluxe Room</a></h3>
-            <div class="reviews">925 guest reviews <span>8.0</span></div>
-          </div> 
-          <!-- end room-detail --> 
-        </div>
-        <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
-          <div class="room-detail">
-            <div class="price-line"><span>STAY FROM</span> $60.00</div>
-            <h3><a href="room-detail.html">Deluxe Room</a></h3>
-            <div class="reviews">925 guest reviews <span>8.0</span></div>
-          </div>  
-          <!-- end room-detail --> 
-        </div>
-        <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
-          <div class="room-detail">
-            <div class="price-line"><span>STAY FROM</span> $60.00</div>
-            <h3><a href="room-detail.html">Deluxe Room</a></h3>
-            <div class="reviews">925 guest reviews <span>8.0</span></div>
-          </div>  
-          <!-- end room-detail --> 
-        </div>
-        <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
-          <div class="room-detail">
-            <div class="price-line"><span>STAY FROM</span> $60.00</div>
-            <h3><a href="room-detail.html">Deluxe Room</a></h3>
-            <div class="reviews">925 guest reviews <span>8.0</span></div>
-          </div>  
-          <!-- end room-detail --> 
-        </div>
-        <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
-          <div class="room-detail">
-            <div class="price-line"><span>STAY FROM</span> $60.00</div>
-            <h3><a href="room-detail.html">Deluxe Room</a></h3>
-            <div class="reviews">925 guest reviews <span>8.0</span></div>
-          </div>  
-          <!-- end room-detail --> 
-        </div>
-        <!-- end swiper-slide --> 
+  <!-- END CONCIERGE SECTION -->
+  
+  <!-- DESTINATIONS -->
+  <section class="content-section destinations" data-background="var(--dirty-white)">
+    <div class="container">
+      <div class="section-title">
+        <h6>PLAN YOUR HOLIDAYS & EXPLORE THE LUXURY OF</h6>
+        <h2>Mansions Croatia Destinations</h2>
       </div>
+      <!-- end section-title --> 
+      <div class="events-tab">
+        <ul class="tab-nav">
+          <li class="active"><a href="#tab01">Accomodations</a></li>
+          <li><a href="#tab02">Destinations</a></li>
+        </ul>
+        <div id="tab01" class="tab-item active-item">
+          <div class="grid-container">
+            <div class="two">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>Eco friendly</h5>
+                  <p>Eco Living - more than Green</p>
+                </div>
+                <img src="img/selection/Eco friendly Villas.jpg" alt="">
+              </div>
+            </div>
+            <div class="three">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>Heated Pool</h5>
+                  <p>365 chilling out all year round </p>
+                </div>
+                <img src="img/selection/Heated Pool Villas.jpg" alt="">
+              </div>
+            </div>
+            <div class="one">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>Spa Retreat</h5>
+                  <p>Peaceful, luxurious with wellness space to relax </p>
+                </div>
+                <img src="img/selection/spa-retreat.jpg" alt="">
+              </div>
+            </div>
+            <div class="five">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>Signature Mansions</h5>
+                  <p>Unlock the unique personality of our properties </p>
+                </div>
+                <img src="img/selection/signature-villas.jpg" alt="">
+              </div>
+            </div>
+            <div class="four">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>Seaside</h5>
+                  <p>Be spoilt for choice between your own pool and one step to the sea </p>
+                </div>
+                <img src="img/selection/Sea side.jfif" alt="">
+              </div>
+            </div>
+            <div class="six">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>Rural</h5>
+                  <p>Surrounded by natural landscapes and Agri cultural and village atmosphere </p>
+                </div>
+                <img src="img/selection/Rural Villas.jpg" alt="">
+              </div>
+            </div>
+            <div class="seven">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>Heritage</h5>
+                  <p>Stay in a unique piece of history </p>
+                </div>
+                <img src="img/selection/Heritage Villas.jpg" alt="">
+              </div>
+            </div>
+            <div class="eight">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>High-Tech</h5>
+                  <p>Explore high standard of smart & home automatization </p>
+                </div>
+                <img src="img/selection/High Tech -Villa Korcula Diamond.jpg" alt="">
+              </div>
+            </div>
+            <div class="nine">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>Pet friendly</h5>
+                  <p>Our selection of fantastic villas where pets are welcome </p>
+                </div>
+                <img src="img/selection/pet-friendly.jpg" alt="">
+              </div>
+            </div>
+            <div class="ten">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>Secluded</h5>
+                  <p>A perfectly peaceful getaway with full privacy  </p>
+                </div>
+                <img src="img/selection/Secluded Villas.jpg" alt="">
+              </div>
+            </div>
+            <div class="eleven">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>For Families</h5>
+                  <p>Happy parents, happy kids</p>
+                </div>
+                <img src="img/selection/Kids friendly Villas.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end tab-item -->
+
+        <div id="tab02" class="tab-item">
+          <div class="destinations-grid-container">
+            <div class="jedan">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>ISTRA</h5>
+                  <p></p>
+                </div>
+                <img src="img/destinations/rovinj.jpeg" alt="">
+              </div>
+            </div>
+            <div class="dva">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>KVARNER</h5>
+                  <p> </p>
+                </div>
+                <img src="img/destinations/losinj-vidikovac.jpeg" alt="">
+              </div>
+            </div>
+            <div class="tri">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>CENTRAL DALMATIA</h5>
+                  <p> </p>
+                </div>
+                <img src="img/destinations/split.jpg" alt="">
+              </div>
+            </div>
+            <div class="cetiri">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>KVARNER ISLANDS</h5>
+                  <p></p>
+                </div>
+                <img src="img/destinations/hvar1.jpeg" alt="">
+              </div>
+            </div>
+            <div class="pet">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>NORTH DALMATIA</h5>
+                  <p> </p>
+                </div>
+                <img src="img/destinations/zadar.jpeg" alt="">
+              </div>
+            </div>
+            <div class="sest">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>OPATIJA</h5>
+                  <p></p>
+                </div>
+                <img src="img/destinations/opatija.jpeg" alt="">
+              </div>
+            </div>
+            <div class="sedam">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>SOUTH DALMATIA</h5>
+                  <p></p>
+                </div>
+                <img src="img/destinations/dubrovnik1.jpeg" alt="">
+              </div>
+            </div>
+            <div class="osam">
+              <div class="flex-item">
+                <div class="flex-item-overlay">
+                  <h5>DALMATIAN ISLANDS</h5>
+                  <p></p>
+                </div>
+                <img src="img/destinations/korcula.jpeg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end tab-item -->
     </div>
-    <!-- end rooms-slider --> 
+    <!-- end container --> 
   </section>
   <!-- end content-section -->
+  <!-- END DESTINATIONS -->
 
+  <!-- LARGE SLIDER -->
+  <section class="content-section no-spacing" data-background="var(--dirty-white)">
+      <div class="rooms-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
+            <div class="room-detail">
+              <div class="price-line"><span>STAY FROM</span> $60.00</div>
+              <h3><a href="room-detail.html">Deluxe Room</a></h3>
+              <div class="reviews">925 guest reviews <span>8.0</span></div>
+            </div> 
+            <!-- end room-detail --> 
+          </div>
+          <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
+            <div class="room-detail">
+              <div class="price-line"><span>STAY FROM</span> $60.00</div>
+              <h3><a href="room-detail.html">Deluxe Room</a></h3>
+              <div class="reviews">925 guest reviews <span>8.0</span></div>
+            </div>  
+            <!-- end room-detail --> 
+          </div>
+          <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
+            <div class="room-detail">
+              <div class="price-line"><span>STAY FROM</span> $60.00</div>
+              <h3><a href="room-detail.html">Deluxe Room</a></h3>
+              <div class="reviews">925 guest reviews <span>8.0</span></div>
+            </div>  
+            <!-- end room-detail --> 
+          </div>
+          <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
+            <div class="room-detail">
+              <div class="price-line"><span>STAY FROM</span> $60.00</div>
+              <h3><a href="room-detail.html">Deluxe Room</a></h3>
+              <div class="reviews">925 guest reviews <span>8.0</span></div>
+            </div>  
+            <!-- end room-detail --> 
+          </div>
+          <div class="swiper-slide" data-background="img/1MansionsBorgheto.jpg">
+            <div class="room-detail">
+              <div class="price-line"><span>STAY FROM</span> $60.00</div>
+              <h3><a href="room-detail.html">Deluxe Room</a></h3>
+              <div class="reviews">925 guest reviews <span>8.0</span></div>
+            </div>  
+            <!-- end room-detail --> 
+          </div>
+          <!-- end swiper-slide --> 
+        </div>
+      </div>
+      <!-- end rooms-slider --> 
+  </section>
+  <!-- end content-section -->
+  <!-- END LARGE SLIDER -->
 
-    <section class="content-section" data-background="#f5f3ec">
+  <!-- TRANSPORTATION -->
+  <section class="content-section" data-background="var(--dirty-white)">
     <div class="container">
       <div class="row justify-content-center">
 		 <div class="col-12">
@@ -658,7 +706,7 @@
         <!-- end col-12 -->
 		  <div class="col-lg-4 col-md-6">
 		  	<div class="member-box">
-			  	<figure><a href="plane-charter.html"><img src="img/private-jet.jpg" alt="Image"></a>
+			  	<figure class="reveal-effect"><a href="plane-charter.html"><img src="img/private-jet.jpg" alt="Image"></a>
 				</figure>
 				<div class="content">
 					<h5>Private Aviation</h5>
@@ -670,7 +718,7 @@
 		  <!-- end col-4 -->
 		  <div class="col-lg-4 col-md-6">
 		  	<div class="member-box">
-			  	<figure><a href="yacht-charter.html"><img src="yachts/img/anthea1.jpg" alt="Image"></a>
+			  	<figure class="reveal-effect"><a href="yacht-charter.html"><img src="yachts/img/anthea1.jpg" alt="Image"></a>
 				</figure>
 				<div class="content">
 					<h5>Yacht Hire & Charter</h5>
@@ -682,7 +730,7 @@
 		  <!-- end col-4 --> 
 		  <div class="col-lg-4 col-md-6">
 		  	<div class="member-box">
-			  	<figure><a href="car-charter.html"><img src="img/mercedes-c-class-5.jpg" alt="Image"></a>
+			  	<figure class="reveal-effect"><a href="car-charter.html"><img src="img/mercedes-c-class-5.jpg" alt="Image"></a>
 				</figure>
 				<div class="content">
 					<h5>Premium Car Service</h5>
@@ -698,8 +746,10 @@
     <!-- end container --> 
   </section>
   <!-- end content-section -->
+  <!-- END TRANSPORTATION -->
 
-  <section class="content-section">
+  <!-- JOURNAL -->
+  <section class="content-section" data-background="var(--dirty-white)">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -750,8 +800,10 @@
     <!-- end container --> 
   </section>
   <!-- end content-section -->
+  <!-- END JOURNAL -->
 
-  <div class="container">
+  <!-- TESTIMONIALS -->
+  <div class="container" data-background="var(--dirty-white)">
     <div id="demo" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -778,10 +830,11 @@
         </div> <a class="carousel-control-prev" href="#demo" data-slide="prev"> <i class='fas fa-arrow-left' style="color: black;"></i> 
         </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <i class='fas fa-arrow-right' style="color: black;"></i> </a>
     </div>
-</div>
-<!--testimonials-->
+  </div>
+  <!-- END TESTIMONIALS -->
   
-  <section class="content-section">
+  <!-- NEWSLETTER -->
+  <section class="content-section" data-background="var(--dirty-white)">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -802,6 +855,7 @@
     <!-- end container --> 
   </section>
   <!-- end content-section -->
+  <!-- END NEWSLETTER -->
 
   <!-- PARTNER LOGOS -->
   <section class="partner-logos">
@@ -809,7 +863,9 @@
     <img class="partner-img" src="img/partners/gentlemans.png" alt="">
     <img class="partner-img" src="img/partners/storm.png" alt="">
   </section>
+  <!-- END PARTNER LOGOS -->
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="column">
@@ -857,7 +913,7 @@
     </div>
     <!-- end container --> 
   </footer>
-  <!-- end footer --> 
+  <!-- END FOOTER --> 
 </main>
 
 <!-- JS FILES --> 
