@@ -72,7 +72,13 @@ theme.
 		60. MOBILE DEVICE RESPONSIVE
     61. SIGNUP PAGE
     62. USER NAVBAR
-
+    63. COLLAGE DESTINATIONS
+    64. CONCIERGE SYMBOLS
+    65. CONCIERGE MAIN PAGE
+    66. TESTIMONIALS
+    67. PARTNER LOGOS
+    68. CONCIERGE ON LANDING PAGE
+    69. DESTINATIONS
 	
 
 */
@@ -99,9 +105,14 @@ body {
   -webkit-font-smoothing: antialiased;
   --mansions-gold: #856d47;
   --mansions-green: #12271c;
+  --mansions-dark:#141414;
+  --dirty-white: rgb(245, 243, 236);
 }
 
 /* HTML TAGS */
+.scroll-content{
+  background-color: var(--dirty-white);
+}
 img {
   max-width: 100%;
 }
@@ -112,6 +123,27 @@ strong {
 
 iframe {
   max-width: 100%;
+}
+
+.lni{
+  color: #fff;
+  size: 5rem;
+}
+.gold{
+  background-color: var(--mansions-gold);
+}
+.golden{
+  color: var(--mansions-gold);
+}
+.gold-outline{
+  border: 5px solid var(--mansions-gold);
+}
+.gray{
+  color: gray;
+}
+.welcome{
+  font-size: 3vw;
+  font-family: "Argesta Display";
 }
 
 /* LINKS */
@@ -738,6 +770,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   transition-delay: 1s;
   transition-delay: 1s;
 }
+
 .preloader .loadbar {
   width: 0%;
   height: 100%;
@@ -748,14 +781,15 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   left: 0;
   z-index: 2;
   overflow: hidden;
+
 }
 .preloader figure {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: fade 0.30s;
+
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.86, 0, 0.09, 1);
@@ -777,6 +811,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   display: inline-block;
   opacity: 0.05;
 }
+
 
 @keyframes fade {
   0% {
@@ -995,15 +1030,7 @@ body .page-header {
 .hamburger-navigation .nav-menu li a:hover {
   color: var(--mansions-gold);
 }
-.golden{
-  color:var(--mansions-gold);
-  transition: all 0.35s ease-in-out;
-  opacity: 1;
-  filter: none;
-}
-.golden:hover{
-  color: white;
-}
+
 /* HAMBURGER NAGIVATION ACTIVE */
 .hamburger-navigation-active .scroll-content {
   transform: translate3d(0px, 0px, 0px) !important;
@@ -1057,6 +1084,7 @@ body .page-header {
 }
 .navbar .logo {
   display: inline-block;
+  margin: 0 auto;
   -webkit-transition: all .35s ease-in-out;
   -moz-transition: all .30s ease-in-out;
   -ms-transition: all .30s ease-in-out;
@@ -1066,8 +1094,8 @@ body .page-header {
 .navbar .logo a {
   display: inline-block;
 }
-.navbar .logo a img {
-  height: 50px;
+.navbar .logo a img{
+  height: 4rem;
 }
 .navbar .navbar-text {
   display: inline-block;
@@ -1078,6 +1106,17 @@ body .page-header {
   -ms-transition: all .30s ease-in-out;
   -o-transition: all .30s ease-in-out;
   transition: all .30s ease-in-out;
+  text-align: center;
+}
+.navbar-booking{
+  margin: 0;
+}
+/* .navbar-text p{
+  border-bottom: 2px solid var(--mansions-gold);
+} */
+.navbar-text .nav-social{
+  display: flex;
+  justify-content: space-between;
 }
 .navbar .site-menu {
   display: inline-block;
@@ -1110,7 +1149,7 @@ body .page-header {
   text-decoration: none;
 }
 .navbar .hamburger-menu {
-  display: inline-block;
+  display: none;
   margin-left: auto;
 }
 
@@ -1243,7 +1282,7 @@ body .page-header {
   width: 20%;
   height: 80px;
   line-height: 80px;
-  background: white;
+  background-color: var(--dirty-white);
   position: absolute;
   left: auto;
   right: 0;
@@ -1256,7 +1295,7 @@ body .page-header {
 .slider .slider-prev {
   width: 80px;
   height: 80px;
-  background: #141414;
+  background: var(--mansions-gold);
   position: absolute;
   right: calc(20% + 82px);
   bottom: 0;
@@ -1286,7 +1325,7 @@ body .page-header {
 .slider .slider-next {
   width: 80px;
   height: 80px;
-  background: #141414;
+  background: var(--mansions-gold);
   position: absolute;
   right: 20%;
   bottom: 0;
@@ -1819,14 +1858,14 @@ body .page-header {
   margin-right: 20px;
   padding: 0 5px;
   list-style: none;
-  border-bottom: 4px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 .events-tab .tab-nav li.active {
   border-color: var(--mansions-gold);
 }
 .events-tab .tab-nav li a {
   display: inline-block;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .events-tab .tab-item {
   width: 100%;
@@ -2046,7 +2085,7 @@ body .page-header {
   content: "";
   width: 100%;
   height: 240px;
-  background: #141414;
+  background: var(--dirty-white);
   position: absolute;
   left: 0;
   top: 0;
@@ -3354,25 +3393,26 @@ body .page-header {
 .footer .bottom-bar {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 2rem;
   font-size: 14px;
   position: relative;
   margin-top: 50px;
 }
 .footer .bottom-bar:before {
   content: "";
-  width: calc(100% + 100px);
+  width: 100%;
   height: 1px;
   background: #fff;
   position: absolute;
   top: 0;
-  left: -50px;
+  left: 0;
   opacity: 0.2;
 }
 .footer .bottom-bar span {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
 }
 .footer .bottom-bar .footer-social {
   display: inline-block;
@@ -3384,10 +3424,34 @@ body .page-header {
   margin-left: 10px;
   padding: 0;
   list-style: none;
+  font-size: 0.8rem;
 }
 .footer .bottom-bar .footer-social li a {
   display: inline-block;
   color: #fff;
+}
+/* 68. FOOTER */
+footer .container{
+  display: flex;
+  justify-content: space-between;
+}
+footer h6{
+  border-bottom: 1px solid white;
+}
+footer ul{
+  list-style-type: none;
+  padding-inline-start: 0;
+  font-size: 1rem;
+}
+footer ul li{
+  margin: 0.5rem;
+}
+footer p{
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+footer a{
+  color: inherit;
 }
 
 /* SIGNUP PAGE */
@@ -3526,6 +3590,9 @@ body .page-header {
   width: 100%;
   overflow: scroll;
 }
+.carousel::-webkit-scrollbar {
+  display: none;
+}
 
 /* WEBKIT FORM AUTOFILL STYLE */
 input:-webkit-autofill,
@@ -3558,9 +3625,300 @@ select:-webkit-autofill:focus{
 }
 
 
+/* 63. COLLAGE DESTINATIONS */
+.collage-flex{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.flex-item{
+  /* height: 15rem;
+  width: 25rem;
+  max-width: 30rem;
+  max-height: 15rem; */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.flex-item img{
+  min-height: 100%;
+  min-width: 100%;
+}
+.flex-item-overlay{
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 1rem;
+  text-align: center;
+}
+.flex-item-overlay h5{
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  transform: translateY(3rem);
+}
+.flex-item-overlay p{
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.flex-item-overlay:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.flex-item img{
+  max-width: 150%;
+  width: 110%;
+  position: relative;
+  top: -100%;
+  left: 0;
+}
+.fade-up{
+  transform: translateY(-1rem);
+  opacity: 1 !important;
+}
+
+.move-up{
+  transform: translateY(0) !important;
+}
+
+.wide{
+  width: 40%;
+}
+.tall{
+  grid-row: span 2;
+}
+
+/* 64. CONCIERGE SYMBOLS */
+.concierge-services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.concierge-services .service{
+  max-width: 10rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+  margin: 0.5rem;
+  overflow: hidden;
+  background: white;
+  padding: 0.5rem;
+}
+.concierge-services .service:hover{
+  border: 1px solid var(--mansions-gold);
+}
+.concierge-services .symbol img{
+  width: 100%;
+}
+.concierge-services .service p{
+  font-size: 0.9rem;
+}
+
+/* 65. CONCIERGE INPUT FORM */
+ input[type=text], 
+ input[type=number],
+ select, 
+ textarea {
+  width: 100%;
+  border: 1px solid var(--mansions-gold);
+}
+label{
+    font-size: 14px;
+    margin-top: 1rem;
+    margin-bottom: 0;
+} 
+
+/* 66. TESTIMONIALS */
+.carousel-caption {
+  position: initial;
+  z-index: 10;
+  padding: 5rem 8rem;
+  color: rgba(78, 77, 77, 0.856);
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 2rem
+}
+.carousel-caption img {
+  width: 6rem;
+  border-radius: 5rem;
+  margin-top: 2rem
+}
+#image-caption {
+  font-style: normal;
+  font-size: 1rem;
+  margin-top: 0.5rem
+}
+.carousel-control-prev {
+  justify-content: flex-start
+}
+
+.carousel-control-next {
+  justify-content: flex-end
+}
+.carousel-control-prev,
+.carousel-control-next {
+  transition: none;
+  opacity: unset
+}
+
+/* 67. PARTNER LOGOS */
+.partner-logos{
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--mansions-gold);
+}
+.partner-img{
+  max-height: 5rem;
+  max-width: 7rem;
+}
+
+/* 68. CONCIERGE ON LANDING PAGE */
+.concierge-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 0;
+  color: white;
+}
+.concierge-emblem{
+  height: 7rem;
+  width: 7rem;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+.container svg{
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+}
+.up-corner{
+  top: 1rem;
+  left: 1rem;
+}
+.down-corner{
+  bottom: 1rem;
+  right: 1rem;
+  transform: rotateZ(180deg);
+}
+/* 69. DESTINATIONS */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: 
+    "one one two two three three"
+    "four four four four five five"
+    "six six seven seven seven seven"
+    "six six eight eight nine nine"
+    "ten ten ten ten eleven eleven"; 
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "one one one two two two three three three four four four"
+    "one one one five five five five five five four four four"
+    "one one one five five five five five five six six six"
+    "seven seven seven seven seven eight eight eight eight six six six"
+    "seven seven seven seven seven eight eight eight eight nine nine nine"
+    "ten ten ten ten eleven eleven eleven eleven eleven nine nine nine";
+  max-height: 700px;
+}
+
+.two { grid-area: two; }
+
+.three { grid-area: three; }
+
+.one { grid-area: one; }
+
+.five { grid-area: five; }
+
+.four { grid-area: four; }
+
+.six { grid-area: six; }
+
+.seven { grid-area: seven; }
+
+.eight { grid-area: eight; }
+
+.nine { grid-area: nine; }
+
+.ten { grid-area: ten; }
+
+.eleven { grid-area: eleven; }
+
+.grid-container>*{
+  min-height: 10rem;
+  color: white;
+}
+
+.destinations-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "jedan jedan jedan dva dva dva tri tri tri cetiri cetiri cetiri"
+    "jedan jedan jedan dva dva dva tri tri tri cetiri cetiri cetiri"
+    "jedan jedan jedan sest sest sest sest sest sest cetiri cetiri cetiri"
+    "pet pet pet sest sest sest sest sest sest osam osam osam"
+    "pet pet pet sedam sedam sedam sedam sedam sedam osam osam osam"
+    "pet pet pet sedam sedam sedam sedam sedam sedam osam osam osam";
+    max-height: 700px;
+}
+
+.jedan { grid-area: jedan; }
+
+.dva { grid-area: dva; }
+
+.tri { grid-area: tri; }
+
+.cetiri { grid-area: cetiri; }
+
+.pet { grid-area: pet; }
+
+.sest { grid-area: sest; }
+
+.sedam { grid-area: sedam; }
+
+.osam { grid-area: osam; }
+
+.destinations-grid-container>*{
+  min-height: 10rem;
+  color: white;
+}
 
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
+  .navbar .hamburger-menu {
+    display: inline-block;
+  }
+  .navbar .site-menu {
+    display: none;
+  }
   .hotel-search form .form-group {
     margin: 15px;
   }
@@ -4115,3 +4473,5 @@ select:-webkit-autofill:focus{
     margin-right: 10px;
   }
 }
+
+
