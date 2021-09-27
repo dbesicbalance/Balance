@@ -3811,8 +3811,8 @@ label{
   color: white;
 }
 .concierge-emblem{
-  height: 7rem;
-  width: 7rem;
+  height: 10rem;
+  width: 10rem;
   margin: 0 auto;
   opacity: 0.8;
 }
@@ -3825,10 +3825,21 @@ label{
   top: 1rem;
   left: 1rem;
 }
+.ur-corner{
+  transform: rotateZ(90deg);
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
 .down-corner{
   bottom: 1rem;
   right: 1rem;
   transform: rotateZ(180deg);
+}
+.dl-corner{
+  transform: rotateZ(270deg);
+  bottom: 1rem;
+  left: 1rem;
 }
 /* 69. DESTINATIONS */
 .grid-container {
