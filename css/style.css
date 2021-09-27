@@ -1150,7 +1150,8 @@ body .page-header {
 }
 .navbar .hamburger-menu {
   display: none;
-  margin-left: auto;
+  /* margin-left: auto; */
+  margin: 0 auto;
 }
 
 /* SLIDER */
@@ -3433,7 +3434,19 @@ body .page-header {
 /* 68. FOOTER */
 footer .container{
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+footer .outer-column{
+  display: flex;
   justify-content: space-between;
+  width: 50%;
+  min-width: 350px;
+}
+footer .column{
+  min-width: 10rem;
+  width: 50%;
+  margin: 0 1rem;
 }
 footer h6{
   border-bottom: 1px solid white;
@@ -3803,7 +3816,7 @@ label{
   margin: 0 auto;
   opacity: 0.8;
 }
-.container svg{
+.fancy-corners svg{
   position: absolute;
   height: 5rem;
   width: 5rem;
@@ -4290,6 +4303,10 @@ label{
   .footer .row div:first-child .widget-title {
     margin-top: 0;
   }
+
+  footer .container{
+    max-width: 100%;
+  }
 }
 /* RESPONSIVE MOBILE */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
@@ -4471,6 +4488,10 @@ label{
   .footer .bottom-bar .footer-social li {
     margin-left: 0;
     margin-right: 10px;
+  }
+  
+  footer .outer-column{
+    width: 100%;
   }
 }
 
