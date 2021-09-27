@@ -1891,7 +1891,7 @@ body .page-header {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--mansions-gold);
 }
 .content-tab .tab-nav li {
   height: 70px;
@@ -1900,11 +1900,11 @@ body .page-header {
   margin-right: 20px;
   padding: 0 25px;
   list-style: none;
-  border: 1px solid #eee;
+  border: 1px solid var(--mansions-gold);
   margin-bottom: -1px;
 }
 .content-tab .tab-nav li.active {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--dirty-white);
 }
 .content-tab .tab-nav li.active a {
   color: var(--mansions-gold);
@@ -3721,10 +3721,10 @@ select:-webkit-autofill:focus{
   max-width: 10rem;
   text-align: center;
   transition: all 0.3s ease;
-  border: 1px solid #eee;
+  border: 1px solid #cbcbcb;
   margin: 0.5rem;
   overflow: hidden;
-  background: white;
+  background: var(--dirty-white);
   padding: 0.5rem;
 }
 .concierge-services .service:hover{
