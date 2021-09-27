@@ -458,7 +458,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: #fff;
+  background: var(--dirty-white);
   padding: 0;
 }
 .accordion .card {
