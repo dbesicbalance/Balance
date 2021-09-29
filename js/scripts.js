@@ -576,21 +576,21 @@
 })(jQuery);
 
 
-// COLLAGE FADE UP TEXT
-const overlay = document.querySelectorAll('.flex-item-overlay');
-const gridItem = document.querySelectorAll('.grid-item-overlay');
+ // COLLAGE FADE UP TEXT
+ const overlay = document.querySelectorAll('.flex-item-overlay');
+ const gridItem = document.querySelectorAll('.grid-item-overlay');
 
-function collageAnimation (item){
- item.forEach(element => {
-  element.addEventListener('mouseenter',()=>{
-    element.children[0].classList.add('move-up');
-    element.children[1].classList.add('fade-up');
-  })
-  element.addEventListener('mouseleave',()=>{
-    element.children[0].classList.remove('move-up');
-    element.children[1].classList.remove('fade-up');
-  })
-}); 
+ function collageAnimation (item){
+  item.forEach(element => {
+   element.addEventListener('mouseenter',()=>{
+     element.children[0].classList.add('move-up');
+     element.children[1].classList.add('fade-up');
+   })
+   element.addEventListener('mouseleave',()=>{
+     element.children[0].classList.remove('move-up');
+     element.children[1].classList.remove('fade-up');
+   })
+  }); 
 }
 
 collageAnimation(overlay);
