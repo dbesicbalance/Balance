@@ -3947,6 +3947,10 @@ label{
   margin: 0 auto;
 }
 
+.concierge{
+  background: url(/img/quilted\ background\ WATERMARKED.jpeg);
+}
+
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
   .navbar .hamburger-menu {
