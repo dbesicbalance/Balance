@@ -1013,6 +1013,10 @@ body .page-header {
 .hamburger-navigation .nav-menu.mobile-menu {
   display: none;
 }
+.hamburger-navigation .nav-menu .logo{
+  width: 7rem;
+  margin: 1rem auto;
+}
 .hamburger-navigation .nav-menu li {
   width: 100%;
   display: block;
@@ -1029,6 +1033,10 @@ body .page-header {
 }
 .hamburger-navigation .nav-menu li a:hover {
   color: var(--mansions-gold);
+}
+
+.hamburger-navigation .nav-social .lni{
+  font-size: 1.5rem;
 }
 
 /* HAMBURGER NAGIVATION ACTIVE */
@@ -2377,12 +2385,14 @@ body .page-header {
   display: block;
 }
 .member-box .content {
-  width: calc(100% - 30px);
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.5);
-  margin-top: -30px;
+  width: 100%;
+  display: flex;
+  background: rgba(255, 255, 255);
   padding: 30px;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .member-box .content small {
   width: 100%;
@@ -2394,7 +2404,7 @@ body .page-header {
   display: block;
   font-size: 28px;
   font-family: "Argesta Display";
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   opacity: 0.7;
 }
 .member-box .content a {
