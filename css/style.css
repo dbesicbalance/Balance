@@ -3596,8 +3596,9 @@ footer a{
   -o-transition: all .30s ease-in-out;
   transition: all .30s ease-in-out;
 }
-.login-menu{
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+.login-menu .break-logo{
+  filter: invert(1);
+  opacity: 1;
 }
 .hamburger-navigation-active .hamburger-navigation .nav-user {
   opacity: 1;
@@ -3809,14 +3810,12 @@ label{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 3rem 0;
   opacity: 0.5;
 }
 .break-logo img{
   height: 6rem;
   padding: 0.5rem 0;
 }
-
 .break-logo::before,
 .break-logo::after{
   content:"";
@@ -3824,6 +3823,7 @@ label{
   height:1px;
   margin: 0 1rem;
   background-color:black;
+  opacity: 0.5;
 }
 
 /* 68. CONCIERGE ON LANDING PAGE */
@@ -3837,10 +3837,23 @@ label{
   color: white;
 }
 .concierge-emblem{
-  height: 10rem;
-  width: 10rem;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.concierge-emblem img{
+  height: 5rem;
+  width: 5rem;
   opacity: 0.8;
+}
+.concierge-emblem::before,
+.concierge-emblem::after{
+  content:"";
+  height: 1px;
+  width: 20%;
+  margin: 2rem;
+  background-color: var(--mansions-gold);
 }
 .fancy-corners svg{
   position: absolute;
@@ -3869,7 +3882,7 @@ label{
 }
 .concierge{
   background-color: var(--mansions-green);
-  background-image: url(/img/mansions-pattern-dark-spacing.svg);
+  background-image: url(/img/LOGO/logo-spacing-pattern.svg);
   background-size: 5rem;
   background-repeat: repeat;
 }
