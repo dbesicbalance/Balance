@@ -1929,7 +1929,7 @@ body .page-header {
   display: none;
   position: relative;
   overflow: hidden;
-  border: 1px solid #eee;
+  border: 1px solid var(--mansions-gold);
   border-top: none;
   padding: 50px;
 }
@@ -2723,7 +2723,6 @@ body .page-header {
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
-  border: 1px solid #eee;
   margin: 30px 0;
 }
 .room-info-box h6 {
