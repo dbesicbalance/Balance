@@ -3852,7 +3852,7 @@ label{
   left: 1rem;
 }
 .concierge{
-  background-color: #12271c;
+  background-color: var(--mansions-green);
   background-image: url(/img/mansions-pattern-dark-spacing.svg);
   background-size: 5rem;
   background-repeat: repeat;
