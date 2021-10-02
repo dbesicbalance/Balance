@@ -1103,7 +1103,7 @@ body .page-header {
   display: inline-block;
 }
 .navbar .logo a img{
-  height: 4rem;
+  height: 4.5rem;
 }
 .navbar .navbar-text {
   display: inline-block;
@@ -3647,7 +3647,6 @@ select:-webkit-autofill:focus{
   cursor: pointer;
 }
 
-
 /* 63. COLLAGE DESTINATIONS */
 .collage-flex{
   display: flex;
@@ -3804,6 +3803,7 @@ label{
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--mansions-gold);
+  margin-top: 100px;
 }
 .partner-img{
   max-height: 5rem;
@@ -3851,6 +3851,13 @@ label{
   bottom: 1rem;
   left: 1rem;
 }
+.concierge{
+  background-color: #12271c;
+  background-image: url(/img/mansions-pattern-dark-spacing.svg);
+  background-size: 5rem;
+  background-repeat: repeat;
+}
+
 /* 69. DESTINATIONS */
 .grid-container {
   display: grid;
@@ -3945,21 +3952,29 @@ label{
   color: white;
 }
 
-/* 70. LOGO DA SE VIDI */
-.concierge-emblem-large{
+/* 70. SECTION BREAK LOGO */
+
+.break-logo{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 3rem 0;
+  opacity: 0.5;
 }
-.concierge-emblem-large img{
-  height: 13rem;
-  margin: 0 auto;
+.break-logo img{
+  height: 6rem;
 }
 
-.concierge{
-  background: url(/img/quilted\ background\ WATERMARKED.jpeg);
+.break-logo::before,
+.break-logo::after{
+  content:"";
+  width: 10vw;
+  height:1px;
+  margin: 0 1rem;
+  background-color:black;
 }
+
 
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
