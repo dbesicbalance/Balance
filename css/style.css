@@ -104,6 +104,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   --mansions-gold: #856d47;
+  /* --mansions-green: #0d1b14; */
   --mansions-green: #12271c;
   --mansions-darkgreen: #0d1b14;
   --mansions-dark:#141414;
@@ -847,7 +848,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   position: absolute;
   left: 0;
   top: 0;
-  background: var(--mansions-green);
+  background: var(--mansions-darkgreen);
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.86, 0, 0.09, 1);
@@ -941,7 +942,7 @@ body .page-header {
 .hamburger-navigation .layer {
   width: 100%;
   height: 0;
-  background: var(--mansions-green);
+  background: var(--mansions-darkgreen);
   position: absolute;
   left: 0;
   top: 0;
