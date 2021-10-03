@@ -3911,6 +3911,18 @@ label{
   color: white;
 }
 
+/* 70. LOGO DA SE VIDI */
+.concierge-emblem-large{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.concierge-emblem-large img{
+  height: 13rem;
+  margin: 0 auto;
+}
+
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
   .navbar .hamburger-menu {
