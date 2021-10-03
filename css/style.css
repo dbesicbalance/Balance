@@ -3882,7 +3882,7 @@ label{
 }
 .concierge{
   background-color: var(--mansions-green);
-  background-image: url(/img/LOGO/logo-nospacing-pattern.svg);
+  background-image: url(/img/LOGO/logo-spacing-pattern.svg);
   background-size: 5rem;
   background-repeat: repeat;
 }
@@ -3979,18 +3979,6 @@ label{
 .destinations-grid-container>*{
   min-height: 10rem;
   color: white;
-}
-
-/* 70. LOGO DA SE VIDI */
-.concierge-emblem-large{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.concierge-emblem-large img{
-  height: 13rem;
-  margin: 0 auto;
 }
 
 /* RESPONSIVE MEDIUM  */
@@ -4563,6 +4551,4 @@ label{
     width: 100%;
   }
 }
-
-
 
