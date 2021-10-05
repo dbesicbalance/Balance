@@ -79,6 +79,7 @@ theme.
     67. PARTNER LOGOS
     68. CONCIERGE ON LANDING PAGE
     69. DESTINATIONS
+    70. ABOUT US
 	
 
 */
@@ -146,6 +147,10 @@ iframe {
 .welcome{
   font-size: 3vw;
   font-family: "Argesta Display";
+}
+
+.gold-frame{
+  border: 2px solid var(--mansions-gold);
 }
 
 /* LINKS */
@@ -3672,10 +3677,6 @@ select:-webkit-autofill:focus{
   justify-content: center;
 }
 .flex-item{
-  /* height: 15rem;
-  width: 25rem;
-  max-width: 30rem;
-  max-height: 15rem; */
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -3995,6 +3996,64 @@ label{
 .destinations-grid-container>*{
   min-height: 10rem;
   color: white;
+}
+
+/* 70. ABOUT US */
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 0;
+}
+.about-text{
+  min-width: 30rem;
+  max-width: 40rem;
+  width: 50vw;
+  padding: 2rem;
+}
+.about-image{
+  width: 40vw; 
+  height: 40vw;
+  max-width: 40rem;
+  display: grid;
+}
+.about-image figure{
+  margin: 0; 
+  height: 100%;
+}
+
+.reverse{
+  flex-wrap: wrap-reverse;
+}
+
+.small-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "top top"
+    "left right";
+}
+
+.top { 
+  grid-area: top; 
+  /* max-height: 20vw; */
+  overflow: hidden;
+}
+
+.left { 
+  grid-area: left; 
+  /* max-height: 20vw; */
+  overflow: hidden;
+}
+
+.right { 
+  grid-area: right; 
+  /* max-height: 20vw; */
+  overflow: hidden;
 }
 
 /* RESPONSIVE MEDIUM  */
@@ -4380,6 +4439,19 @@ label{
   footer .container{
     max-width: 100%;
   }
+
+  .about-text{
+    width: 100%;
+  }
+
+  .about-image{
+    width: 100%;
+    /* 
+      HEIGHT TREBA BITI ISTI KOLIKO I WIDTH 
+      JS ili VW umjesto 100%
+    */
+    
+  }
 }
 /* RESPONSIVE MOBILE */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
@@ -4565,6 +4637,14 @@ label{
   
   footer .outer-column{
     width: 100%;
+  }
+
+  .about-text{
+    min-width:initial;
+  }
+
+  .about-image{
+    min-width: initial;
   }
 }
 
