@@ -106,8 +106,10 @@ body {
   -webkit-font-smoothing: antialiased;
   --mansions-gold: #856d47;
   /* --mansions-green: #0d1b14; */
-  --mansions-green: #12271c;
-  --mansions-darkgreen: #0d1b14;
+  /* --mansions-green: #12271c; */
+  --mansions-green: #001d18;
+  --mansions-darkgreen: #001d18;
+  /* --mansions-darkgreen: #0d1b14; */
   --mansions-dark:#141414;
   --dirty-white: rgb(245, 243, 236);
 }
@@ -2959,7 +2961,7 @@ body .page-header {
   width: 90%;
 }
 .contact-form textarea {
-  width: 100%;
+  width: 90%;
 }
 
 /* CONTACT BOX*/
@@ -3903,7 +3905,9 @@ label{
   background-size: 5rem;
   background-repeat: repeat;
 }
-
+.talent-needed p{
+  padding: 0 1rem;
+}
 /* 69. DESTINATIONS */
 .grid-container {
   display: grid;
@@ -4222,6 +4226,10 @@ label{
   .contact-form input[type="text"] {
     width: 100%;
   }
+  
+  .contact-form textarea {
+    width: 100%;
+  }
 
   .custom-button {
     height: 70px;
@@ -4446,11 +4454,6 @@ label{
 
   .about-image{
     width: 100%;
-    /* 
-      HEIGHT TREBA BITI ISTI KOLIKO I WIDTH 
-      JS ili VW umjesto 100%
-    */
-    
   }
 }
 /* RESPONSIVE MOBILE */

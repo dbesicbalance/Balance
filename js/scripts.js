@@ -595,3 +595,19 @@
 
 collageAnimation(overlay);
 collageAnimation(gridItem);
+
+// ABOUT US SQUARE IMAGES
+const aboutImage = document.querySelectorAll('.about-image');
+
+
+
+window.addEventListener('load', ()=>{
+  aboutImage.forEach(element => {
+    element.style.height = element.offsetWidth + 'px';
+    console.log('width: ' + element.offsetWidth);
+  })});
+window.addEventListener('resize', ()=>{
+  aboutImage.forEach(element => {
+    element.style.height = element.offsetWidth + 'px';
+    console.log('width: ' + element.offsetWidth);
+  })});
