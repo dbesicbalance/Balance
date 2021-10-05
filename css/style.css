@@ -1095,11 +1095,8 @@ body .page-header {
   display: inline-block;
 }
 .navbar .logo a img{
-<<<<<<< Updated upstream
-  height: 4rem;
-=======
-  height: 100px;
->>>>>>> Stashed changes
+ height: 100px;
+
 }
 .navbar .navbar-text {
   display: inline-block;
