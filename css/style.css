@@ -91,6 +91,11 @@ theme.
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'PinyonScript-Regular';
+  src: url("../fonts/PinyonScript-Regular.ttf");
+  font-style: normal;
+}
 * {
   outline: none !important;
 }
@@ -112,6 +117,7 @@ body {
   /* --mansions-darkgreen: #0d1b14; */
   --mansions-dark:#141414;
   --dirty-white: rgb(245, 243, 236);
+  --dirty-white-dark: rgb(221, 219, 210);
 }
 
 /* HTML TAGS */
@@ -150,9 +156,18 @@ iframe {
   font-size: 3vw;
   font-family: "Argesta Display";
 }
-
 .gold-frame{
   border: 2px solid var(--mansions-gold);
+}
+.slogan{
+  font-family: 'PinyonScript-Regular';
+  font-size: 3rem;
+}
+.disabled{
+  display: none !important;
+}
+.hidden{
+  opacity: 0 !important;
 }
 
 /* LINKS */
@@ -1090,7 +1105,7 @@ body .page-header {
   opacity: 0;
 }
 
-/* NAVBAR */
+/* 18. NAVBAR */
 .navbar {
   width: 100%;
   display: flex;
@@ -1131,9 +1146,6 @@ body .page-header {
 .navbar-booking{
   margin: 0;
 }
-/* .navbar-text p{
-  border-bottom: 2px solid var(--mansions-gold);
-} */
 .navbar-text .nav-social{
   display: flex;
   justify-content: space-between;
@@ -1168,9 +1180,33 @@ body .page-header {
 .navbar .site-menu ul li a:hover {
   text-decoration: none;
 }
+
+.navbar .language-icon{
+  color: white;
+}
+.language-list{
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--dirty-white);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.navbar .site-menu .language-list li{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+.language-list li:hover{
+  background-color: var(--dirty-white-dark);
+  color: var(--mansions-gold)
+}
+.language img{
+  width: 2rem;
+}
+
 .navbar .hamburger-menu {
   display: none;
-  /* margin-left: auto; */
   margin: 0 auto;
 }
 
@@ -1303,13 +1339,13 @@ body .page-header {
   width: 20%;
   height: 80px;
   line-height: 80px;
-  background-color: var(--dirty-white);
+  background-color: var(--mansions-green);
   position: absolute;
   left: auto;
   right: 0;
   bottom: 0;
   z-index: 1;
-  color: black;
+  color: var(--mansions-gold);
   font-family: "Argesta Display";
   font-size: 22px;
 }

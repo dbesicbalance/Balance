@@ -599,8 +599,6 @@ collageAnimation(gridItem);
 // ABOUT US SQUARE IMAGES
 const aboutImage = document.querySelectorAll('.about-image');
 
-
-
 window.addEventListener('load', ()=>{
   aboutImage.forEach(element => {
     element.style.height = element.offsetWidth + 'px';
@@ -611,3 +609,21 @@ window.addEventListener('resize', ()=>{
     element.style.height = element.offsetWidth + 'px';
     console.log('width: ' + element.offsetWidth);
   })});
+
+// LANGUAGE SELECT SHOW-HIDE
+const languageIcon = document.querySelector('.language-icon');
+const languageList = document.querySelector('.language-list');
+
+languageIcon.addEventListener('click',()=>{
+  languageList.classList.toggle('disabled');
+  setTimeout(() => {
+    languageList.classList.toggle('hidden');
+  }, 50);
+})
+
+document.addEventListener('mouseup',()=>{
+  if(!languageList.classList.contains('disabled')){
+      languageList.classList.add('disabled');
+  languageList.classList.add('hidden');
+  }
+});
