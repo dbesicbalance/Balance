@@ -1095,7 +1095,11 @@ body .page-header {
   display: inline-block;
 }
 .navbar .logo a img{
+<<<<<<< Updated upstream
   height: 4rem;
+=======
+  height: 100px;
+>>>>>>> Stashed changes
 }
 .navbar .navbar-text {
   display: inline-block;
@@ -1282,7 +1286,7 @@ body .page-header {
   width: 20%;
   height: 80px;
   line-height: 80px;
-  background-color: var(--dirty-white);
+  background-color: var(--mansions-green);
   position: absolute;
   left: auto;
   right: 0;
