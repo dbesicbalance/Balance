@@ -1189,13 +1189,13 @@ body .page-header {
   position: absolute;
   background-color: var(--dirty-white);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .navbar .site-menu .language-list li{
   width: 100%;
   padding: 0.5rem 1rem;
   margin: 0;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .language-list li:hover{
   background-color: var(--dirty-white-dark);
@@ -1222,8 +1222,7 @@ body .page-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .language-list-hamburger li{
-  /* margin: 0.5rem; */
-  transition: 0.3s ease;
+  transition: 0.2s ease;
   font-family: 'ArgestaDisplay';
 }
 .language-list-hamburger li:hover{
@@ -3772,10 +3771,12 @@ select:-webkit-autofill:focus{
   font-weight: 400;
   transition: all 0.3s ease;
   transform: translateY(3rem);
+  text-transform: uppercase;
 }
 .flex-item-overlay p{
   opacity: 0;
   transition: all 0.3s ease;
+  font-size: 1rem;
 }
 .flex-item-overlay:hover{
   background-color: rgba(0, 0, 0, 0.7);

@@ -623,8 +623,10 @@ languageIcon.addEventListener('click',()=>{
 
 document.addEventListener('mouseup',()=>{
   if(!languageList.classList.contains('disabled')){
-    languageList.classList.add('disabled');
     languageList.classList.add('hidden');
+    setTimeout(() => {
+      languageList.classList.add('disabled');
+    }, 300);
   }
 });
 
