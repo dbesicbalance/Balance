@@ -649,23 +649,3 @@ document.addEventListener('mouseup',()=>{
     }, 300);
   }
 });
-
-// SERVICE SELECT SHOW-HIDE
-const serviceShowButton = document.querySelector('.service-show-button');
-const serviceHideButton = document.querySelector('.service-hide-button');
-const serviceSelectTab = document.querySelector('.service-select-tab');
-
-serviceShowButton.addEventListener('click',()=>{
-  serviceSelectTab.classList.remove('disabled');
-  setTimeout(() => {
-    serviceSelectTab.classList.remove('hidden');
-  }, 50);
-})
-serviceHideButton.addEventListener('click',()=>{
-  serviceSelectTab.classList.add('hidden');
-  setTimeout(() => {
-    serviceSelectTab.classList.add('disabled');
-  }, 50);
-})
-
-
