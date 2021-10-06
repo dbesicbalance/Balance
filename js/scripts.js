@@ -623,7 +623,27 @@ languageIcon.addEventListener('click',()=>{
 
 document.addEventListener('mouseup',()=>{
   if(!languageList.classList.contains('disabled')){
-      languageList.classList.add('disabled');
-  languageList.classList.add('hidden');
+    languageList.classList.add('disabled');
+    languageList.classList.add('hidden');
+  }
+});
+
+// LANGUAGE SELECT SHOW-HIDE (HAMBURGER-MENU)
+const languageText = document.querySelector('.language-text');
+const languageListHamburger = document.querySelector('.language-list-hamburger');
+
+languageText.addEventListener('click',()=>{
+  languageListHamburger.classList.toggle('disabled');
+  setTimeout(() => {
+    languageListHamburger.classList.toggle('hidden');
+  }, 50);
+})
+
+document.addEventListener('mouseup',()=>{
+  if(!languageListHamburger.classList.contains('disabled')){
+    languageListHamburger.classList.add('hidden');
+    setTimeout(() => {
+      languageListHamburger.classList.add('disabled');
+    }, 300);
   }
 });
