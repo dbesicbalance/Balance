@@ -254,7 +254,7 @@ input[type="checkbox"] {
   height: 18px;
   display: inline-block;
   margin-right: 4px;
-  transform: translateY(3px);
+  /* transform: translateY(3px); */
   appearance: none;
   background: #ededed;
 }
@@ -3822,23 +3822,99 @@ select:-webkit-autofill:focus{
   justify-content: center;
 }
 .concierge-services .service{
-  max-width: 10rem;
+  width: 8rem;
+  height: 10rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   transition: all 0.3s ease;
   border: 1px solid #cbcbcb;
   margin: 0.5rem;
   overflow: hidden;
   background: var(--dirty-white);
   padding: 0.5rem;
+  padding-top: 0;
 }
 .concierge-services .service:hover{
   border: 1px solid var(--mansions-gold);
 }
+
+.concierge-services .symbol{
+  width: 7rem;
+  height: 7rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .concierge-services .symbol img{
-  width: 100%;
+  width: 120%;
+  max-width: initial;
 }
 .concierge-services .service p{
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+.service-show-button{
+  /* background-color: white;
+  border: 1px solid var(--mansions-gold); */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;;
+}
+.service-select-tab{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dirty-white);
+  border: 1px solid var(--mansions-gold);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  transition: all 0.2s ease;
+}
+.service-select-tab h2{
+  width: 100%;
+  text-align: center;
+}
+.service-select-tab .service-container{
+  width: 33%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.service-select-tab .service-container label{
+  margin: 0;
+}
+
+.service-select-tab .custom-button{
+  margin: 1rem auto;
+}
+
+/* TEST SA LISTOM UMJESTO KARTICA */
+.service-card{
+  width: 15rem;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid var(--mansions-gold);
+}
+.service-card p{
+  margin: 0 1rem !important;
+}
+.service-card img{
+  height: 4rem;
 }
 
 /* 65. CONCIERGE INPUT FORM */
@@ -4454,6 +4530,23 @@ label{
 
   .content-tab .tab-item .col-lg-4.col-md-6 {
     margin-bottom: 30px;
+  }
+
+  .content-tab .tab-item.active-item {
+    padding: 0.5rem;
+  }
+
+  .concierge-services .service{
+    width: 5rem;
+    height: 7rem;
+  }
+
+  .concierge-services .symbol img{
+    width: 80%;
+  }
+
+  .concierge-services .service p{
+    font-size: 0.5rem;
   }
 
   .video-box {
