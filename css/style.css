@@ -1020,6 +1020,9 @@ body .page-header {
   color: #fff;
   font-size: 14px;
 }
+.language-text img{
+  height: 3vw;
+}
 .hamburger-navigation .nav-menu {
   width: 100%;
   display: inline-block;
@@ -1183,6 +1186,7 @@ body .page-header {
 
 .navbar .language-icon{
   color: white;
+  height: 1.5rem;
 }
 .language-list{
   flex-direction: column;
@@ -4542,6 +4546,10 @@ label{
     font-size: 6vw;
   }
 
+  .language-text img{
+    height: 6vw;
+  }
+  
   .page-header .container h1 {
     font-size: 10vw;
   }
