@@ -3025,12 +3025,19 @@ body .page-header {
   display: block;
 }
 .contact-form input[type="text"] {
-  width: 90%;
+  width: 100%;
 }
 .contact-form textarea {
-  width: 90%;
+  width: 100%;
 }
-
+.contact-form .half{
+  width: 50% !important;
+}
+.double{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
 /* CONTACT BOX*/
 .contact-box {
   width: 100%;
@@ -4549,7 +4556,7 @@ label{
   .language-text img{
     height: 6vw;
   }
-  
+
   .page-header .container h1 {
     font-size: 10vw;
   }
