@@ -2468,17 +2468,24 @@ body .page-header {
 .member-box .content {
   width: 100%;
   display: flex;
-  background: rgba(255, 255, 255);
+  background: var(--mansions-gold);
   padding: 30px;
   position: relative;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+
 .member-box .content small {
   width: 100%;
   display: block;
   margin-bottom: 5px;
+}
+.member-box .content h6 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 .member-box .content h5 {
   width: 100%;
@@ -2487,6 +2494,7 @@ body .page-header {
   font-family: "Argesta Display";
   /* margin-bottom: 25px; */
   opacity: 0.7;
+  color: white;
 }
 .member-box .content a {
   display: inline-block;
@@ -2494,6 +2502,17 @@ body .page-header {
   color: var(--mansions-gold);
   font-weight: 600;
   font-size: 15px;
+}
+.member-box .custom-button{
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--mansions-gold);
+  background-color: white;
+  border: 1px solid var(--mansions-gold);
 }
 
 /* VIDEO BOX */
@@ -3491,6 +3510,7 @@ body .page-header {
 .footer .bottom-bar {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 2rem;
   font-size: 14px;
