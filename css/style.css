@@ -3871,14 +3871,37 @@ select:-webkit-autofill:focus{
 }
 
 /* TEST SA MALIM KARTICAMA */
+.services-outer-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 .service-card{
   width: 7rem;
-  height: 9rem;
+  height: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   border: 1px solid var(--mansions-gold);
+}
+.service-symbol{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-symbol img{
+  max-width: initial;
+  width: 120%;
+}
+.service-name p{
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 
@@ -4787,6 +4810,19 @@ label{
 
   .about-image{
     min-width: initial;
+  }
+
+  /* CONCIERGE KARTICE */
+  .service-card{
+    width: 6rem;
+    height: 6rem;
+  }
+  .service-symbol img{
+    width: 100%;
+  }
+  .service-name p{
+    font-size: 0.7rem;
+    line-height: 1rem;
   }
 }
 
