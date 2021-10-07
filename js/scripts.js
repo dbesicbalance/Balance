@@ -614,21 +614,21 @@ window.addEventListener('resize', ()=>{
 const languageIcon = document.querySelector('.language-icon');
 const languageList = document.querySelector('.language-list');
 
-languageIcon.addEventListener('click',()=>{
-  languageList.classList.toggle('disabled');
-  setTimeout(() => {
-    languageList.classList.toggle('hidden');
-  }, 50);
-})
-
-document.addEventListener('mouseup',()=>{
-  if(!languageList.classList.contains('disabled')){
+document.addEventListener('mouseup',(e)=>{
+  if(e.target.classList.contains('language-icon')){
+    languageList.classList.toggle('disabled');
+    setTimeout(() => {
+      languageList.classList.toggle('hidden');
+    }, 50);
+  } else if(!e.target.classList.contains('language-icon')){
     languageList.classList.add('hidden');
     setTimeout(() => {
-      languageList.classList.add('disabled');
+    languageList.classList.add('disabled');
     }, 300);
   }
 });
+
+
 
 // LANGUAGE SELECT SHOW-HIDE (HAMBURGER-MENU)
 const languageText = document.querySelector('.language-text');
