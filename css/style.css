@@ -1229,25 +1229,32 @@ body .page-header {
   left: 0;
   list-style-type: none;
   color: white;
-  font-size: 2rem;
+  font-size: 3vw;
   background-color: var(--mansions-green);
   transition: all 0.3s ease;
   padding: 0 !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
 }
 .language-list-hamburger li{
   transition: 0.2s ease;
   font-family: 'ArgestaDisplay';
+  font-size: 2rem;
 }
 .language-list-hamburger li:hover{
   color:var(--mansions-gold);
 }
 
 .language-list-hamburger img{
-  height: 3vw;
+  height: 2rem;
   margin-right: 0.5rem;
 }
+.languages-container{
+  padding: 1rem 30%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 
 .language-flag img{
   width: 2rem;
@@ -4658,6 +4665,10 @@ label{
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .hamburger-navigation-active .hamburger-navigation .container {
     padding-top: 50px;
+  }
+
+  .nav-user{
+    width: 100%;
   }
 
   .hamburger-navigation .info-box {
