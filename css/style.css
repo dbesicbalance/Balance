@@ -1196,6 +1196,11 @@ body .page-header {
   background-color: var(--dirty-white);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease;
+  transform: translateX(-1rem);
+}
+.language-list img{
+  height: 1.5rem;
+  margin-right: 0.5rem;
 }
 .navbar .site-menu .language-list li{
   width: 100%;
@@ -1206,6 +1211,10 @@ body .page-header {
 .language-list li:hover{
   background-color: var(--dirty-white-dark);
   color: var(--mansions-gold)
+}
+.language{
+  display: flex !important;
+  align-items: center;
 }
 
 .language-list-hamburger{
@@ -1234,6 +1243,12 @@ body .page-header {
 .language-list-hamburger li:hover{
   color:var(--mansions-gold);
 }
+
+.language-list-hamburger img{
+  height: 3vw;
+  margin-right: 0.5rem;
+}
+
 .language-flag img{
   width: 2rem;
 }
