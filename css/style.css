@@ -1217,6 +1217,8 @@ body .page-header {
   align-items: center;
 }
 
+/* HAMBURGER LANGUAGE */
+
 .language-list-hamburger{
   display: flex;
   flex-direction: column;
@@ -1238,8 +1240,8 @@ body .page-header {
 }
 .language-list-hamburger li{
   transition: 0.2s ease;
-  font-family: 'ArgestaDisplay';
-  font-size: 2rem;
+  font-family: 'Argesta Display';
+  font-size: 3vw;
 }
 .language-list-hamburger li:hover{
   color:var(--mansions-gold);
@@ -4681,6 +4683,9 @@ label{
 
   .language-text img{
     height: 6vw;
+  }
+  .language-list-hamburger li{
+    font-size: 6vw;
   }
 
   .page-header .container h1 {
