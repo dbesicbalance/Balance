@@ -3779,9 +3779,12 @@ select:-webkit-autofill:focus{
   height: 100%;
   overflow: hidden;
 }
-.flex-item img{
-  min-height: 100%;
-  min-width: 100%;
+.flex-item .image-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .flex-item-overlay{
   width: 100%;
@@ -3815,11 +3818,19 @@ select:-webkit-autofill:focus{
   background-color: rgba(0, 0, 0, 0.7);
 }
 .flex-item img{
-  max-width: 150%;
-  width: 110%;
+  /* max-width: 150%;
+  width: 110%; */
   position: relative;
   top: -100%;
   left: 0;
+  max-height: initial;
+  max-width: initial;
+}
+.tall{
+  height: 100%;
+}
+.wide{
+  width: 100%;
 }
 .fade-up{
   transform: translateY(-1rem);
@@ -3828,13 +3839,6 @@ select:-webkit-autofill:focus{
 
 .move-up{
   transform: translateY(0) !important;
-}
-
-.wide{
-  width: 40%;
-}
-.tall{
-  grid-row: span 2;
 }
 
 /* 64. CONCIERGE SYMBOLS */
