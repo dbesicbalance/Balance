@@ -633,8 +633,10 @@ document.addEventListener('mouseup',(e)=>{
 // LANGUAGE SELECT SHOW-HIDE (HAMBURGER-MENU)
 const languageText = document.querySelector('.language-text');
 const languageListHamburger = document.querySelector('.language-list-hamburger');
+const navMenu = document.querySelector('#hamburger-nav-menu');
 
 languageText.addEventListener('click',()=>{
+  navMenu.classList.toggle('disabled');
   languageListHamburger.classList.toggle('disabled');
   setTimeout(() => {
     languageListHamburger.classList.toggle('hidden');
@@ -646,6 +648,7 @@ document.addEventListener('mouseup',()=>{
     languageListHamburger.classList.add('hidden');
     setTimeout(() => {
       languageListHamburger.classList.add('disabled');
+      navMenu.classList.remove('disabled');
     }, 300);
   }
 });
