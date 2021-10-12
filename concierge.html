@@ -59,48 +59,54 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-
 </head>
+
 <body>
 <div class="cursor js-cursor"></div>
-<div class="preloader" >
+<!-- PRELOADER -->
+<div class="preloader">
   <div class="loadbar"></div>
   <!-- end loadbar -->
-  <figure style="background-image: url(img/mansions-logo-pattern1.png); opacity: 0.05;"> <span>MANSIONS CROATIA</span>  </figure>
+  <figure style="background: url(img/LOGO/logo-text-dark-preloader.svg) no-repeat center/200px 200px;"></figure>
 </div>
-<!-- end preloader -->
+<!-- END PRELOADER -->
+<!-- PAGE TRANSITION ANIMATION -->
 <div class="page-transition">
+  <!-- BLACK LAYER TRANSITION -->
   <div class="layer"></div>
-  <!-- end layer --> 
+  <!-- END BLACK LAYER TRANSITION --> 
 </div>
-<!-- end page-transition -->
+<!-- END PAGE TRANSITION ANIMATION -->
+
 <main id="main">
-  <!-- HAMBURGER NAVIGATION -->
+  <!-- HAMBURGER NAVIGATION MENU -->
   <nav class="hamburger-navigation">
     <div class="layer"></div>
     <!-- end layer -->
-        <!-- Log-In / Welcome User -->
-        <div class="container">
-          <div class="nav-user">
-            <ul class="nav-menu login-menu">
-              <li>
-                <div class="break-logo">
-                  <a href="index.html"><img src="/img/LOGO/logo-text-dark.svg" alt=""></a>
-                </div>              
-              </li>
-            </ul>
-          </div>
-          <!-- end Log-In / Welcome User -->
+    <div class="container">
+      <!-- LOGO / ex-user-login -->
+      <div class="nav-user">
+        <ul class="nav-menu login-menu">
+          <li>
+            <div class="break-logo">
+              <a href="index.html"><img src="img/LOGO/logo-text.svg" alt=""></a>
+            </div>              
+          </li>
+        </ul>
+      </div>
+      <!-- END LOGO / ex-user-login -->
       <ul class="nav-menu">
-        <li><a href="quardo.html">Collections</a></li>
-        <li><a href="special-offers.html">Promotions</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="special-offers.html">Journal</a></li>
-        <li><a href="contact-us.html">About us</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="about-us.html">About us</a></li>
         <li><a href="concierge.html">Concierge</a></li>
+        <li><a href="#" class="language-text">Language</a></li>
       </ul>
       <div class="info-box">
         <ul class="nav-social">
+          <span>Follow us on Social Media</span>
           <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
           <li><a href="https://www.instagram.com/mansionscroatia/"><i class="lni lni-instagram"></i></a></li>
           <li><a href="https://twitter.com/mansionscroatia"><i class="lni lni-twitter-original"></i></a></li>
@@ -109,17 +115,30 @@
         </ul>
       </div>
       <!-- end info-box --> 
+      <!-- LANGUAGE LIST -->
+      <ul class="language-list-hamburger disabled hidden">
+        <li class="language">English</li>
+        <li class="language">Hrvatski</li>
+        <li class="language">Deutsch</li>
+        <li class="language">Italiano</li>
+        <li class="language">Français</li>
+        <li class="language">Español</li>
+        <li class="language">Portuguès</li>
+        <li class="language">Pусский</li>
+      </ul>
+      <!-- END LANGUAGE LIST -->
     </div>
     <!-- end container --> 
   </nav>
-  <!-- END HAMBURGER NAVIGATION -->
-
+  <!-- END HAMBURGER NAVIGATION MENU -->
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="container">
+      <!-- NAVBAR LOGO -->
       <div class="logo"> <a href="index.html"><img src="img/LOGO/logo-text.svg" alt="Image"></a> </div>
-      <!-- end logo -->
-      <div class="navbar-text"><p class='navbar-booking'>Booking  +385 91 3271 221</p> 
+      <!-- END NAVBAR LOGO -->
+      <!-- BOOKING AND SOCIAL -->
+      <div class="navbar-text"><p class='navbar-booking'>Call +385 91 3271 221</p> 
         <div class="nav-social social-nav">
           <a href="#"><i class="lni lni-facebook-filled"></i></a>
           <a href="https://www.instagram.com/mansionscroatia/"><i class="lni lni-instagram"></i></a>
@@ -128,18 +147,33 @@
           <a href="#"><i class="lni lni-youtube"></i></a>
         </div>
       </div>
-      <!-- end navbar-text -->
+      <!-- END BOOKING AND SOCIAL -->
+      <!-- SITE MENU -->
       <div class="site-menu">
         <ul>
-          <li><a href="quardo.html">Collections</a></li>
-          <li><a href="special-offers.html">Promotions</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="promotions.html">Promotions</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="special-offers.html">Journal</a></li>
-          <li><a href="contact-us.html">About us</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="about-us.html">About us</a></li>
           <li><a href="concierge.html">Concierge</a></li>
+          <li>
+            <i class="fas fa-globe-americas language-icon"></i>
+            <ul class="language-list disabled hidden">
+              <li class="language">English</li>
+              <li class="language">Hrvatski</li>
+              <li class="language">Deutsch</li>
+              <li class="language">Italiano</li>
+              <li class="language">Français</li>
+              <li class="language">Español</li>
+              <li class="language">Portuguès</li>
+              <li class="language">Pусский</li>
+            </ul>
+          </li>
         </ul>
       </div>
-      <!-- end site-menu -->
+      <!-- END SITE MENU -->
+      <!-- HAMBURGER -->
       <div class="hamburger-menu">
         <button class="menu">
         <svg width="45" height="45" viewBox="0 0 100 100">
@@ -149,12 +183,11 @@
         </svg>
         </button>
       </div>
-      <!-- end hamburger-menu --> 
+      <!-- END HAMBURGER --> 
     </div>
     <!-- end container --> 
   </nav>
   <!-- END NAVBAR -->
-
 
   <!-- HEADER -->
   <header class="page-header" data-background="img/3LIFESTYLE.jpg">
@@ -170,7 +203,7 @@
   <!-- END HEADER -->
 
   <!-- ABOUT CONCIERGE -->
-  <section class="content-section">
+  <section class="content-section no-bottom-spacing">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-12">
@@ -183,10 +216,10 @@
         <!-- end col-12 -->
         <div class="col-lg-6">
 		      <p>
-            Throughout our <b>15 years</b> experience in VIP hospitality in Croatia for exclusive clients,
+            Throughout our 15 years experience in VIP hospitality in Croatia for exclusive clients,
             we have developed a large network of contacts and human resources.
             We are proud to offer You access to this limited resource for unlimited pleasure.<br>
-            <span>They say you <u><i>cannot buy time.</i></u> You can, however, choose how you <u><i>spend your free time.</i></u></span><br>
+            <i>They say you cannot buy time. You can, however, choose how to spend your free time.</i><br>
             Allow our team to handle the mundane and cumbersome tasks of organizing a holiday experience, while you
             relax and enjoy Your holiday with full service of Mansions Croatia Concierge.
           </p>
@@ -200,7 +233,7 @@
           Our philosophy is simple: you desire, we deliver. 
           Chose from a list of our services, or contact us for a more specific need.
         </p>
-			  <a href="#contact" class="custom-button light">CONTACT US</a>
+			  <a href="#contact-form" class="custom-button light">CONTACT US</a>
 			  </div>
 			  <!-- end testimonial-box -->
 		  </div>
@@ -223,606 +256,11 @@
   <!-- end content-section -->
   <!-- END ABOUT CONCIERGE -->
 
-  <!-- SERVICE ICONS -->
-  <section class="content-section no-spacing">
-      <div class="col-12">
-        <div class="section-title text-center">
-          <h6>PROFESIONAL, FIVE STAR</h6>
-          <h2>Concierge services</h2>
-        </div>
-        <div class="content-tab">
-              <ul class="tab-nav">
-                <li class="active" style="color: var(--mansions-gold);"><a href="#tab01">All</a></li>
-                <li><a href="#tab02">Entertainment</a></li>
-                <li><a href="#tab03">Dine&Wine</a></li>
-                <li><a href="#tab04">Services</a></li>
-                <li><a href="#tab05">Care</a></li>
-              </ul>
-              <div id="tab01" class="tab-item active-item">
-                <div class="concierge-services">
-                  <!-- CARE -->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="/img/concierge/nanny1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>NANNY</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/massage1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>MASSAGE</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/barber1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>BARBER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/pet-care1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>PET DAY CARE</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/dentist1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>DENTIST</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/pedicure1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>MANICURE & PEDICURE</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/coach1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>PERSONAL TRAINER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/mua1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>MAKE UP ARTIST</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/hairdresser1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>HAIRDRESSER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/yoga1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>YOGA INSTRUCTOR</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/coach1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>PERSONAL COACH</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/barber1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>BARBER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-
-                  <!-- ENTERTAIMENT -->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/multimedia1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>MULTIMEDIA SERVICE</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/hostess1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>HOSTESS</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/event1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>ORGANIZE PRIVATE EVENT</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/aritst1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>BOOK ARTISTS AND MUSICIANS</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/cook1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>GOURMET NIGHT</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/coctail1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>COCTAIL NIGHT</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  
-                  <!-- DINE AND WINE -->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/cook1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>GOURMET NIGHT</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/coctail1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>COCKTAIL NIGHT</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/confectioner1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>CONFECTIONER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-
-                  <!-- SERVICES -->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/security1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>PRIVATE SECURITY</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/shopper1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>PERSONAL SHOPPER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/guide1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>TOUR GUIDE</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/driver1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>PRIVATE DRIVER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/skipper1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>SKIPPER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                </div>
-              </div>
-              <!-- end tab-item -->
-              <div id="tab02" class="tab-item">
-                <!-- ENTERTAIMENT -->
-                <div class="concierge-services">
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/multimedia1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>MULTIMEDIA SERVICE</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/hostess1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>HOSTESS</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/event1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>ORGANIZE PRIVATE EVENT</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/aritst1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>BOOK ARTISTS AND MUSICIANS</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/cook1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>GOURMET NIGHT</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/coctail1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>COCTAIL NIGHT</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                </div>
-              </div>
-              <!-- end tab-item -->
-              <div id="tab03" class="tab-item">
-                <div class="concierge-services">
-                  <!-- DINE AND WINE -->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/cook1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>GOURMET NIGHT</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/coctail1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>COCKTAIL NIGHT</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/confectioner1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>CONFECTIONER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                </div>
-              </div>
-              <!-- end tab-item -->
-              <div id="tab04" class="tab-item">
-                <div class="concierge-services">
-                  <!-- SERVICES -->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/security1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>PRIVATE SECURITY</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/shopper1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>PERSONAL SHOPPER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/guide1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>TOUR GUIDE</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/driver1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>PRIVATE DRIVER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/skipper1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>SKIPPER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                </div>
-              </div>
-              <!-- end tab-item -->
-              <div id="tab05" class="tab-item">
-                <div class="concierge-services">
-                  <!-- CARE -->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="/img/concierge/nanny1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>NANNY</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/massage1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>MASSAGE</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/barber1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>BARBER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/pet-care1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>PET DAY CARE</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/dentist1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>DENTIST</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/pedicure1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>MANICURE & PEDICURE</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/coach1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>PERSONAL TRAINER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/mua1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>MAKE UP ARTIST</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/hairdresser1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>HAIRDRESSER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/yoga1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>YOGA INSTRUCTOR</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/coach1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>PERSONAL COACH</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                  <div class="service">
-                    <div class="symbol">
-                      <img src="img/concierge/barber1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <p>BARBER</p>
-                      <p class="gray">starting from 100€</p>
-                    </div>
-                  </div>
-                  <!-- end service card-->
-                </div>
-              </div>
-              <!-- end tab-item -->
-            </div>
-            <!-- end content-tab --> 
-        </div>
-        <!-- end col-12 -->
-  </section>
-  <!-- end content-section -->
-  <!-- END SERVICE ICONS -->
-
-  <!-- TERMS OF USE -->
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="room-info-box" style="text-align: center; padding: 75px;">
-          <h2 style="color: var(--mansions-gold); font-size: 30px">Terms of use</h2>
-          <p style="text-align: left;"><br>
-            <i class="fas fa-chevron-circle-right" style="color: var(--mansions-gold); padding-right: 10px;"></i>To reserve our concierge services the client has to inform our staff minimum 7 days ahead of the determined date of service.<br>
-            <i class="fas fa-chevron-circle-right" style="color: var(--mansions-gold); padding-right: 10px;"></i>A last minute concierge reservation fee may be charged extra, depending on availability.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- END TERMS OF USE -->
-
   <!-- BENEFITS -->
-  <section class="content-section">
+  <section class="content-section no-bottom-spacing">
     <div class="container">
       <div class="section-title text-center">
-        <h6></h6>
+        <h6>GET MORE DONE</h6>
         <h2>Benefits of Concierge Services</h2>
       </div>
       <!-- end section-title --> 
@@ -906,46 +344,733 @@
   <!-- end content-section -->
   <!-- END BENEFITS -->
 
-  <!-- CONTACT US -->
-  <div class="container">
-    <div class="section-title text-center">
-      <h2>Contact Us</h2>
+  <!-- SERVICE ACCORDION -->
+  <section class="content-section no-bottom-spacing">
+    <div class="container">
+      <div class="section-title text-center">
+        <h6>PROFESSIONAL, FIVE-STAR</h6>
+        <h2>Explore Our Services</h2>
+      </div>
+      <!-- end section-title --> 
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="accordion" id="accordion" role="tablist">
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingSix"> 
+                    <a data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">ALL SERVICES</a> 
+                  </div>
+                  <div id="collapseSix" class="collapse" role="tabpanel" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body"> 
+                      <!-- ALL CARDS -->
+                      <div class="services-outer-container">
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/barber1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>BARBER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/hairdresser1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>HAIRDRESSER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/mua1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>MAKEUP ARTIST</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/pedicure1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>MANICURE-PEDICURE</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/massage1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>MASSAGE</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/yoga1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>YOGA INSTRUCTOR</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/coach1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>PERSONAL TRAINER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/dentist1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>DENTIST</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/nanny1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>NANNY</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/pet-care1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>PET DAY CARE</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/cook1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>PRIVATE CHEF</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/coctail1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>BARMEN</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/confectioner1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>CONFECTIONER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/multimedia1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>MULTIMEDIA SERVICE</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/event1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>EVENT PLANNER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/hostess1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>HOSTESS</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/aritst1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>ARTISTS, MUSICIANS</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/driver1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>DRIVER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/skipper1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>SKIPPER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/security1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>PRIVATE SECURITY</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/shopper1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>PERSONAL SHOPPER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/guide1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>TOUR GUIDE</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                      </div>
+                      <!-- END ALL CARDS -->
+                    </div>
+                    <!-- end card-body --> 
+                  </div>
+                  <!-- end collapse --> 
+                </div>
+                <!-- end card -->
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingSeven"> 
+                    <a class="collapsed" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">PERSONAL CARE</a> 
+                  </div>
+                  <div id="collapseSeven" class="collapse" role="tabpanel" aria-labelledby="headingSeven" data-parent="#accordion">
+                    <div class="card-body"> 
+                      <!-- ALL CARDS -->
+                      <div class="services-outer-container">
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/barber1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>BARBER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/hairdresser1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>HAIRDRESSER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/mua1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>MAKEUP ARTIST</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/pedicure1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>MANICURE & PEDICURE</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/massage1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>MASSAGE</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/yoga1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>YOGA INSTRUCTOR</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/coach1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>PERSONAL TRAINER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/dentist1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>DENTIST</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/nanny1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>NANNY</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/pet-care1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>PET DAY CARE</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                      </div>
+                      <!-- END ALL CARDS -->
+                    </div>
+                    <!-- end card-body --> 
+                  </div>
+                  <!-- end collapse --> 
+                </div>
+                <!-- end card -->
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingEight"> 
+                    <a class="collapsed" data-toggle="collapse" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">DINE & WINE</a> 
+                  </div>
+                  <div id="collapseEight" class="collapse" role="tabpanel" aria-labelledby="headingEight" data-parent="#accordion">
+                    <div class="card-body"> 
+                      <!-- ALL CARDS -->
+                      <div class="services-outer-container">
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/cook1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>PRIVATE CHEF</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/coctail1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>BARMEN</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/confectioner1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>CONFECTIONER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                      </div>
+                      <!-- END ALL CARDS -->
+                    </div>
+                    <!-- end card-body --> 
+                  </div>
+                  <!-- end collapse --> 
+                </div>
+                <!-- end card --> 
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingNine"> 
+                    <a class="collapsed" data-toggle="collapse" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">ENTERTAIMENT</a> 
+                  </div>
+                  <div id="collapseNine" class="collapse" role="tabpanel" aria-labelledby="headingNine" data-parent="#accordion">
+                    <div class="card-body">
+                      <!-- ALL CARDS -->
+                      <div class="services-outer-container">
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/multimedia1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>MULTIMEDIA SERVICE</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/event1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>EVENT PLANNER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/hostess1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>HOSTESS</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/aritst1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>ARTISTS, MUSICIANS</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                      </div>
+                      <!-- END ALL CARDS -->
+                    </div>
+                    <!-- end card-body --> 
+                  </div>
+                  <!-- end collapse --> 
+                </div>
+                <!-- end card --> 
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingTen"> 
+                    <a class="collapsed" data-toggle="collapse" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">SPECIAL</a> 
+                  </div>
+                  <div id="collapseTen" class="collapse" role="tabpanel" aria-labelledby="headingTen" data-parent="#accordion">
+                    <div class="card-body">
+                      <!-- ALL CARDS -->
+                      <div class="services-outer-container">
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/driver1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>DRIVER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/skipper1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>SKIPPER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/security1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>PRIVATE SECURITY</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/shopper1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>PERSONAL SHOPPER</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                        <!-- SINGLE CARD -->
+                        <div class="service-card">
+                          <div class="service-symbol">
+                            <img src="img/concierge/guide1.png" alt="">
+                          </div>
+                          <div class="service-name">
+                            <p>TOUR GUIDE</p>
+                          </div>
+                        </div>
+                        <!-- END SINGLE CARD -->
+                      </div>
+                      <!-- END ALL CARDS -->
+                    </div>
+                    <!-- end card-body --> 
+                  </div>
+                  <!-- end collapse --> 
+                </div>
+                <!-- end card --> 
+          </div>
+          <!-- end accordion -->
+        </div>
+        <!-- end col-10 -->
+      </div>
+      <!-- end row --> 
     </div>
-    <form action="https://formsubmit.co/josipuremovic1234@gmail.com" method="POST">
-      <label for="fname" id="contact">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      <label for="country">Service</label>
-      <select id="country" name="country" placeholder="Choose service">
-        <option value="SERVICE" >CHOOSE SERVICE</option>
-        <option value="NANNY">NANNY</option>
-        <option value="MASSAGE">MASSAGE</option>
-        <option value="BARBER">BARBER</option>
-        <option value="PET DAY CARE">PET DAY CARE</option>
-        <option value="DENTIST">DENTIST</option>
-        <option value="MANICURE&PEDICURE">MANICURE&PEDICURE</option>
-        <option value="PERSONAL TRAINER">PESONAL TRAINER</option>
-        <option value="MAKE UP ARTIST">MAKE UP ARTIST</option>
-        <option value="HAIRDRESSER">HAIRDRESSER</option>
-        <option value="MULTIMEDIA SERVICE">HOSTESS</option>
-        <option value="ORGANIZE PRIVATE EVENT">ORGANIZE PRIVATE EVENT</option>
-        <option value="ARTIST&MUSICIANS">ARTIST&MUSICIANS</option>
-        <option value="GOURMET NIGHT">GOURMET NIGHT</option>
-        <option value="PRIVATE SECURITY">PRIVATE SECURITY</option>
-        <option value="PERSONAL SHOPPER">TOUR GUIDE</option>
-        <option value="PRIVATE DRIVER">PRIVATE DRIVER</option>
-        <option value="CONFECTIONER">CONFECTIONER</option>
-        <option value="SKIPPER">SKIPPER</option>
-        <option value="YOGA TRAINER">YOGA TRAINER</option>
-        <option value="PERSONAL COACH">PERSONAL COACH</option>
-      </select>
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      <input type="submit" value="SUBMIT" class="custom-button">
-    </form>
-  </div>
-  <!-- END CONTACT US-->
+    <!-- end container --> 
+  </section>
+  <!-- end content-section -->
+  <!-- END SERVICE ACCORDION -->
+
+  <!-- TERMS OF USE -->
+  <section class="content-section no-spacing">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="room-info-box" style="text-align: center; padding: 1rem;">
+          <h2 style="color: var(--mansions-gold); font-size: 30px;">Terms of use</h2>
+          <p style="text-align: left;"><br>
+            <i class="fas fa-chevron-circle-right" style="color: var(--mansions-gold); padding-right: 1rem;"></i>To reserve our concierge services the client has to inform our staff minimum 7 days ahead of the determined date of service.<br><br>
+            <i class="fas fa-chevron-circle-right" style="color: var(--mansions-gold); padding-right: 1rem;"></i>A last minute concierge reservation fee may be charged extra, depending on availability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>  
+  </section>
+  <!-- END TERMS OF USE -->
+
+  <!-- CONTACT US -->
+  <section class="content-section" id="contact-form">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="section-title">
+            <h6>HAVE QUESTIONS?</h6>
+            <h2>Contact Us</h2>
+          </div>
+          <!-- end section-title --> 
+            <div class="contact-form">
+              <div class="form-group double">
+                <input type="text" placeholder="First Name" class="half">
+                <input type="text" placeholder="Last Name" class="half">
+              </div>
+              <!-- end form-group -->
+              <div class="form-group">
+                <input type="text" placeholder="E-mail">
+              </div>
+              <!-- end form-group -->
+              <div class="form-group">
+                <input type="text" placeholder="Phone Number">
+              </div>
+              <!-- end form-group -->
+              <div class="accordion" id="accordion" role="tablist">
+                <div class="card">
+                  <div class="card-header" role="tab" id="headingOne"> 
+                    <a data-toggle="collapse" href="#collapseSelect" aria-expanded="false" aria-controls="collapseSelect">Select Services</a> 
+                  </div>
+                  <div id="collapseSelect" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body"> 
+                      <div class="service-tab">
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Barber</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Hairdresser</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Makeup Artist</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Manicure-Pedicure</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Massage</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Yoga Instructor</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Personal Trainer</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Dentist</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Nanny</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Pet Daycare</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Private Chef</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Barmen</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Confectioner</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Multimedia Service</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Event Planner</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Hostess</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Artists, Musicians</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Driver</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Skipper</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Private Security</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Personal Shopper</label>
+                        </div>
+                        <div class="service-container">
+                          <input type="checkbox" id="service" name="service" value="nanny">
+                          <label for="service">Tour Guide</label>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end card-body --> 
+                  </div>
+                  <!-- end collapse --> 
+                </div>
+                <!-- end card -->
+              </div>
+              <!-- end accordion -->
+              <!-- end form-group -->
+              <div class="form-group">
+                <textarea placeholder="Inquiry..."></textarea>
+              </div>
+              <!-- end form-group -->
+              <div class="form-group">
+              <input type="submit" value="SEND MESSAGE">
+              </div>
+              <!-- end form-group -->
+            </div>
+            <!-- end contact-form -->
+        </div>
+        <!-- end col-lg-7 -->
+        <div class="col-xl-4 offset-xl-1 col-lg-5">
+          <div class="contact-box" data-background="var(--mansions-green)">
+            <h6>CONCIERGE</h6>
+            <address>Rijeka: Frane Supila 11, concierge@mansionscroatia.hr<strong>Rijeka / CRO</strong></address>
+          </div>
+          <!-- end contact-box -->
+          <div class="contact-box" data-background="var(--mansions-gold)">
+            <h6>SALES</h6>
+            <address>Rijeka: Frane Supila 11, info@mansionscroatia.hr<strong>Rijeka / CRO</strong></address>
+          </div>
+          <!-- end contact-box -->
+          <!-- <div class="contact-box">
+            <h6><a href="https://www.google.com/maps/search/?api=1&amp;query=centurylink+field" data-fancybox="" data-width="640" data-height="360"><i class="lni lni-map-marker">Discover On Map</i></a></h6>
+          </div> -->
+          <!-- end contact-box -->
+        </div>
+        <!-- end col-xl-4 -->
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </section>
+  <!-- end content-section -->
+  <!-- END CONTACT US -->
 
   <!-- PAGE-END LOGO -->
   <section class="page-end">
