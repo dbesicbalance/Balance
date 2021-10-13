@@ -3785,79 +3785,52 @@ select:-webkit-autofill:focus{
 }
 
 /* 63. COLLAGE DESTINATIONS */
-.collage-flex{
-  display: flex;
+.grouped-selections{
   width: 100%;
+  display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
-.flex-item{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.flex-item .image-container{
-  width: 100%;
-  height: 100%;
+.column{
+  width: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  min-width: 15rem;
 }
-.flex-item-overlay{
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s ease;
+.selection{
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  padding: 1rem;
+  justify-content: center;
   text-align: center;
-}
-.flex-item-overlay h5{
-  font-size: 1.5rem;
-  font-weight: 400;
+  border: 1px solid red;
   transition: all 0.3s ease;
-  transform: translateY(3rem);
-  text-transform: uppercase;
+  overflow: hidden;
+  /* margin: 0.5rem; */
+  filter: saturate(0);
 }
-.flex-item-overlay p{
-  opacity: 0;
-  transition: all 0.3s ease;
-  font-size: 1rem;
-}
-.flex-item-overlay:hover{
-  background-color: rgba(0, 0, 0, 0.7);
-}
-.flex-item img{
-  /* max-width: 150%;
-  width: 110%; */
-  position: relative;
-  top: -100%;
-  left: 0;
-  max-height: initial;
-  max-width: initial;
-}
-.tall{
-  height: 100%;
-}
-.wide{
-  width: 100%;
-}
-.fade-up{
-  transform: translateY(-1rem);
-  opacity: 1 !important;
+.selection:hover{
+  height: 200px;
+  filter: saturate(1);
 }
 
-.move-up{
-  transform: translateY(0) !important;
+.selection .text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
 }
+.selection img{
+  width: 100%;
+}
+.selected{
+  height: 300px;
+}
+
+
 
 /* 64. CONCIERGE SYMBOLS */
 .concierge-services{

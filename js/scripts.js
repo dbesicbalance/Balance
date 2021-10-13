@@ -652,3 +652,24 @@ document.addEventListener('mouseup',()=>{
     }, 300);
   }
 });
+
+// SELECTIONS ACCORDION
+
+const selection = document.querySelectorAll('.selection');
+/*
+document.addEventListener('click',(e)=>{
+  if(e.target.classList.contains('selection')){
+    selection.forEach(element =>{
+      element.classList.remove('selected');
+    })
+    e.target.classList.toggle('selected');
+  }
+
+})
+*/
+
+selection.forEach(element => {
+  element.addEventListener('click',()=>{
+    element.classList.toggle('selected');
+  })
+});
