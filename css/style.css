@@ -3809,10 +3809,10 @@ select:-webkit-autofill:focus{
   /* margin: 0.5rem; */
   filter: saturate(0);
 }
-.selection:hover{
+/* .selection:hover{
   height: 200px;
   filter: saturate(1);
-}
+} */
 
 .selection .text{
   width: 100%;
@@ -3823,11 +3823,19 @@ select:-webkit-autofill:focus{
   align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.selection .text h5{
+  text-transform: uppercase;
+}
+.selection p{
+  transition: all 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .selection img{
   width: 100%;
 }
 .selected{
-  height: 300px;
+  height: 200px;
+  filter: saturate(1);
 }
 
 

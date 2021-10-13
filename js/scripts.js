@@ -669,7 +669,23 @@ document.addEventListener('click',(e)=>{
 */
 
 selection.forEach(element => {
+  /*
   element.addEventListener('click',()=>{
     element.classList.toggle('selected');
+  })
+  */
+  element.addEventListener('mouseenter',()=>{
+    element.classList.add('selected');
+
+    element.children[1].classList.remove('disabled');
+    element.children[1].classList.remove('hidden');
+  })
+  element.addEventListener('mouseleave',()=>{
+    element.classList.remove('selected');
+    element.children[1].classList.add('hidden');
+    setTimeout(() => {
+      element.children[1].classList.add('disabled');
+    }, 200);
+
   })
 });
