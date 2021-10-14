@@ -72,7 +72,7 @@ theme.
 		60. MOBILE DEVICE RESPONSIVE
     61. SIGNUP PAGE
     62. USER NAVBAR
-    63. COLLAGE DESTINATIONS
+    63. COLLECTIONS
     64. CONCIERGE SYMBOLS
     65. CONCIERGE MAIN PAGE
     66. TESTIMONIALS
@@ -2525,12 +2525,12 @@ body .page-header {
   width: 100%;
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: 800;
-  letter-spacing: 1px;
+  /* font-weight: 800;
+  letter-spacing: 1px; */
   text-align: center;
-  color: var(--mansions-gold);
-  background-color: white;
-  border: 1px solid var(--mansions-gold);
+  color: white;
+  background-color: var(--mansions-gold);
+  /* border: 1px solid var(--mansions-gold); */
 }
 
 /* VIDEO BOX */
@@ -3784,18 +3784,37 @@ select:-webkit-autofill:focus{
   cursor: pointer;
 }
 
-/* 63. COLLAGE DESTINATIONS */
-.collage-flex{
-  display: flex;
+/* 63. COLLECTIONS */
+.destinations .swiper-slide{
+  
+}
+.destinations .carousel-image-box figure{
+  height: 25rem;
+}
+.destinations .carousel-image-box figure img{
+  width: auto;
+  max-width: initial;
+  height: 100%;
+}
+.destinations .carousel-image-box h5{
+  text-shadow: 0 0 5px black;
+}
+.destinations .carousel-image-box p{
+  text-shadow: 0 0 5px black;
+}
+
+
+.swipe-container{
   width: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  overflow: scroll;
+  display: flex;
 }
 .flex-item{
-  width: 100%;
-  height: 100%;
+  flex: 0 0 15rem;
+  width: 15rem;
+  height: 15rem;
   overflow: hidden;
+  margin: 1rem;
 }
 .flex-item .image-container{
   width: 100%;
@@ -3844,12 +3863,7 @@ select:-webkit-autofill:focus{
   max-height: initial;
   max-width: initial;
 }
-.tall{
-  height: 100%;
-}
-.wide{
-  width: 100%;
-}
+
 .fade-up{
   transform: translateY(-1rem);
   opacity: 1 !important;
@@ -4092,98 +4106,8 @@ label{
   padding: 0 1rem;
 }
 /* 69. DESTINATIONS */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: 
-    "one one two two three three"
-    "four four four four five five"
-    "six six seven seven seven seven"
-    "six six eight eight nine nine"
-    "ten ten ten ten eleven eleven"; 
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "one one one two two two three three three four four four"
-    "one one one five five five five five five four four four"
-    "one one one five five five five five five six six six"
-    "seven seven seven seven seven eight eight eight eight six six six"
-    "seven seven seven seven seven eight eight eight eight nine nine nine"
-    "ten ten ten ten eleven eleven eleven eleven eleven nine nine nine";
-  max-height: 700px;
-}
 
-.two { grid-area: two; }
 
-.three { grid-area: three; }
-
-.one { grid-area: one; }
-
-.five { grid-area: five; }
-
-.four { grid-area: four; }
-
-.six { grid-area: six; }
-
-.seven { grid-area: seven; }
-
-.eight { grid-area: eight; }
-
-.nine { grid-area: nine; }
-
-.ten { grid-area: ten; }
-
-.eleven { grid-area: eleven; }
-
-.grid-container>*{
-  min-height: 10rem;
-  color: white;
-}
-
-.destinations-grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "jedan jedan jedan dva dva dva tri tri tri cetiri cetiri cetiri"
-    "jedan jedan jedan dva dva dva tri tri tri cetiri cetiri cetiri"
-    "jedan jedan jedan sest sest sest sest sest sest cetiri cetiri cetiri"
-    "pet pet pet sest sest sest sest sest sest osam osam osam"
-    "pet pet pet sedam sedam sedam sedam sedam sedam osam osam osam"
-    "pet pet pet sedam sedam sedam sedam sedam sedam osam osam osam";
-    max-height: 700px;
-}
-
-.jedan { grid-area: jedan; }
-
-.dva { grid-area: dva; }
-
-.tri { grid-area: tri; }
-
-.cetiri { grid-area: cetiri; }
-
-.pet { grid-area: pet; }
-
-.sest { grid-area: sest; }
-
-.sedam { grid-area: sedam; }
-
-.osam { grid-area: osam; }
-
-.destinations-grid-container>*{
-  min-height: 10rem;
-  color: white;
-}
 
 /* 70. ABOUT US */
 .about{
@@ -4729,6 +4653,12 @@ label{
   .hotel-search form .form-group {
     width: 100%;
   }
+  .hotel-search form .form-group select {
+    width: 100%;
+  }
+  .hotel-search form .form-group input {
+    width: 100%;
+  }
 
   .section-title h2 {
     font-size: 34px;
@@ -4873,6 +4803,25 @@ label{
   .service-name p{
     font-size: 0.7rem;
     line-height: 1rem;
+  }
+  /* TALENT NEEDED */
+  .fancy-corners svg{
+    height: 2rem;
+    width: 2rem;
+  }
+  .concierge-emblem::before,
+  .concierge-emblem::after{
+    width: 20%;
+    margin: 1rem;
+    background-color: var(--mansions-gold);
+  }
+  /* FOOTER */
+  footer .outer-column{
+    gap: 0.5rem;
+  }
+  footer .column{
+    width: 45%;
+    margin: 0;
   }
 }
 
