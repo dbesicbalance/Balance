@@ -4173,45 +4173,53 @@ label{
   display: flex;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
 }
-
 .card-stack .card{
-  width: 30%;
-  /* min-width: 20rem; */
+  width: 32%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 3%;
+  border: 1px solid var(--mansions-gold);
+  border-radius: 0;
+  background-color: var(--dirty-white);
 }
-
 .card-stack .card .top{
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
-  
 }
-
 .card-stack .card .icon{
-  width: 5rem;
-  height: 5rem; /* ovo ce vjerojatno trebati biti fleksibilna, a ne fiksna velicina */
-  border-right: 2px solid var(--mansions-gold);
-  margin-right: 1rem;
-  padding-right: 0.5rem;
+  width: 7vw;
+  max-width: 7rem;
+  height: 7rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  filter: brightness(0.7);
+}
+.card-stack .card .icon img{
+  max-width: 110%;
 }
 
 .card .heading{
   min-width: 10rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--mansions-gold);
 }
 
+.card .bottom{
+  width: 100%;
+}
 .card .bottom ul{
-  list-style:square;
-  padding: 0;
+  list-style: square;
+  padding-left: 1rem;
+}
+
+.card .bottom ul li::marker{
+  color: var(--mansions-gold);
 }
 
 .mini-stack{
@@ -4229,12 +4237,18 @@ label{
   justify-content: flex-start;
   padding: 1rem;
   text-align: center;
+  background-color: var(--mansions-green);
+  color: white;
+  border-radius: 0;
+  border: 2px solid var(--mansions-gold);
 }
 
 .mini-stack .card .icon{
-  height: 7rem;
-  width: 7rem;
+  height: 60%;
+  width: 60%;
   margin-bottom: 1rem;
+  filter: brightness(0.7);
+  overflow: hidden;
 }
 
 
@@ -4652,6 +4666,11 @@ label{
   .about-image{
     width: 100%;
   }
+  /* SERVICES */
+  .card-stack .card .icon{
+    width: 12vw;
+    min-width: 7rem;
+  }
 }
 /* RESPONSIVE MOBILE */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
@@ -4894,6 +4913,41 @@ label{
   footer .column{
     width: 45%;
     margin: 0;
+  }
+
+  /* 71. SERVICES */
+  .card-stack{
+    flex-direction: column;
+  }
+  .card-stack .card{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .card-stack .card .icon{
+    width: 30vw;
+  }
+  .card .bottom ul{
+    padding-left: 2rem;
+  }
+
+
+  .mini-stack{
+    flex-direction: column;
+  }
+  .mini-stack .card{
+    flex-direction: row;
+    height: 7rem;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+  }
+  .mini-stack .card .icon{
+    height: 5rem;
+    width: 5rem;
+    margin: 0 2rem;
+  }
+  .mini-stack .card p{
+    margin-bottom: 0;
   }
 }
 
