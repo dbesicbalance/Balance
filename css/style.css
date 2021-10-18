@@ -4186,14 +4186,16 @@ label{
 }
 .card-stack .card .top{
   display: flex;
-  flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
+  width: 100%;
 }
 .card-stack .card .icon{
-  width: 7vw;
-  max-width: 7rem;
-  height: 7rem;
+  width: 5rem;
+  height: 5rem;
+  border-right: 1px solid var(--mansions-gold);
+  padding-right: 0.5rem;
+  margin-right: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4667,10 +4669,16 @@ label{
     width: 100%;
   }
   /* SERVICES */
-  .card-stack .card .icon{
-    width: 12vw;
-    min-width: 7rem;
+  .card-stack{
+    flex-direction: column;
+    gap: 1rem;
   }
+  .card-stack .card{
+    flex-direction: row;
+    width: 100%;
+    min-height: 15rem;
+  }
+
 }
 /* RESPONSIVE MOBILE */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
@@ -4922,9 +4930,10 @@ label{
   .card-stack .card{
     width: 100%;
     margin-bottom: 1rem;
+    flex-direction: column;
   }
   .card-stack .card .icon{
-    width: 30vw;
+    width: 5rem;
   }
   .card .bottom ul{
     padding-left: 2rem;
