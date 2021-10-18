@@ -4228,6 +4228,7 @@ label{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: var(--mansions-gold);
 }
 
 .mini-stack .card{
@@ -4239,17 +4240,16 @@ label{
   justify-content: flex-start;
   padding: 1rem;
   text-align: center;
-  background-color: var(--mansions-green);
+  background-color: var(--mansions-gold);
   color: white;
-  border-radius: 0;
-  border: 2px solid var(--mansions-gold);
+  border: none;
 }
 
 .mini-stack .card .icon{
   height: 60%;
   width: 60%;
   margin-bottom: 1rem;
-  filter: brightness(0.7);
+  filter: brightness(1.5) saturate(0);
   overflow: hidden;
 }
 
@@ -4679,6 +4679,24 @@ label{
     min-height: 15rem;
   }
 
+
+  .mini-stack{
+    padding: 1rem;
+    height: 12rem;
+  }
+  .mini-stack .card{
+    width: 25%;
+    padding: 0;
+    height: 100%;
+    /* height: auto; */
+  }
+  .mini-stack .card .icon{
+    width: 5rem;
+    margin: 0;
+  }
+  .mini-stack .card-text{
+    height: 50%;
+  }
 }
 /* RESPONSIVE MOBILE */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
@@ -4942,6 +4960,9 @@ label{
 
   .mini-stack{
     flex-direction: column;
+    height: auto;
+    padding: 0;
+    gap: 0;
   }
   .mini-stack .card{
     flex-direction: row;
@@ -4954,6 +4975,9 @@ label{
     height: 5rem;
     width: 5rem;
     margin: 0 2rem;
+  }
+  .mini-stack .card-text{
+    height: auto;
   }
   .mini-stack .card p{
     margin-bottom: 0;
