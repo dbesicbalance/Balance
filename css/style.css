@@ -4678,6 +4678,9 @@ label{
     width: 100%;
     min-height: 15rem;
   }
+  .card-stack .card .heading{
+    margin-right: 1rem;
+  }
 
 
   .mini-stack{
@@ -4952,6 +4955,9 @@ label{
   }
   .card-stack .card .icon{
     width: 5rem;
+  }
+  .card-stack .card .heading{
+    margin-right: 0;
   }
   .card .bottom ul{
     padding-left: 2rem;
