@@ -4150,6 +4150,16 @@ label{
     "left right";
 }
 
+.full{
+  grid-area: 1/1/3/3;
+  overflow: hidden;
+}
+.full img{
+  max-width: initial;
+  max-height: 100%;
+  transform: translateX(-25%);
+}
+
 .top { 
   grid-area: top; 
   /* max-height: 20vw; */

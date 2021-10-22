@@ -67,7 +67,7 @@
 <div class="preloader">
   <div class="loadbar"></div>
   <!-- end loadbar -->
-  <figure style="background: url(img/LOGO/logo-text-dark-preloader.svg) no-repeat center/200px 200px;"></figure>
+  <figure style="background: url(img/LOGO/logo-text-dark-op20.svg) no-repeat center/200px 200px;"></figure>
 </div>
 <!-- END PRELOADER -->
 <!-- PAGE TRANSITION ANIMATION -->
@@ -89,20 +89,42 @@
         <ul class="nav-menu login-menu">
           <li>
             <div class="break-logo">
-              <a href="index.html"><img src="/img/LOGO/logo-text.svg" alt=""></a>
+              <a href="index.html"><img src="img/LOGO/logo-text.svg" alt=""></a>
             </div>              
           </li>
         </ul>
       </div>
       <!-- END LOGO / ex-user-login -->
-      <ul class="nav-menu">
+      <!-- NAV MENU -->
+      <ul class="nav-menu" id="hamburger-nav-menu">
         <li><a href="collections.html">Collections</a></li>
         <li><a href="promotions.html">Promotions</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="journal.html">Journal</a></li>
         <li><a href="about-us.html">About us</a></li>
         <li><a href="concierge.html">Concierge</a></li>
+        <li>
+          <a href="#" class="language-text">
+            <img src="img/language-flags/united-kingdom.png" alt="">
+          </a>
+        </li>
       </ul>
+      <!-- END NAV MENU -->
+      <!-- LANGUAGE LIST -->
+      <ul class="language-list-hamburger disabled hidden">
+        <div class="languages-container">
+          <li class="language"><img src="img/language-flags/united-kingdom.png" alt="">English</li>
+          <li class="language"><img src="img/language-flags/croatia.png" alt="">Hrvatski</li>
+          <li class="language"><img src="img/language-flags/germany.png" alt="">Deutsch</li>
+          <li class="language"><img src="img/language-flags/italy.png" alt="">Italiano</li>
+          <li class="language"><img src="img/language-flags/france.png" alt="">Français</li>
+          <li class="language"><img src="img/language-flags/spain.png" alt="">Español</li>
+          <li class="language"><img src="img/language-flags/portugal.png" alt="">Portuguès</li>
+          <li class="language"><img src="img/language-flags/russia.png" alt="">Pусский</li>
+        </div>
+       </ul>
+      <!-- END LANGUAGE LIST -->
+      <!-- SOCIAL MEDIA -->
       <div class="info-box">
         <ul class="nav-social">
           <span>Follow us on Social Media</span>
@@ -113,7 +135,8 @@
           <li><a href="#"><i class="lni lni-youtube"></i></a></li>
         </ul>
       </div>
-      <!-- end info-box --> 
+      <!-- END SOCIAL MEDIA --> 
+
     </div>
     <!-- end container --> 
   </nav>
@@ -125,7 +148,7 @@
       <div class="logo"> <a href="index.html"><img src="img/LOGO/logo-text.svg" alt="Image"></a> </div>
       <!-- END NAVBAR LOGO -->
       <!-- BOOKING AND SOCIAL -->
-      <div class="navbar-text"><p class='navbar-booking'>Booking  +385 91 3271 221</p> 
+      <div class="navbar-text"><p class='navbar-booking'>Call +385 91 3271 221</p> 
         <div class="nav-social social-nav">
           <a href="#"><i class="lni lni-facebook-filled"></i></a>
           <a href="https://www.instagram.com/mansionscroatia/"><i class="lni lni-instagram"></i></a>
@@ -144,6 +167,21 @@
           <li><a href="journal.html">Journal</a></li>
           <li><a href="about-us.html">About us</a></li>
           <li><a href="concierge.html">Concierge</a></li>
+          <li>
+            <a href="#">
+              <img class="language-icon" src="img/language-flags/united-kingdom.png" alt="">
+            </a>
+            <ul class="language-list disabled hidden">
+              <li class="language"><img src="img/language-flags/united-kingdom.png" alt="">English</li>
+              <li class="language"><img src="img/language-flags/croatia.png" alt="">Hrvatski</li>
+              <li class="language"><img src="img/language-flags/germany.png" alt="">Deutsch</li>
+              <li class="language"><img src="img/language-flags/italy.png" alt="">Italiano</li>
+              <li class="language"><img src="img/language-flags/france.png" alt="">Français</li>
+              <li class="language"><img src="img/language-flags/spain.png" alt="">Español</li>
+              <li class="language"><img src="img/language-flags/portugal.png" alt="">Portuguès</li>
+              <li class="language"><img src="img/language-flags/russia.png" alt="">Pусский</li>
+            </ul>
+          </li>
         </ul>
       </div>
       <!-- END SITE MENU -->
@@ -162,6 +200,7 @@
     <!-- end container --> 
   </nav>
   <!-- END NAVBAR -->
+
 
   <header class="page-header" style="height: 90vh;" data-background="img/about-us-header.jpg">
     <div class="container">
@@ -238,15 +277,15 @@
       </p>
     </div>
     <div class="about-image small-grid">
-      <div class="top">
+      <div class="full">
         <figure class="reveal-effect"><img src="img/balance/logo-emerald.jpg" alt="Image"></figure>
       </div>
-      <div class="left">
+      <!-- <div class="left">
         <figure class="reveal-effect"><img src="img/balance/Luxury-Paper-Logo-Mockup-PSD-1.jpg" alt="Image"></figure>
       </div>
       <div class="right">      
         <figure class="reveal-effect"><img src="img/balance/what-exactly-is-bent_1600x0w.jpg" alt="Image"></figure>
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- END VISION -->
@@ -318,10 +357,12 @@ concierge@mansionscroatia.hr
   </section>
   <!-- end content-section -->
  
+  
+
   <!-- PAGE-END LOGO -->
   <section class="page-end">
     <div class="break-logo">
-      <img src="/img/LOGO/logo-text-dark.svg" alt="">
+      <img src="img/LOGO/logo-text-dark-op50.svg" alt="">
     </div>
   </section>
   <!-- END PAGE-END LOGO -->
