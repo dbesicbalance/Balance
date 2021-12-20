@@ -73,14 +73,6 @@ theme.
     61. SIGNUP PAGE
     62. USER NAVBAR
     63. COLLAGE DESTINATIONS
-    64. CONCIERGE SYMBOLS
-    65. CONCIERGE MAIN PAGE
-    66. TESTIMONIALS
-    67. PARTNER LOGOS
-    68. CONCIERGE ON LANDING PAGE
-    69. DESTINATIONS
-    70. ABOUT US
-    71. SERVICES
 	
 
 */
@@ -90,11 +82,6 @@ theme.
   src: url("../fonts/ArgestaDisplay-Regular.eot");
   src: url("../fonts/ArgestaDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ArgestaDisplay-Regular.woff2") format("woff2"), url("../fonts/ArgestaDisplay-Regular.woff") format("woff"), url("../fonts/ArgestaDisplay-Regular.ttf") format("truetype"), url("../fonts/ArgestaDisplay-Regular.svg#ArgestaDisplay-Regular") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'PinyonScript-Regular';
-  src: url("../fonts/PinyonScript-Regular.ttf");
   font-style: normal;
 }
 * {
@@ -110,21 +97,11 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  --mansions-gold: #ab8b50;
-  /* --mansions-green: #0d1b14; */
-  /* --mansions-green: #12271c; */
-  --mansions-green: #001d18;
-  --mansions-darkgreen: #001d18;
-  /* --mansions-darkgreen: #0d1b14; */
-  --mansions-dark:#141414;
-  --dirty-white: rgb(245, 243, 236);
-  --dirty-white-dark: rgb(221, 219, 210);
+  --mansions-gold: #856d47;
+  --mansions-green: #12271c;
 }
 
 /* HTML TAGS */
-.scroll-content{
-  background-color: var(--dirty-white);
-}
 img {
   max-width: 100%;
 }
@@ -135,40 +112,6 @@ strong {
 
 iframe {
   max-width: 100%;
-}
-
-.lni{
-  color: #fff;
-  size: 5rem;
-}
-.gold{
-  background-color: var(--mansions-gold);
-}
-.golden{
-  color: var(--mansions-gold);
-}
-.gold-outline{
-  border: 5px solid var(--mansions-gold);
-}
-.gray{
-  color: gray;
-}
-.welcome{
-  font-size: 3vw;
-  font-family: "Argesta Display";
-}
-.gold-frame{
-  border: 2px solid var(--mansions-gold);
-}
-.slogan{
-  font-family: 'PinyonScript-Regular';
-  font-size: 3rem;
-}
-.disabled{
-  display: none !important;
-}
-.hidden{
-  opacity: 0 !important;
 }
 
 /* LINKS */
@@ -483,7 +426,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: var(--dirty-white);
+  background: #fff;
   padding: 0;
 }
 .accordion .card {
@@ -783,7 +726,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: var(--mansions-darkgreen);
+  background: #141414;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -795,7 +738,6 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   transition-delay: 1s;
   transition-delay: 1s;
 }
-
 .preloader .loadbar {
   width: 0%;
   height: 100%;
@@ -806,15 +748,14 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   left: 0;
   z-index: 2;
   overflow: hidden;
-
 }
 .preloader figure {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  animation: fade 0.30s;
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.86, 0, 0.09, 1);
@@ -832,10 +773,10 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   font-size: 14px;
 }
 .preloader figure img {
-  height: 10rem;
+  height: 100px;
   display: inline-block;
+  opacity: 0.05;
 }
-
 
 @keyframes fade {
   0% {
@@ -871,7 +812,7 @@ input::-moz-focus-inner, input::-moz-focus-outer {
   position: absolute;
   left: 0;
   top: 0;
-  background: var(--mansions-darkgreen);
+  background: #141414;
   transition-duration: 1s;
   -webkit-transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.86, 0, 0.09, 1);
@@ -965,7 +906,7 @@ body .page-header {
 .hamburger-navigation .layer {
   width: 100%;
   height: 0;
-  background: var(--mansions-darkgreen);
+  background: #141414;
   position: absolute;
   left: 0;
   top: 0;
@@ -986,9 +927,9 @@ body .page-header {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 50px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: 1rem;
+  padding-top: 50px;
   color: #fff;
   opacity: 0;
   visibility: hidden;
@@ -1037,10 +978,6 @@ body .page-header {
 .hamburger-navigation .nav-menu.mobile-menu {
   display: none;
 }
-.hamburger-navigation .nav-menu .logo{
-  width: 7rem;
-  margin: 1rem auto;
-}
 .hamburger-navigation .nav-menu li {
   width: 100%;
   display: block;
@@ -1058,15 +995,15 @@ body .page-header {
 .hamburger-navigation .nav-menu li a:hover {
   color: var(--mansions-gold);
 }
-
-.hamburger-navigation .nav-social .lni{
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+.golden{
+  color:var(--mansions-gold);
+  transition: all 0.35s ease-in-out;
+  opacity: 1;
+  filter: none;
 }
-.hamburger-navigation .nav-social .lni:hover{
-  color: var(--mansions-gold);
+.golden:hover{
+  color: white;
 }
-
 /* HAMBURGER NAGIVATION ACTIVE */
 .hamburger-navigation-active .scroll-content {
   transform: translate3d(0px, 0px, 0px) !important;
@@ -1106,7 +1043,7 @@ body .page-header {
   opacity: 0;
 }
 
-/* 18. NAVBAR */
+/* NAVBAR */
 .navbar {
   width: 100%;
   display: flex;
@@ -1120,7 +1057,6 @@ body .page-header {
 }
 .navbar .logo {
   display: inline-block;
-  margin: 0 auto;
   -webkit-transition: all .35s ease-in-out;
   -moz-transition: all .30s ease-in-out;
   -ms-transition: all .30s ease-in-out;
@@ -1130,8 +1066,8 @@ body .page-header {
 .navbar .logo a {
   display: inline-block;
 }
-.navbar .logo a img{
-  height: 4.5rem;
+.navbar .logo a img {
+  height: 50px;
 }
 .navbar .navbar-text {
   display: inline-block;
@@ -1142,14 +1078,6 @@ body .page-header {
   -ms-transition: all .30s ease-in-out;
   -o-transition: all .30s ease-in-out;
   transition: all .30s ease-in-out;
-  text-align: center;
-}
-.navbar-booking{
-  margin: 0;
-}
-.navbar-text .nav-social{
-  display: flex;
-  justify-content: space-between;
 }
 .navbar .site-menu {
   display: inline-block;
@@ -1181,61 +1109,9 @@ body .page-header {
 .navbar .site-menu ul li a:hover {
   text-decoration: none;
 }
-
-.navbar .language-icon{
-  color: white;
-}
-.language-list{
-  flex-direction: column;
-  position: absolute;
-  background-color: var(--dirty-white);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  transition: all 0.2s ease;
-}
-.navbar .site-menu .language-list li{
-  width: 100%;
-  padding: 0.5rem 1rem;
-  margin: 0;
-  transition: all 0.2s ease;
-}
-.language-list li:hover{
-  background-color: var(--dirty-white-dark);
-  color: var(--mansions-gold)
-}
-
-.language-list-hamburger{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  list-style-type: none;
-  color: white;
-  font-size: 2rem;
-  background-color: var(--mansions-green);
-  transition: all 0.3s ease;
-  padding: 0 !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-.language-list-hamburger li{
-  transition: 0.2s ease;
-  font-family: 'ArgestaDisplay';
-}
-.language-list-hamburger li:hover{
-  color:var(--mansions-gold);
-}
-.language-flag img{
-  width: 2rem;
-}
-
 .navbar .hamburger-menu {
-  display: none;
-  margin: 0 auto;
+  display: inline-block;
+  margin-left: auto;
 }
 
 /* SLIDER */
@@ -1367,20 +1243,20 @@ body .page-header {
   width: 20%;
   height: 80px;
   line-height: 80px;
-  background-color: var(--mansions-green);
+  background: white;
   position: absolute;
   left: auto;
   right: 0;
   bottom: 0;
   z-index: 1;
-  color: var(--mansions-gold);
+  color: black;
   font-family: "Argesta Display";
   font-size: 22px;
 }
 .slider .slider-prev {
   width: 80px;
   height: 80px;
-  background: var(--mansions-gold);
+  background: #141414;
   position: absolute;
   right: calc(20% + 82px);
   bottom: 0;
@@ -1410,7 +1286,7 @@ body .page-header {
 .slider .slider-next {
   width: 80px;
   height: 80px;
-  background: var(--mansions-gold);
+  background: #141414;
   position: absolute;
   right: 20%;
   bottom: 0;
@@ -1943,14 +1819,14 @@ body .page-header {
   margin-right: 20px;
   padding: 0 5px;
   list-style: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: 4px solid transparent;
 }
 .events-tab .tab-nav li.active {
   border-color: var(--mansions-gold);
 }
 .events-tab .tab-nav li a {
   display: inline-block;
-  color: rgb(0, 0, 0);
+  color: #fff;
 }
 .events-tab .tab-item {
   width: 100%;
@@ -1975,7 +1851,7 @@ body .page-header {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid var(--mansions-gold);
+  border-bottom: 1px solid #eee;
 }
 .content-tab .tab-nav li {
   height: 70px;
@@ -1984,11 +1860,11 @@ body .page-header {
   margin-right: 20px;
   padding: 0 25px;
   list-style: none;
-  border: 1px solid var(--mansions-gold);
+  border: 1px solid #eee;
   margin-bottom: -1px;
 }
 .content-tab .tab-nav li.active {
-  border-bottom: 1px solid var(--dirty-white);
+  border-bottom: 1px solid #fff;
 }
 .content-tab .tab-nav li.active a {
   color: var(--mansions-gold);
@@ -2005,7 +1881,7 @@ body .page-header {
   display: none;
   position: relative;
   overflow: hidden;
-  border: 1px solid var(--mansions-gold);
+  border: 1px solid #eee;
   border-top: none;
   padding: 50px;
 }
@@ -2170,7 +2046,7 @@ body .page-header {
   content: "";
   width: 100%;
   height: 240px;
-  background: var(--dirty-white);
+  background: var(--mansions-green);
   position: absolute;
   left: 0;
   top: 0;
@@ -2461,14 +2337,12 @@ body .page-header {
   display: block;
 }
 .member-box .content {
-  width: 100%;
-  display: flex;
-  background: rgba(255, 255, 255);
+  width: calc(100% - 30px);
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: -30px;
   padding: 30px;
   position: relative;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 .member-box .content small {
   width: 100%;
@@ -2480,18 +2354,16 @@ body .page-header {
   display: block;
   font-size: 28px;
   font-family: "Argesta Display";
-  /* margin-bottom: 25px; */
+  margin-bottom: 25px;
   opacity: 0.7;
 }
 .member-box .content a {
   display: inline-block;
-  /*text-decoration: underline;*/
+  text-decoration: underline;
   color: var(--mansions-gold);
   font-weight: 600;
   font-size: 15px;
 }
-
-
 
 /* VIDEO BOX */
 .video-box {
@@ -2801,6 +2673,7 @@ body .page-header {
   display: flex;
   flex-wrap: wrap;
   padding: 50px;
+  border: 1px solid #eee;
   margin: 30px 0;
 }
 .room-info-box h6 {
@@ -3027,7 +2900,7 @@ body .page-header {
   width: 90%;
 }
 .contact-form textarea {
-  width: 90%;
+  width: 100%;
 }
 
 /* CONTACT BOX*/
@@ -3481,26 +3354,25 @@ body .page-header {
 .footer .bottom-bar {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 50px 0;
   font-size: 14px;
   position: relative;
   margin-top: 50px;
 }
 .footer .bottom-bar:before {
   content: "";
-  width: 100%;
+  width: calc(100% + 100px);
   height: 1px;
   background: #fff;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -50px;
   opacity: 0.2;
 }
 .footer .bottom-bar span {
-  display: flex;
-  align-items: center;
-  font-size: 0.8rem;
+  display: inline-block;
 }
 .footer .bottom-bar .footer-social {
   display: inline-block;
@@ -3512,46 +3384,10 @@ body .page-header {
   margin-left: 10px;
   padding: 0;
   list-style: none;
-  font-size: 0.8rem;
 }
 .footer .bottom-bar .footer-social li a {
   display: inline-block;
   color: #fff;
-}
-/* 68. FOOTER */
-footer .container{
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-footer .outer-column{
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  min-width: 350px;
-}
-footer .column{
-  min-width: 10rem;
-  width: 50%;
-  margin: 0 1rem;
-}
-footer h6{
-  border-bottom: 1px solid white;
-}
-footer ul{
-  list-style-type: none;
-  padding-inline-start: 0;
-  font-size: 1rem;
-}
-footer ul li{
-  margin: 0.5rem;
-}
-footer p{
-  font-size: 1rem;
-  margin: 0.5rem;
-}
-footer a{
-  color: inherit;
 }
 
 /* SIGNUP PAGE */
@@ -3674,20 +3510,8 @@ footer a{
   -o-transition: all .30s ease-in-out;
   transition: all .30s ease-in-out;
 }
-.login-menu .break-logo{
-  filter: invert(0);
-  opacity: 1;
-}
-.login-menu .break-logo img{
-  width: 10rem;
-  opacity: 0.8;
-}
-.login-menu .break-logo::before,
-.login-menu .break-logo::after{
-  opacity: 0.2;
-  margin: 0;
-  width: 40%;
-  background-color: rgba(255, 255, 255);
+.login-menu{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .hamburger-navigation-active .hamburger-navigation .nav-user {
   opacity: 1;
@@ -3701,9 +3525,6 @@ footer a{
   flex-wrap: nowrap;
   width: 100%;
   overflow: scroll;
-}
-.carousel::-webkit-scrollbar {
-  display: none;
 }
 
 /* WEBKIT FORM AUTOFILL STYLE */
@@ -3737,6 +3558,69 @@ select:-webkit-autofill:focus{
 }
 
 /* 63. COLLAGE DESTINATIONS */
+.collage-grid{
+  position: relative;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 15rem;
+  grid-auto-flow: dense;
+  /* grid-template-columns: repeat(2, 50%); */
+  width: 100%;
+  
+}
+.grid-item{
+  overflow: hidden;
+  min-width: 15rem;
+  /* height: 15rem; */
+}
+.grid-item-overlay{
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  text-align: center;
+  padding: 0 1rem;
+}
+.grid-item-overlay h5{
+  font-size: 2rem;
+  font-weight: 800;
+  transition: all 0.3s ease;
+  transform: translateY(3rem);
+}
+.grid-item-overlay p{
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.grid-item-overlay:hover{
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.grid-item img{
+  width: 100%;
+  position: relative;
+  top: -100%;
+  left: 0;
+}
+.wide{
+  grid-column: span 2;
+}
+.tall{
+  grid-row: span 2;
+}
+.big{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+
 .collage-flex{
   display: flex;
   width: 100%;
@@ -3744,14 +3628,18 @@ select:-webkit-autofill:focus{
   align-items: center;
   justify-content: center;
 }
-.flex-item{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  /* POJEDINI ITEM U COLLAGEU */
+
+.column{
+  flex: 25%;
+  max-width: 25%;
 }
-.flex-item img{
-  min-height: 100%;
-  min-width: 100%;
+.flex-item{
+  height: 15rem;
+  width: 100%;
+  min-width: 15rem;
+  max-width: 25rem;
+  overflow: hidden;
 }
 .flex-item-overlay{
   width: 100%;
@@ -3766,27 +3654,24 @@ select:-webkit-autofill:focus{
   top: 0;
   left: 0;
   z-index: 2;
-  padding: 1rem;
   text-align: center;
+  padding: 0 1rem;
 }
 .flex-item-overlay h5{
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 2rem;
+  font-weight: 800;
   transition: all 0.3s ease;
   transform: translateY(3rem);
-  text-transform: uppercase;
 }
 .flex-item-overlay p{
   opacity: 0;
   transition: all 0.3s ease;
-  font-size: 1rem;
 }
 .flex-item-overlay:hover{
   background-color: rgba(0, 0, 0, 0.7);
 }
 .flex-item img{
-  max-width: 150%;
-  width: 110%;
+  width: 100%;
   position: relative;
   top: -100%;
   left: 0;
@@ -3795,435 +3680,17 @@ select:-webkit-autofill:focus{
   transform: translateY(-1rem);
   opacity: 1 !important;
 }
-
 .move-up{
   transform: translateY(0) !important;
 }
-
-.wide{
-  width: 40%;
+.flex-wide{
+  
 }
-.tall{
-  grid-row: span 2;
-}
-
-/* 64. CONCIERGE SYMBOLS */
-.concierge-services{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.concierge-services .service{
-  max-width: 10rem;
-  text-align: center;
-  transition: all 0.3s ease;
-  border: 1px solid #cbcbcb;
-  margin: 0.5rem;
-  overflow: hidden;
-  background: var(--dirty-white);
-  padding: 0.5rem;
-}
-.concierge-services .service:hover{
-  border: 1px solid var(--mansions-gold);
-}
-.concierge-services .symbol img{
-  width: 100%;
-}
-.concierge-services .service p{
-  font-size: 0.9rem;
-}
-
-/* 65. CONCIERGE INPUT FORM */
- input[type=text], 
- input[type=number],
- select, 
- textarea {
-  width: 100%;
-  border: 1px solid var(--mansions-gold);
-}
-label{
-    font-size: 14px;
-    margin-top: 1rem;
-    margin-bottom: 0;
-} 
-
-/* 66. TESTIMONIALS */
-.carousel-caption {
-  position: initial;
-  z-index: 10;
-  padding: 5rem 8rem;
-  color: rgba(78, 77, 77, 0.856);
-  text-align: center;
-  font-size: 1.2rem;
-  font-style: italic;
-  font-weight: bold;
-  line-height: 2rem
-}
-.carousel-caption img {
-  width: 6rem;
-  border-radius: 5rem;
-  margin-top: 2rem
-}
-#image-caption {
-  font-style: normal;
-  font-size: 1rem;
-  margin-top: 0.5rem
-}
-.carousel-control-prev {
-  justify-content: flex-start
-}
-
-.carousel-control-next {
-  justify-content: flex-end
-}
-.carousel-control-prev,
-.carousel-control-next {
-  transition: none;
-  opacity: unset
-}
-
-/* 67. PAGE END */
-.page-end{
-  width: 100%;
-  height: 7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--mansions-gold);
-  margin-top: 100px;
-}
-.break-logo{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.5;
-}
-.break-logo img{
-  height: 6rem;
-  padding: 0.5rem 0;
-}
-.break-logo::before,
-.break-logo::after{
-  content:"";
-  width: 15vw;
-  height:1px;
-  margin: 0 1rem;
-  background-color:rgb(255, 255, 255);
-  opacity: 0.5;
-}
-
-/* 68. CONCIERGE ON LANDING PAGE */
-.concierge-text{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 2rem 0;
-  color: white;
-}
-.concierge-emblem{
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.concierge-emblem img{
-  height: 5rem;
-  width: 5rem;
-  opacity: 0.8;
-}
-.concierge-emblem::before,
-.concierge-emblem::after{
-  content:"";
-  height: 1px;
-  width: 20%;
-  margin: 2rem;
-  background-color: var(--mansions-gold);
-}
-.fancy-corners svg{
-  position: absolute;
-  height: 5rem;
-  width: 5rem;
-}
-.up-corner{
-  top: 1rem;
-  left: 1rem;
-}
-.ur-corner{
-  transform: rotateZ(90deg);
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-}
-.down-corner{
-  bottom: 1rem;
-  right: 1rem;
-  transform: rotateZ(180deg);
-}
-.dl-corner{
-  transform: rotateZ(270deg);
-  bottom: 1rem;
-  left: 1rem;
-}
-.concierge{
-  background-color: var(--mansions-green);
-  background-image: url(../img/LOGO/logo-spacing-pattern.svg);
-  background-size: 3rem;
-  background-repeat: repeat;
-}
-.talent-needed p{
-  padding: 0 1rem;
-}
-/* 69. DESTINATIONS */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: 
-    "one one two two three three"
-    "four four four four five five"
-    "six six seven seven seven seven"
-    "six six eight eight nine nine"
-    "ten ten ten ten eleven eleven"; 
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "one one one two two two three three three four four four"
-    "one one one five five five five five five four four four"
-    "one one one five five five five five five six six six"
-    "seven seven seven seven seven eight eight eight eight six six six"
-    "seven seven seven seven seven eight eight eight eight nine nine nine"
-    "ten ten ten ten eleven eleven eleven eleven eleven nine nine nine";
-  max-height: 700px;
-}
-
-.two { grid-area: two; }
-
-.three { grid-area: three; }
-
-.one { grid-area: one; }
-
-.five { grid-area: five; }
-
-.four { grid-area: four; }
-
-.six { grid-area: six; }
-
-.seven { grid-area: seven; }
-
-.eight { grid-area: eight; }
-
-.nine { grid-area: nine; }
-
-.ten { grid-area: ten; }
-
-.eleven { grid-area: eleven; }
-
-.grid-container>*{
-  min-height: 10rem;
-  color: white;
-}
-
-.destinations-grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "jedan jedan jedan dva dva dva tri tri tri cetiri cetiri cetiri"
-    "jedan jedan jedan dva dva dva tri tri tri cetiri cetiri cetiri"
-    "jedan jedan jedan sest sest sest sest sest sest cetiri cetiri cetiri"
-    "pet pet pet sest sest sest sest sest sest osam osam osam"
-    "pet pet pet sedam sedam sedam sedam sedam sedam osam osam osam"
-    "pet pet pet sedam sedam sedam sedam sedam sedam osam osam osam";
-    max-height: 700px;
-}
-
-.jedan { grid-area: jedan; }
-
-.dva { grid-area: dva; }
-
-.tri { grid-area: tri; }
-
-.cetiri { grid-area: cetiri; }
-
-.pet { grid-area: pet; }
-
-.sest { grid-area: sest; }
-
-.sedam { grid-area: sedam; }
-
-.osam { grid-area: osam; }
-
-.destinations-grid-container>*{
-  min-height: 10rem;
-  color: white;
-}
-
-/* 70. ABOUT US */
-.about{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 10rem 0;
-}
-.about-text{
-  min-width: 30rem;
-  max-width: 40rem;
-  width: 50vw;
-  padding: 2rem;
-}
-.about-image{
-  width: 40vw; 
-  height: 40vw;
-  max-width: 40rem;
-  display: grid;
-}
-.about-image figure{
-  margin: 0; 
-  height: 100%;
-}
-
-.reverse{
-  flex-wrap: wrap-reverse;
-}
-
-.small-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "top top"
-    "left right";
-}
-
-.top { 
-  grid-area: top; 
-  /* max-height: 20vw; */
-  overflow: hidden;
-}
-
-.left { 
-  grid-area: left; 
-  /* max-height: 20vw; */
-  overflow: hidden;
-}
-
-.right { 
-  grid-area: right; 
-  /* max-height: 20vw; */
-  overflow: hidden;
-}
-
-/* 71. SERVICES */
-.card-stack{
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-.card-stack .card{
-  width: 32%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 3%;
-  border: 1px solid var(--mansions-gold);
-  border-radius: 0;
-  background-color: var(--dirty-white);
-}
-.card-stack .card .top{
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  width: 100%;
-}
-.card-stack .card .icon{
-  width: 5rem;
-  height: 5rem;
-  border-right: 1px solid var(--mansions-gold);
-  padding-right: 0.5rem;
-  margin-right: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  filter: brightness(0.7);
-}
-.card-stack .card .icon img{
-  max-width: 110%;
-}
-
-.card .heading{
-  min-width: 10rem;
-  font-size: 1.5rem;
-  color: var(--mansions-gold);
-}
-
-.card .bottom{
-  width: 100%;
-}
-.card .bottom ul{
-  list-style: square;
-  padding-left: 1rem;
-}
-
-.card .bottom ul li::marker{
-  color: var(--mansions-gold);
-}
-
-.mini-stack{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: var(--mansions-gold);
-}
-
-.mini-stack .card{
-  width: 15rem;
-  height: 15rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 1rem;
-  text-align: center;
-  background-color: var(--mansions-gold);
-  color: white;
-  border: none;
-}
-
-.mini-stack .card .icon{
-  height: 60%;
-  width: 60%;
-  margin-bottom: 1rem;
-  filter: brightness(1.5) saturate(0);
-  overflow: hidden;
-}
-
+  /* END POJEDINI ITEM U COLLAGEU */
 
 
 /* RESPONSIVE MEDIUM  */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
-  .navbar .hamburger-menu {
-    display: inline-block;
-  }
-  .navbar .site-menu {
-    display: none;
-  }
-
   .hotel-search form .form-group {
     margin: 15px;
   }
@@ -4380,10 +3847,6 @@ label{
   }
 
   .contact-form input[type="text"] {
-    width: 100%;
-  }
-  
-  .contact-form textarea {
     width: 100%;
   }
 
@@ -4599,18 +4062,6 @@ label{
   .footer .row div:first-child .widget-title {
     margin-top: 0;
   }
-
-  footer .container{
-    max-width: 100%;
-  }
-
-  .about-text{
-    width: 100%;
-  }
-
-  .about-image{
-    width: 100%;
-  }
 }
 /* RESPONSIVE MOBILE */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
@@ -4793,17 +4244,4 @@ label{
     margin-left: 0;
     margin-right: 10px;
   }
-  
-  footer .outer-column{
-    width: 100%;
-  }
-
-  .about-text{
-    min-width:initial;
-  }
-
-  .about-image{
-    min-width: initial;
-  }
 }
-
